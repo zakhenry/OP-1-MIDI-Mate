@@ -11,6 +11,7 @@
 // than once which would confuse the compiler
 
 #include "ofMain.h"
+#include "ofEvents.h"
 
 class OP1 {
 	
@@ -23,18 +24,26 @@ class OP1 {
     void drawButtons();
     void drawButton(int buttonNumber);
     void drawKnobs();
-    void drawKnob(int knobNumber, float angle);
+    void drawKnob(int knobNumber);
+    
+    void drawScreen();
+    float getScreenHeight();
+    float getScreenWidth();
     
     void quadraticBezierVertex(float cpx, float cpy, float x, float y, float prevX, float prevY);
     void roundedRect(float w, float h, float r);
     
-    ofTrueTypeFont	verdana;
+    ofTrueTypeFont	verdana, spyroclassic;
+    
+    float scaleFactor;
+    float volume, bEncoder, gEncoder, wEncoder, oEncoder; //angles
     
 public:
     
     OP1(); //constructor
     
     void draw(int x, int y, int width);
+    void setEncoder(int encoder, float angle);
     
 };
 

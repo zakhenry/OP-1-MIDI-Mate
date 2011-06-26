@@ -23,14 +23,16 @@ OP1::OP1(){ // constructor
     cout << "OP-1 created\n";
     
     // font name, size, anti-aliased, full character set
-	verdana.loadFont("verdana.ttf",40, false, true);
+	verdana.loadFont("verdana.ttf",80, true, true);
+    spyroclassic.loadFont("spyroclassic.ttf",80, true, true);
+    ofSetRectMode(OF_RECTMODE_CENTER);
 }
 
 void OP1::draw(int x, int y, int width){ //all is drawn as 1px = 1mm, then scaled up
     
-    
+    scaleFactor = (float)width/284;
     ofTranslate(x, y);
-    ofScale(width/284, width/284);
+    ofScale(scaleFactor, scaleFactor);
     ofTranslate(-(284/2), -(102/2)); //set coords to top right
 
     drawFrame();
@@ -40,6 +42,21 @@ void OP1::draw(int x, int y, int width){ //all is drawn as 1px = 1mm, then scale
     drawKnobs();
     drawButtons();
     
+    ofPushMatrix();
+    ofPushStyle();
+    ofTranslate(66, 4.5);
+    drawScreen();
+    ofPopStyle();
+    ofPopMatrix();
+    
+}
+
+float OP1::getScreenHeight(){
+    return 30;
+}
+
+float OP1::getScreenWidth(){
+    return 61;
 }
 
 
@@ -191,271 +208,321 @@ void OP1::drawButton(int buttonNumber){
     switch (buttonNumber) {
         case 0:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("input", 0,0);
+            ofSetColor(orange);
+            ofRotateZ(45);
+            ofTranslate(0, -1.5);
+            ofCircle(0, 0, 0.8);
+            ofRect(0, 2, 0.6, 2.5);
         }
         break;
             
         case 1:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("com", 0,0);
+            ofSetColor(black);
+            ofTranslate(0, -1.5);
+            ofCircle(0, 0, 2);
+            ofSetColor(lightGrey);
+            ofCircle(0, 0, 1.7);
+            ofSetColor(black);
+            ofCircle(0, 0, 0.6);
+            ofScale(0.025, 0.025);
+            ofSetColor(black);
+            spyroclassic.drawString("COM", -100,180);
         }
         break;
             
         case 2:
         {
-            ofSetColor(0x222222);
+            ofSetColor(blue);
             ofTranslate(-3, 2);
             ofScale(0.05, 0.05);
-            verdana.drawString("synth", 0,0);
+            spyroclassic.drawString("synth", 0,0);
         }
         break;
             
         case 3:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("drum", 0,0);
+            ofSetColor(green);
+            ofCircle(0, 0, 1.7);
+            ofSetColor(lightGrey);
+            ofCircle(0, 0, 1.4);
+            ofSetColor(green);
+            ofCircle(0, 0, 0.5);
+            ofTranslate(0, 1.4);
+            ofRect(0, 0, 0.3, 1.8);
         }
         break;
             
         case 4:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("tape", 0,0);
+            ofTranslate(-1.5, 0);
+            ofSetColor(orange);
+            ofCircle(0, 0, 1.3);
+            ofSetColor(lightGrey);
+            ofCircle(0, 0, 1);
+            ofTranslate(3, 0);
+            ofSetColor(orange);
+            ofCircle(0, 0, 1.3);
+            ofSetColor(lightGrey);
+            ofCircle(0, 0, 1);
+            ofTranslate(-1.5, 1.1);
+            ofSetColor(orange);
+            ofRect(0, 0, 3, 0.3);
         }
         break;
             
         case 5:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("mix", 0,0);
+            ofSetColor(black);
+            ofTranslate(-1.5, 0.4);
+            ofRect(0, 0, 0.3, 2);
+            ofRect(1, -0.5, 0.3, 3);
+            ofRect(2, 0.15, 0.3, 1.7);
+            ofRect(3, 0, 0.3, 2);
         }
         break;
             
         case 6:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("1", 0,0);
+            ofSetColor(black);
+            ofRect(0, 0, 0.55, 5);
         }
         break;
             
         case 7:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("2", 0,0);
+            ofSetColor(black);
+            ofTranslate(-2, 2.5);
+            ofScale(0.1, 0.08);
+            spyroclassic.drawString("2", 0,0);
         }
         break;
             
         case 8:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("3", 0,0);
+            ofSetColor(black);
+            ofTranslate(-2.5, 2.5);
+            ofScale(0.1, 0.08);
+            spyroclassic.drawString("3", 0,0);
         }
         break;
             
         case 9:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("4", 0,0);
+            ofSetColor(black);
+            ofTranslate(-2.5, 2.5);
+            ofScale(0.1, 0.08);
+            spyroclassic.drawString("4", 0,0);
         }
         break;
             
         case 10:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("in", 0,0);
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("1", -20,0);
+            ofScale(0.5, 0.7);
+            ofSetColor(green);
+            spyroclassic.drawString("IN", -50,100);
         }
         break;
             
         case 11:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("out", 0,0);
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("2", -20,0);
+            ofScale(0.5, 0.7);
+            ofSetColor(green);
+            spyroclassic.drawString("OUT", -100,100);
         }
         break;
             
         case 12:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("loop", 0,0);
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("3", -20,0);
+            ofSetColor(green);
         }
         break;
             
         case 13:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("mute", 0,0);
+            ofPushMatrix();
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("4", -20,0);
+            ofPopMatrix();
+            
+            ofTranslate(-1.5, 2);
+            ofScale(0.8, 0.8);
+            //            ofScale(8, 8);
+            //            ofTranslate(-10, 0);
+            ofSetColor(orange);
+            ofCircle(0, 0, 1.3);
+            ofSetColor(lightGrey);
+            ofCircle(0, 0, 1);
+            ofTranslate(3, 0);
+            ofSetColor(orange);
+            ofCircle(0, 0, 1.3);
+            ofSetColor(lightGrey);
+            ofCircle(0, 0, 1);
+            ofTranslate(-1.5, 1.1);
+            ofSetColor(orange);
+            ofRect(0, 0, 3, 0.3);
+            
+            ofBeginShape();
+            //            ofCurve(-0.3, -0.3, <#float x1#>, <#float y1#>, <#float x2#>, <#float y2#>, <#float x3#>, <#float y3#>);
+            ofEndShape();
         }
         break;
             
         case 14:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("rev", 0,0);
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("5", -20,0);
+            ofSetColor(orange);
         }
         break;
             
         case 15:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("stop", 0,0);
+            ofPushMatrix();
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("6", -20,0);
+            ofPopMatrix();
         }
         break;
             
         case 16:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("M1", 0,0);
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("7", -20,0);
+            ofScale(0.5, 0.7);
+            spyroclassic.drawString("M1", -50,100);
         }
         break;
             
         case 17:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("M2", 0,0);
+            ofScale(0.04, 0.04);
+            ofSetColor(black);
+            spyroclassic.drawString("8", -20,0);
+            ofScale(0.5, 0.7);
+            spyroclassic.drawString("M2", -50,100);
         }
         break;
             
         case 18:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("seq", 0,0);
+            ofSetColor(blue);
+            ofTranslate(-2, 0.8);
+            ofCircle(0, 0, 0.5);
+            ofCircle(1.5, -1.5, 0.5);
+            ofCircle(3, 0, 0.5);
+            ofCircle(4.5, 0, 0.5);
         }
         break;
             
         case 19:
         {
-            ofSetColor(0x222222);
+            ofSetColor(black);
             ofTranslate(-3, 2);
             ofScale(0.05, 0.05);
-            verdana.drawString("help", 0,0);
+            spyroclassic.drawString("help", 0,0);
         }
         break;
             
         case 20:
         {
-            ofSetColor(0x222222);
+            ofSetColor(black);
             ofTranslate(-3, 2);
             ofScale(0.05, 0.05);
-            verdana.drawString("metro", 0,0);
+            spyroclassic.drawString("metro", 0,0);
         }
         break;
             
         case 21:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("lift", 0,0);
+            ofSetColor(orange);
+            
+            ofScale(0.04, 0.03);
+            ofSetColor(black);
+            spyroclassic.drawString("1-4", -50,100);
         }
         break;
             
         case 22:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("drop", 0,0);
+            ofSetColor(orange);
+            ofSetColor(black);
+            ofTranslate(0, 2.5);
+            ofCircle(0, 0, 0.5);
         }
         break;
             
         case 23:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("join", 0,0);
+            ofSetColor(orange);
+            ofScale(0.03, 0.03);
+            ofSetColor(black);
+            spyroclassic.drawString("JOIN", -70,100);
         }
         break;
             
         case 24:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("rec", 0,0);
+            ofSetColor(orange);
+            ofCircle(0, 0, 4);
+            ofSetColor(lightGrey);
+            ofCircle(0, 0, 1);
         }
         break;
             
         case 25:
         {
-            ofSetColor(0x222222);
+            ofSetColor(black);
             ofTranslate(-3, 2);
             ofScale(0.05, 0.05);
-            verdana.drawString("play", 0,0);
+            spyroclassic.drawString("play", 0,0);
         }
         break;
             
         case 26:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("stop", 0,0);
+            ofSetColor(black);
+            ofRect(0, 0, 2.5, 2.5);
         }
         break;
             
         case 27:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("rw", 0,0);
+            ofSetColor(black);
+            ofTranslate(-2, 2);
+            ofScale(0.06, 0.06);
+            spyroclassic.drawString("<", 0,0);
         }
         break;
             
         case 28:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("ff", 0,0);
+            ofSetColor(black);
+            ofTranslate(-1, 2);
+            ofScale(0.06, 0.06);
+            spyroclassic.drawString(">", 0,0);
         }
         break;
             
         case 29:
         {
-            ofSetColor(0x222222);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            verdana.drawString("shift", 0,0);
+            ofSetColor(black);
+            ofTranslate(-2, 1);
+            ofScale(0.03, 0.04);
+            spyroclassic.drawString("Shift", 0,0);
         }
         break;
             
@@ -515,7 +582,7 @@ void OP1::drawButtons(){
     
 }
 
-void OP1::drawKnob(int knobNumber, float angle){
+void OP1::drawKnob(int knobNumber){
     ofSetColor(darkGrey);
     roundedRect(30, 30, 0.5);
     ofPushMatrix();
@@ -525,19 +592,24 @@ void OP1::drawKnob(int knobNumber, float angle){
     ofSetColor(lightGrey);
     ofCircle(0, 0, 8.5);
     
-    int color = 0x000000;
+    int color = 0x000000; 
+    float angle;
     switch (knobNumber) {
         case 0:
             color = blue;
+            angle = bEncoder;
             break;
         case 1:
             color = green;
+            angle = gEncoder;
             break;
         case 2:
             color = white;
+            angle = wEncoder;
             break;
         case 3:
             color = orange;
+            angle = oEncoder;
             break;
             
         default:
@@ -563,7 +635,7 @@ void OP1::drawKnobs(){
     ofPushMatrix();
     ofTranslate(128.5, 4.5);
     for (int i=0; i<4; i++){
-        drawKnob(i, 0.125);
+        drawKnob(i);
         ofTranslate(31, 0);
     }
     ofPopMatrix();
@@ -593,4 +665,33 @@ void OP1::quadraticBezierVertex(float cpx, float cpy, float x, float y, float pr
     ofBezierVertex(cp1x, cp1y, cp2x, cp2y, x, y);
 }
 
-  
+
+
+/*Setting values*/
+
+void OP1::setEncoder(int encoder, float angle){
+    
+    
+    switch (encoder) {
+        case 'b':
+            bEncoder = angle;
+            break;
+            
+        case 'g':
+            gEncoder = angle;
+            break;
+            
+        case 'w':
+            wEncoder = angle;
+            break;
+            
+        case 'o':
+            oEncoder = angle;
+            break;
+            
+        default:
+            cout <<"bad encoder id\n";
+            break;
+    }
+    
+}
