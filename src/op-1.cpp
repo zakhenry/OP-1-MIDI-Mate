@@ -30,6 +30,10 @@ OP1::OP1(){ // constructor
     midiIn.listPorts();
     midiIn.openPort(0);
     ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
+    
+    for (int i=0; i<29; i++){
+        keyStatus.push_back(false);
+    }
 }
 
 void OP1::draw(int x, int y, int width){ //all is drawn as 1px = 1mm, then scaled up
@@ -210,7 +214,7 @@ void OP1::drawButton(int buttonNumber){
     ofCircle(0, 0, 5);
     
     switch (buttonNumber) {
-        case 0:
+        case 0: //mic/radio/input
         {
             ofSetColor(orange);
             ofRotateZ(45);
@@ -220,7 +224,7 @@ void OP1::drawButton(int buttonNumber){
         }
         break;
             
-        case 1:
+        case 1: //com
         {
             ofSetColor(black);
             ofTranslate(0, -1.5);
@@ -534,9 +538,17 @@ void OP1::drawButton(int buttonNumber){
             break;
     }
     
-    
-    
     ofPopMatrix();
+    
+    if (keyStatus[buttonNumber]){
+        //highlight keydown
+        ofPushMatrix();
+        ofTranslate(14.5/2, 14.5/2);
+        ofSetColor(0xff0000);
+        ofCircle(0, 0, 5);
+        ofPopMatrix();
+    }
+    
 }
 
 void OP1::drawButtons(){
@@ -727,6 +739,124 @@ void OP1::incrementEncoder(int encoder, bool cw){
     
 }
 
+void OP1::changeKeyStatus(int keyNum, bool keyDown){
+    if (keyNum>=0){
+        keyStatus[keyNum] = keyDown;
+        cout << "key ["<<keyNum<<"] status changed to ["<<keyDown<<"]\n";
+    }else{
+        cout <<"key not found\n";
+    }
+    
+}
+
+void OP1::keyEvent(int key, bool keyDown){
+    int keyNum = -1; //changing midi id's to graphical ids
+    
+    switch (key) {
+        case 48:
+            keyNum = 0;
+            break;
+        case 49:
+            keyNum = 1;
+            break;
+        case 7:
+            keyNum = 2;
+            break;
+        case 8:
+            keyNum = 3;
+            break;
+        case 9:
+            keyNum = 4;
+            break;
+        case 10:
+            keyNum = 5;
+            break;
+    /*    case :
+            keyNum = 6;
+            break;
+        case :
+            keyNum = 7;
+            break;
+        case :
+            keyNum = 8;
+            break;
+        case :
+            keyNum = 9;
+            break;
+     */
+        case 50:
+            keyNum = 10;
+            break;
+        case 51:
+            keyNum = 11;
+            break;
+        case 52:
+            keyNum = 12;
+            break;
+        case 21:
+            keyNum = 13;
+            break;
+        case 22:
+            keyNum = 14;
+            break;
+        case 23:
+            keyNum = 15;
+            break;
+        case 24:
+            keyNum = 16;
+            break;
+        case 25:
+            keyNum = 17;
+            break;
+        case 26:
+            keyNum = 18;
+            break;
+        case 5:
+            keyNum = 19;
+            break;
+        case 6:
+            keyNum = 20;
+            break;
+        case 15:
+            keyNum = 21;
+            break;
+        case 16:
+            keyNum = 22;
+            break;
+        case 17:
+            keyNum = 23;
+            break;
+        case 38:
+            keyNum = 24;
+            break;
+        case 39:
+            keyNum = 25;
+            break;
+        case 40:
+            keyNum = 26;
+            break;
+        /*case 41:
+            keyNum = 27;
+            break;
+        case 42:
+            keyNum = 28;
+            break;
+        case :
+            keyNum = 29;
+            break;*/
+            
+        default:
+            cout <<"key not found\n";
+            break;
+    }
+    
+    if (keyDown){
+        changeKeyStatus(keyNum, keyDown);
+    }else{
+        changeKeyStatus(keyNum, keyDown);
+    }
+}
+
 void OP1::newMessageEvent (ofxMidiEventArgs & args){
     
     int port = args.port;
@@ -736,11 +866,16 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
 	int byteTwo = args.byteTwo;
 	double 	timestamp = args.timestamp;
     
-    if (byteOne<=4){ //encoder
-        incrementEncoder(byteOne, byteTwo==1);
-    }else{
+    if (status == 176){ //control input
+        if (byteOne<=4){ //encoder
+            incrementEncoder(byteOne, byteTwo==1);
+        }else{
+            keyEvent(byteOne, byteTwo==127); //keyid keydown
+        }
+    }else{ //keyboard input?
         
     }
+    
     
     cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
 }

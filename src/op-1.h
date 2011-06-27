@@ -42,6 +42,9 @@ class OP1 {
     ofxMidiIn midiIn;
     void newMessageEvent (ofxMidiEventArgs & args);
     
+    vector<bool>keyStatus;
+    void changeKeyStatus(int keyNum, bool keyDown);
+    
 public:
     
     OP1(); //constructor
@@ -49,6 +52,8 @@ public:
     void draw(int x, int y, int width);
     void setEncoder(int encoder, float angle);
     void incrementEncoder(int encoder, bool cw);
+    
+    void keyEvent (int key, bool keydown);
     
 };
 
