@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CAD001B13B8014E004C3A3A /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001113B8014E004C3A3A /* RtMidi.cpp */; };
+		6CAD001C13B8014E004C3A3A /* ofxMidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001713B8014E004C3A3A /* ofxMidiIn.cpp */; };
+		6CAD001D13B8014E004C3A3A /* ofxMidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001913B8014E004C3A3A /* ofxMidiOut.cpp */; };
+		6CAD003313B80F71004C3A3A /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAD003213B80F71004C3A3A /* CoreMIDI.framework */; };
 		6CD24F2F13B6D4370026B661 /* op-1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CD24F2D13B6D4370026B661 /* op-1.cpp */; };
 		E45BE0AA0E8CC67C009D7055 /* GLee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE0A90E8CC67C009D7055 /* GLee.a */; };
 		E45BE2E40E8CC69C009D7055 /* rtAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE2E30E8CC69C009D7055 /* rtAudio.a */; };
@@ -79,6 +83,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6CAD000E13B8014E004C3A3A /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		6CAD001013B8014E004C3A3A /* RtError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtError.h; sourceTree = "<group>"; };
+		6CAD001113B8014E004C3A3A /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
+		6CAD001213B8014E004C3A3A /* RtMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtMidi.h; sourceTree = "<group>"; };
+		6CAD001413B8014E004C3A3A /* ofxMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMidi.h; sourceTree = "<group>"; };
+		6CAD001513B8014E004C3A3A /* ofxMidiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMidiConstants.h; sourceTree = "<group>"; };
+		6CAD001613B8014E004C3A3A /* ofxMidiEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMidiEvents.h; sourceTree = "<group>"; };
+		6CAD001713B8014E004C3A3A /* ofxMidiIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidiIn.cpp; sourceTree = "<group>"; };
+		6CAD001813B8014E004C3A3A /* ofxMidiIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMidiIn.h; sourceTree = "<group>"; };
+		6CAD001913B8014E004C3A3A /* ofxMidiOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMidiOut.cpp; sourceTree = "<group>"; };
+		6CAD001A13B8014E004C3A3A /* ofxMidiOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMidiOut.h; sourceTree = "<group>"; };
+		6CAD003213B80F71004C3A3A /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = /System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<absolute>"; };
 		6CD24F2D13B6D4370026B661 /* op-1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "op-1.cpp"; sourceTree = "<group>"; };
 		6CD24F2E13B6D4370026B661 /* op-1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "op-1.h"; sourceTree = "<group>"; };
 		E45BE0390E8CC647009D7055 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeImage.h; path = ../../../libs/freeimage/include/FreeImage.h; sourceTree = SOURCE_ROOT; };
@@ -127,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAD003313B80F71004C3A3A /* CoreMIDI.framework in Frameworks */,
 				E4C2422B10CC554B004149E2 /* openFrameworksDebug.a in Frameworks */,
 				E45BE0AA0E8CC67C009D7055 /* GLee.a in Frameworks */,
 				E45BE2E40E8CC69C009D7055 /* rtAudio.a in Frameworks */,
@@ -157,6 +174,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CAD000C13B8013B004C3A3A /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD000D13B8014E004C3A3A /* ofxMidi */,
+			);
+			name = addons;
+			path = src;
+			sourceTree = "<group>";
+		};
+		6CAD000D13B8014E004C3A3A /* ofxMidi */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD000E13B8014E004C3A3A /* install.xml */,
+				6CAD000F13B8014E004C3A3A /* libs */,
+				6CAD001313B8014E004C3A3A /* src */,
+			);
+			name = ofxMidi;
+			path = ../../../../addons/ofxMidi;
+			sourceTree = "<group>";
+		};
+		6CAD000F13B8014E004C3A3A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD001013B8014E004C3A3A /* RtError.h */,
+				6CAD001113B8014E004C3A3A /* RtMidi.cpp */,
+				6CAD001213B8014E004C3A3A /* RtMidi.h */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		6CAD001313B8014E004C3A3A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD001413B8014E004C3A3A /* ofxMidi.h */,
+				6CAD001513B8014E004C3A3A /* ofxMidiConstants.h */,
+				6CAD001613B8014E004C3A3A /* ofxMidiEvents.h */,
+				6CAD001713B8014E004C3A3A /* ofxMidiIn.cpp */,
+				6CAD001813B8014E004C3A3A /* ofxMidiIn.h */,
+				6CAD001913B8014E004C3A3A /* ofxMidiOut.cpp */,
+				6CAD001A13B8014E004C3A3A /* ofxMidiOut.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		E45BE0360E8CC5DE009D7055 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +361,7 @@
 		E45BE5980E8CC70C009D7055 /* core frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CAD003213B80F71004C3A3A /* CoreMIDI.framework */,
 				E4C2424410CC5A17004149E2 /* AppKit.framework */,
 				E4C2424510CC5A17004149E2 /* Cocoa.framework */,
 				E4C2424610CC5A17004149E2 /* IOKit.framework */,
@@ -340,6 +402,7 @@
 				E4B69B5B0A3A1756003C02F2 /* OP-1Debug.app */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				6CAD000C13B8013B004C3A3A /* addons */,
 				E4C2422310CC54B6004149E2 /* openFrameworks */,
 				E45BE0360E8CC5DE009D7055 /* libs */,
 			);
@@ -525,6 +588,9 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
 				6CD24F2F13B6D4370026B661 /* op-1.cpp in Sources */,
+				6CAD001B13B8014E004C3A3A /* RtMidi.cpp in Sources */,
+				6CAD001C13B8014E004C3A3A /* ofxMidiIn.cpp in Sources */,
+				6CAD001D13B8014E004C3A3A /* ofxMidiOut.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

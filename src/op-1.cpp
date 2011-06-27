@@ -26,6 +26,10 @@ OP1::OP1(){ // constructor
 	verdana.loadFont("verdana.ttf",80, true, true);
     spyroclassic.loadFont("spyroclassic.ttf",80, true, true);
     ofSetRectMode(OF_RECTMODE_CENTER);
+    
+    midiIn.listPorts();
+    midiIn.openPort(0);
+    ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
 }
 
 void OP1::draw(int x, int y, int width){ //all is drawn as 1px = 1mm, then scaled up
@@ -694,4 +698,49 @@ void OP1::setEncoder(int encoder, float angle){
             break;
     }
     
+}
+
+void OP1::incrementEncoder(int encoder, bool cw){
+    
+    
+    switch (encoder) {
+        case 1:
+            bEncoder = cw ? bEncoder+((float)1/32):bEncoder-((float)1/32);
+            break;
+            
+        case 2:
+            gEncoder = cw ? gEncoder+((float)1/32):gEncoder-((float)1/32);
+            break;
+            
+        case 3:
+            wEncoder = cw ? wEncoder+((float)1/32):wEncoder-((float)1/32);
+            break;
+            
+        case 4:
+            oEncoder = cw ? oEncoder+((float)1/32):oEncoder-((float)1/32);
+            break;
+            
+        default:
+            cout <<"bad encoder id\n";
+            break;
+    }
+    
+}
+
+void OP1::newMessageEvent (ofxMidiEventArgs & args){
+    
+    int port = args.port;
+	int	channel = args.channel;
+	int status = args.status;
+	int byteOne = args.byteOne;
+	int byteTwo = args.byteTwo;
+	double 	timestamp = args.timestamp;
+    
+    if (byteOne<=4){ //encoder
+        incrementEncoder(byteOne, byteTwo==1);
+    }else{
+        
+    }
+    
+    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
 }

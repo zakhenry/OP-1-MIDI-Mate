@@ -12,10 +12,10 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
-    op1.setEncoder('b', (float)mouseX/1000);
-    op1.setEncoder('g', (float)mouseY/1000);
-    op1.setEncoder('w', (float)mouseX/1000+(float)mouseY/1000);
-    op1.setEncoder('o', (float)mouseX/1000*(float)mouseY/1000);
+//    op1.setEncoder('b', (float)mouseX/1000);
+//    op1.setEncoder('g', (float)mouseY/1000);
+//    op1.setEncoder('w', (float)mouseX/1000+(float)mouseY/1000);
+//    op1.setEncoder('o', (float)mouseX/1000*(float)mouseY/1000);
 }
 
 //--------------------------------------------------------------

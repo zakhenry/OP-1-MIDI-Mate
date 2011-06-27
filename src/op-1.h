@@ -12,6 +12,7 @@
 
 #include "ofMain.h"
 #include "ofEvents.h"
+#include "ofxMidi.h"
 
 class OP1 {
 	
@@ -38,12 +39,16 @@ class OP1 {
     float scaleFactor;
     float volume, bEncoder, gEncoder, wEncoder, oEncoder; //angles
     
+    ofxMidiIn midiIn;
+    void newMessageEvent (ofxMidiEventArgs & args);
+    
 public:
     
     OP1(); //constructor
     
     void draw(int x, int y, int width);
     void setEncoder(int encoder, float angle);
+    void incrementEncoder(int encoder, bool cw);
     
 };
 
