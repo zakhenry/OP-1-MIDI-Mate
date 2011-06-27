@@ -12,10 +12,7 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
-//    op1.setEncoder('b', (float)mouseX/1000);
-//    op1.setEncoder('g', (float)mouseY/1000);
-//    op1.setEncoder('w', (float)mouseX/1000+(float)mouseY/1000);
-//    op1.setEncoder('o', (float)mouseX/1000*(float)mouseY/1000);
+//    op1.update();
 }
 
 //--------------------------------------------------------------
@@ -51,12 +48,13 @@ void testApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
+    op1.sendNoteOn(69);
 }
 
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
-
+    op1.sendNoteOff(69);
 }
 
 //--------------------------------------------------------------

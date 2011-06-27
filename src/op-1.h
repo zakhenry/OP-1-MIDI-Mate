@@ -16,6 +16,7 @@
 class OP1 {
 	
 	//private
+    public:
     
     void drawFrame();
     void drawKeyboard();
@@ -38,6 +39,8 @@ class OP1 {
     float scaleFactor;
     float volume, bEncoder, gEncoder, wEncoder, oEncoder; //angles
     
+    //MIDI IN (FROM OP-1)
+    
     ofxMidiIn midiIn;
     void newMessageEvent (ofxMidiEventArgs & args);
     
@@ -47,7 +50,12 @@ class OP1 {
     void changeButtonStatus(int keyNum, bool keyDown);
     void changeKeyStatus(int keyNum, bool keyDown);
     
-public:
+    //MIDI OUT (TO OP-1)
+    
+    ofxMidiOut midiOut;
+    void sendNoteOn(int noteId);
+    void sendNoteOff(int noteId);
+
     
     OP1(); //constructor
     
@@ -57,6 +65,8 @@ public:
     
     void buttonEvent (int key, bool keydown);
     void keyEvent (int key, bool keydown);
+    
+    void update();
     
 };
 

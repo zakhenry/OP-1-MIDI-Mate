@@ -39,6 +39,8 @@ OP1::OP1(){ // constructor
     }
     
     octaveOffset = 0; //possibly can get this through midi??
+    
+    midiOut.openPort(0);
 }
 
 void OP1::draw(int x, int y, int width){ //all is drawn as 1px = 1mm, then scaled up
@@ -514,9 +516,11 @@ void OP1::drawButton(int buttonNumber){
         case 25:
         {
             ofSetColor(black);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            spyroclassic.drawString("play", 0,0);
+            ofBeginShape();
+            ofVertex(-1, -1.5);
+            ofVertex(-1, 1.5);
+            ofVertex(1.5, 0);
+            ofEndShape();
         }
         break;
             
@@ -548,8 +552,8 @@ void OP1::drawButton(int buttonNumber){
         case 29:
         {
             ofSetColor(black);
-            ofTranslate(-2, 1);
-            ofScale(0.03, 0.04);
+            ofTranslate(-3, 1.5);
+            ofScale(0.04, 0.04);
             spyroclassic.drawString("Shift", 0,0);
         }
         break;
@@ -1014,3 +1018,16 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
     
     cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
 }
+
+
+void OP1::sendNoteOn(int noteId){
+    midiOut.sendNoteOn(1, noteId, 144);
+    keyEvent(noteId, true);
+}
+
+void OP1::sendNoteOff(int noteId){
+    midiOut.sendNoteOff(1, noteId, 128);
+    keyEvent(noteId, false);
+}
+
+
