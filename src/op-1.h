@@ -3,7 +3,6 @@
 //  OP-1
 //
 //  Created by Zak Henry on 26/06/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #ifndef _OP_1 // if this class hasn't been defined, the program can define it
@@ -42,7 +41,10 @@ class OP1 {
     ofxMidiIn midiIn;
     void newMessageEvent (ofxMidiEventArgs & args);
     
+    vector<bool>buttonStatus;
     vector<bool>keyStatus;
+    int octaveOffset;
+    void changeButtonStatus(int keyNum, bool keyDown);
     void changeKeyStatus(int keyNum, bool keyDown);
     
 public:
@@ -53,6 +55,7 @@ public:
     void setEncoder(int encoder, float angle);
     void incrementEncoder(int encoder, bool cw);
     
+    void buttonEvent (int key, bool keydown);
     void keyEvent (int key, bool keydown);
     
 };

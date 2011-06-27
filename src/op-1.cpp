@@ -3,7 +3,6 @@
 //  OP-1
 //
 //  Created by Zak Henry on 26/06/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #include "op-1.h"
@@ -32,8 +31,14 @@ OP1::OP1(){ // constructor
     ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
     
     for (int i=0; i<29; i++){
+        buttonStatus.push_back(false);
+    }
+    
+    for (int i=0; i<24; i++){
         keyStatus.push_back(false);
     }
+    
+    octaveOffset = 0; //possibly can get this through midi??
 }
 
 void OP1::draw(int x, int y, int width){ //all is drawn as 1px = 1mm, then scaled up
@@ -108,6 +113,8 @@ void OP1::drawKeyboard(){
     
     ofPushMatrix();
     ofTranslate(50.5, 66);
+    
+    int keyNumber = 0;
         
     //white notes
     for (int i=0; i<14; i++){
@@ -117,9 +124,17 @@ void OP1::drawKeyboard(){
             ofTranslate(2, 2);
             ofSetColor(lightGrey);
             roundedRect(10, 25, 5);
+        
+        if (keyStatus[keyNumber]){
+            ofSetColor(0x00ff00);
+            ofCircle(5, 12, 3);
+        }
+            
         ofPopMatrix();
         
         ofTranslate(15.5, 0);
+        
+        keyNumber++;
     }
     
     ofPopMatrix();
@@ -145,6 +160,11 @@ void OP1::drawKeyboard(){
         ofCircle(0, 0, 5);
         ofSetColor(black);
         ofCircle(0, 0, 4.5);
+        if (keyStatus[keyNumber]){
+            ofSetColor(0x00ff00);
+            ofCircle(0, 0, 3);
+        }
+        
         ofPopMatrix();
         
         if (i==2||i==7){
@@ -152,7 +172,7 @@ void OP1::drawKeyboard(){
         }else{
             ofTranslate(23.3, 0);
         }
-        
+     keyNumber++;   
     }
     ofPopMatrix();
         
@@ -540,12 +560,12 @@ void OP1::drawButton(int buttonNumber){
     
     ofPopMatrix();
     
-    if (keyStatus[buttonNumber]){
+    if (buttonStatus[buttonNumber]){
         //highlight keydown
         ofPushMatrix();
         ofTranslate(14.5/2, 14.5/2);
         ofSetColor(0xff0000);
-        ofCircle(0, 0, 5);
+        ofCircle(0, 0, 3);
         ofPopMatrix();
     }
     
@@ -739,112 +759,209 @@ void OP1::incrementEncoder(int encoder, bool cw){
     
 }
 
-void OP1::changeKeyStatus(int keyNum, bool keyDown){
-    if (keyNum>=0){
-        keyStatus[keyNum] = keyDown;
-        cout << "key ["<<keyNum<<"] status changed to ["<<keyDown<<"]\n";
+void OP1::changeButtonStatus(int buttonNum, bool buttonDown){
+    if (buttonNum>=0){
+        buttonStatus[buttonNum] = buttonDown;
+        cout << "button ["<<buttonNum<<"] status changed to ["<<buttonDown<<"]\n";
     }else{
-        cout <<"key not found\n";
+        cout <<"button not found\n";
     }
     
+}
+
+void OP1::buttonEvent(int button, bool buttonDown){
+    int buttonNum = -1; //changing midi id's to graphical ids
+    
+    switch (button) {
+        case 48:
+            buttonNum = 0;
+            break;
+        case 49:
+            buttonNum = 1;
+            break;
+        case 7:
+            buttonNum = 2;
+            break;
+        case 8:
+            buttonNum = 3;
+            break;
+        case 9:
+            buttonNum = 4;
+            break;
+        case 10:
+            buttonNum = 5;
+            break;
+    /*    case :
+            buttonNum = 6;
+            break;
+        case :
+            buttonNum = 7;
+            break;
+        case :
+            buttonNum = 8;
+            break;
+        case :
+            buttonNum = 9;
+            break;
+     */
+        case 50:
+            buttonNum = 10;
+            break;
+        case 51:
+            buttonNum = 11;
+            break;
+        case 52:
+            buttonNum = 12;
+            break;
+        case 21:
+            buttonNum = 13;
+            break;
+        case 22:
+            buttonNum = 14;
+            break;
+        case 23:
+            buttonNum = 15;
+            break;
+        case 24:
+            buttonNum = 16;
+            break;
+        case 25:
+            buttonNum = 17;
+            break;
+        case 26:
+            buttonNum = 18;
+            break;
+        case 5:
+            buttonNum = 19;
+            break;
+        case 6:
+            buttonNum = 20;
+            break;
+        case 15:
+            buttonNum = 21;
+            break;
+        case 16:
+            buttonNum = 22;
+            break;
+        case 17:
+            buttonNum = 23;
+            break;
+        case 38:
+            buttonNum = 24;
+            break;
+        case 39:
+            buttonNum = 25;
+            break;
+        case 40:
+            buttonNum = 26;
+            break;
+        case 41:
+            buttonNum = 27;
+            break;
+        case 42:
+            buttonNum = 28;
+            break;
+        /*case :
+            buttonNum = 29;
+            break;*/
+            
+        default:
+            cout <<"button not found\n";
+            break;
+    }
+    
+    if (buttonDown){
+        changeButtonStatus(buttonNum, buttonDown);
+    }else{
+        changeButtonStatus(buttonNum, buttonDown);
+    }
 }
 
 void OP1::keyEvent(int key, bool keyDown){
     int keyNum = -1; //changing midi id's to graphical ids
     
+    cout <<"key input is ["<<key<<"]\n";
+    key -= octaveOffset;
+    cout <<"key output is ["<<key<<"]\n";
+    
     switch (key) {
-        case 48:
+            //white keys
+        case 53:
             keyNum = 0;
             break;
-        case 49:
+        case 55:
             keyNum = 1;
             break;
-        case 7:
+        case 57:
             keyNum = 2;
             break;
-        case 8:
+        case 59:
             keyNum = 3;
             break;
-        case 9:
+        case 60:
             keyNum = 4;
             break;
-        case 10:
+        case 62:
             keyNum = 5;
             break;
-    /*    case :
+        case 64:
             keyNum = 6;
             break;
-        case :
+        case 65:
             keyNum = 7;
             break;
-        case :
+        case 67:
             keyNum = 8;
             break;
-        case :
+        case 69:
             keyNum = 9;
             break;
-     */
-        case 50:
+        case 71:
             keyNum = 10;
             break;
-        case 51:
+        case 72:
             keyNum = 11;
             break;
-        case 52:
+        case 74:
             keyNum = 12;
             break;
-        case 21:
+        case 76:
             keyNum = 13;
             break;
-        case 22:
+            
+            //black keys
+            
+        case 54:
             keyNum = 14;
             break;
-        case 23:
+        case 56:
             keyNum = 15;
             break;
-        case 24:
+        case 58:
             keyNum = 16;
             break;
-        case 25:
+        case 61:
             keyNum = 17;
             break;
-        case 26:
+        case 63:
             keyNum = 18;
             break;
-        case 5:
+        case 66:
             keyNum = 19;
             break;
-        case 6:
+        case 68:
             keyNum = 20;
             break;
-        case 15:
+        case 70:
             keyNum = 21;
             break;
-        case 16:
+        case 73:
             keyNum = 22;
             break;
-        case 17:
+        case 75:
             keyNum = 23;
             break;
-        case 38:
-            keyNum = 24;
-            break;
-        case 39:
-            keyNum = 25;
-            break;
-        case 40:
-            keyNum = 26;
-            break;
-        /*case 41:
-            keyNum = 27;
-            break;
-        case 42:
-            keyNum = 28;
-            break;
-        case :
-            keyNum = 29;
-            break;*/
-            
+           
         default:
             cout <<"key not found\n";
             break;
@@ -855,6 +972,16 @@ void OP1::keyEvent(int key, bool keyDown){
     }else{
         changeKeyStatus(keyNum, keyDown);
     }
+}
+
+void OP1::changeKeyStatus(int keyNum, bool keyDown){
+    if (keyNum>=0){
+        keyStatus[keyNum] = keyDown;
+        cout << "key ["<<keyNum<<"] status changed to ["<<keyDown<<"]\n";
+    }else{
+        cout <<"key not found\n";
+    }
+    
 }
 
 void OP1::newMessageEvent (ofxMidiEventArgs & args){
@@ -869,11 +996,19 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
     if (status == 176){ //control input
         if (byteOne<=4){ //encoder
             incrementEncoder(byteOne, byteTwo==1);
+        }else if (byteOne==41||byteOne==42){ //octave shift
+            if (byteOne==41){
+                octaveOffset -= 12;
+                cout << "octave down\n";
+            }else if(byteOne==42){
+                octaveOffset += 12;
+                cout << "octave up\n";
+            }
         }else{
-            keyEvent(byteOne, byteTwo==127); //keyid keydown
+            buttonEvent(byteOne, byteTwo==127); //buttonid buttondown
         }
     }else{ //keyboard input?
-        
+        keyEvent(byteOne, byteTwo==127); //keyid keydown
     }
     
     
