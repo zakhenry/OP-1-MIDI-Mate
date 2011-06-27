@@ -16,6 +16,7 @@ int darkGrey = 0xC3C9C9;
 int black = 0x000000;
 int white = 0xFFFFFF;
 
+int keyMap[] = {53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 54, 56, 58, 61, 63, 66, 68, 70, 73, 75};
 
 OP1::OP1(){ // constructor
     
@@ -41,28 +42,50 @@ OP1::OP1(){ // constructor
     octaveOffset = 0; //possibly can get this through midi??
     
     midiOut.openPort(0);
+    
+    currentNotePlaying = -1;
 }
 
-void OP1::draw(int x, int y, int width){ //all is drawn as 1px = 1mm, then scaled up
+void OP1::setDimensions(int _x, int _y, int _width){
+    posX = _x;
+    posY = _y;
+    width = _width;
     
-    scaleFactor = (float)width/284;
-    ofTranslate(x, y);
-    ofScale(scaleFactor, scaleFactor);
-    ofTranslate(-(284/2), -(102/2)); //set coords to top right
+    scaleFactor = width/284;
+}
 
-    drawFrame();
-    drawKeyboard();
-    drawSpeakerGrille();
-    drawVolumeKnob(1);
-    drawKnobs();
-    drawButtons();
+void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
     
     ofPushMatrix();
-    ofPushStyle();
-    ofTranslate(66, 4.5);
-    drawScreen();
-    ofPopStyle();
+        
+        
+        ofTranslate(posX, posY);
+        ofScale(scaleFactor, scaleFactor);
+        ofTranslate(-(284/2), -(102/2)); //set coords to top left
+        
+        
+
+        drawFrame();
+        drawKeyboard();
+        drawSpeakerGrille();
+        drawVolumeKnob(1);
+        drawKnobs();
+        drawButtons();
+        
+        ofPushMatrix();
+        ofPushStyle();
+        ofTranslate(66, 4.5);
+        drawScreen();
+        ofPopStyle();
+        ofPopMatrix();
+    
+    ofSetColor(0x0000ff);
+    ofCircle(cursorX, cursorY, 2);
+    
     ofPopMatrix();
+    
+    
+    
     
 }
 
@@ -121,11 +144,14 @@ void OP1::drawKeyboard(){
     //white notes
     for (int i=0; i<14; i++){
         ofPushMatrix();
+        
             ofSetColor(darkGrey);
             roundedRect(14.5, 30, 0.5);
             ofTranslate(2, 2);
             ofSetColor(lightGrey);
             roundedRect(10, 25, 5);
+        
+        
         
         if (keyStatus[keyNumber]){
             ofSetColor(0x00ff00);
@@ -513,7 +539,7 @@ void OP1::drawButton(int buttonNumber){
         }
         break;
             
-        case 25:
+        case 25: //play
         {
             ofSetColor(black);
             ofBeginShape();
@@ -524,7 +550,7 @@ void OP1::drawButton(int buttonNumber){
         }
         break;
             
-        case 26:
+        case 26: //stop
         {
             ofSetColor(black);
             ofRect(0, 0, 2.5, 2.5);
@@ -766,7 +792,7 @@ void OP1::incrementEncoder(int encoder, bool cw){
 void OP1::changeButtonStatus(int buttonNum, bool buttonDown){
     if (buttonNum>=0){
         buttonStatus[buttonNum] = buttonDown;
-        cout << "button ["<<buttonNum<<"] status changed to ["<<buttonDown<<"]\n";
+//        cout << "button ["<<buttonNum<<"] status changed to ["<<buttonDown<<"]\n";
     }else{
         cout <<"button not found\n";
     }
@@ -884,9 +910,9 @@ void OP1::buttonEvent(int button, bool buttonDown){
 void OP1::keyEvent(int key, bool keyDown){
     int keyNum = -1; //changing midi id's to graphical ids
     
-    cout <<"key input is ["<<key<<"]\n";
+//    cout <<"key input is ["<<key<<"]\n";
     key -= octaveOffset;
-    cout <<"key output is ["<<key<<"]\n";
+//    cout <<"key output is ["<<key<<"]\n";
     
     switch (key) {
             //white keys
@@ -921,7 +947,7 @@ void OP1::keyEvent(int key, bool keyDown){
             keyNum = 9;
             break;
         case 71:
-            keyNum = 10;
+            keyNum = 10; 
             break;
         case 72:
             keyNum = 11;
@@ -981,7 +1007,7 @@ void OP1::keyEvent(int key, bool keyDown){
 void OP1::changeKeyStatus(int keyNum, bool keyDown){
     if (keyNum>=0){
         keyStatus[keyNum] = keyDown;
-        cout << "key ["<<keyNum<<"] status changed to ["<<keyDown<<"]\n";
+//        cout << "key ["<<keyNum<<"] status changed to ["<<keyDown<<"]\n";
     }else{
         cout <<"key not found\n";
     }
@@ -1003,10 +1029,10 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
         }else if (byteOne==41||byteOne==42){ //octave shift
             if (byteOne==41){
                 octaveOffset -= 12;
-                cout << "octave down\n";
+//                cout << "octave down\n";
             }else if(byteOne==42){
                 octaveOffset += 12;
-                cout << "octave up\n";
+//                cout << "octave up\n";
             }
         }else{
             buttonEvent(byteOne, byteTwo==127); //buttonid buttondown
@@ -1016,7 +1042,7 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
     }
     
     
-    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
+//    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
 }
 
 
@@ -1028,6 +1054,72 @@ void OP1::sendNoteOn(int noteId){
 void OP1::sendNoteOff(int noteId){
     midiOut.sendNoteOff(1, noteId, 128);
     keyEvent(noteId, false);
+}
+
+void OP1::mouseDown(int x, int y){
+    
+    cout << "mouse down at ("<<cursorX<<","<<cursorY<<")\n";
+    handleKeystrokes();
+}
+
+void OP1::mouseUp(){
+    
+    sendNoteOff(currentNotePlaying);
+    currentNotePlaying = -1;
+}
+
+void OP1::updateCursorPosition(int x, int y){ //global mouseX, mouseY is passed in
+    
+    cursorX = (x-posX)/scaleFactor+(284/2);
+    cursorY = (y-posY)/scaleFactor+(102/2);
+    
+}
+
+bool OP1::cursorInBoundingBox(float x, float y, float width, float height){
+    
+    if (cursorX>x && cursorX<x+width){
+        if (cursorY>y && cursorY<y+height){
+            ofSetColor(0x00ffff);
+            return true;
+        }
+    }
+    return false;
+}
+
+void OP1::handleKeystrokes(){
+    
+    int keyNumber = 0;
+    
+//white notes
+    for (int i=0; i<14; i++){
+        
+            if (cursorInBoundingBox(50.5+i*15.5, 66, 14.5, 30)){
+                currentNotePlaying = keyMap[keyNumber];
+                sendNoteOn(currentNotePlaying);
+            }
+        
+        keyNumber++;
+    }
+//black notes
+    float xOffset = 0;
+    
+    for (int i=1; i<=10; i++){
+        
+        int keyWidth = (i==2||i==7)? 15.3:23.3;
+        
+        if (cursorInBoundingBox(50.5+xOffset, 50.5, keyWidth, 15.5)){
+            currentNotePlaying = keyMap[keyNumber];
+            sendNoteOn(currentNotePlaying);
+        }
+        
+        if (i==2||i==7){
+            xOffset += 15.3;
+        }else{
+            xOffset += 23.3;
+        }
+        
+        keyNumber++;   
+    }
 }
 
 

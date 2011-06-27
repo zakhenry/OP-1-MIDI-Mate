@@ -18,6 +18,10 @@ class OP1 {
 	//private
     public:
     
+    float posX, posY, width;
+    
+    float cursorX, cursorY;
+    
     void drawFrame();
     void drawKeyboard();
     void drawSpeakerGrille();
@@ -59,7 +63,8 @@ class OP1 {
     
     OP1(); //constructor
     
-    void draw(int x, int y, int width);
+    void setDimensions(int x, int y, int width);
+    void draw();
     void setEncoder(int encoder, float angle);
     void incrementEncoder(int encoder, bool cw);
     
@@ -67,6 +72,16 @@ class OP1 {
     void keyEvent (int key, bool keydown);
     
     void update();
+    
+    void updateCursorPosition(int x, int y);
+    void mouseDown(int x, int y);
+    void mouseUp();
+    
+    bool mouseClicked;
+    bool cursorInBoundingBox(float x, float y, float width, float height);
+    int currentNotePlaying;
+    
+    void handleKeystrokes();
     
 };
 
