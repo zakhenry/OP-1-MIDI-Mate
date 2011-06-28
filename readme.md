@@ -12,4 +12,4 @@ To simplify full midi IO for the OP-1 with openframeworks
 *   Midi input controlling control buttons on screen
 *   Midi input controllong keyboard keys on screen (with octave correction when in CTRL mode)
 *   On screen keyboard (controlled by mouse) giving midi output to OP-1
-*   User controllable screen draw function
+*   OP1 screen shows stereo visualisation
