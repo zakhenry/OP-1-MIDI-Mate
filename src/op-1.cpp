@@ -1028,21 +1028,29 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
             incrementEncoder(byteOne, byteTwo==1);
         }else if (byteOne==41||byteOne==42){ //octave shift
             if (byteOne==41){
-                octaveOffset -= 12;
+//                octaveOffset -= 12;
 //                cout << "octave down\n";
             }else if(byteOne==42){
-                octaveOffset += 12;
+//                octaveOffset += 12;
 //                cout << "octave up\n";
             }
         }else{
             buttonEvent(byteOne, byteTwo==127); //buttonid buttondown
         }
     }else{ //keyboard input?
+        while (byteOne>64) {
+            byteOne-=24;
+        }
+        
+        while (byteOne<53) {
+            byteOne+=24;
+        }
+        
         keyEvent(byteOne, byteTwo==127); //keyid keydown
     }
     
     
-//    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
+    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
 }
 
 
