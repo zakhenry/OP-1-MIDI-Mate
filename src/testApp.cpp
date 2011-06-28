@@ -1,5 +1,5 @@
 #include "testApp.h"
-
+#include "stdio.h"
 
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -11,16 +11,11 @@ void testApp::setup(){
     
     ofHideCursor();
     op1.setDimensions(ofGetWidth()/2, ofGetHeight()/2, ofGetWidth()-200);
+
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-//    op1.update();
-//    CGPoint point;
-//    point.x = 100*sin(ofGetElapsedTimef()*5)+500;
-//    point.y = 100*cos(ofGetElapsedTimef()*5)+500;
-//    CGWarpMouseCursorPosition(point);
-    
 
 }
 
@@ -29,13 +24,7 @@ void testApp::draw(){
     op1.draw();
 }
 
-void OP1::drawScreen(){
-    ofSetRectMode(OF_RECTMODE_CORNER);
-    ofSetColor(0xff0000);
-    ofRect(0, 0, this->getScreenWidth(), this->getScreenHeight());
-    
-}
-
+static float adder = 0;
 
 //--------------------------------------------------------------
 void testApp::keyPressed  (int key){

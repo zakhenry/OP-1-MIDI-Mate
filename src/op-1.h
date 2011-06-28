@@ -13,7 +13,7 @@
 #include "ofEvents.h"
 #include "ofxMidi.h"
 
-class OP1 {
+class OP1 : public ofBaseApp{
 	
 	//private
     public:
@@ -50,7 +50,7 @@ class OP1 {
     
     vector<bool>buttonStatus;
     vector<bool>keyStatus;
-    int octaveOffset;
+    
     void changeButtonStatus(int keyNum, bool keyDown);
     void changeKeyStatus(int keyNum, bool keyDown);
     
@@ -71,7 +71,7 @@ class OP1 {
     void buttonEvent (int key, bool keydown);
     void keyEvent (int key, bool keydown);
     
-    void update();
+    void update(){};
     
     void updateCursorPosition(int x, int y);
     void mouseDown(int x, int y);
@@ -82,6 +82,12 @@ class OP1 {
     int currentNotePlaying;
     
     void handleKeystrokes();
+    
+    //audio in (optional)
+    void audioReceived 	(float * input, int bufferSize, int nChannels); 
+    
+    float * left;
+    float * right;
     
 };
 

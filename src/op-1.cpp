@@ -39,11 +39,19 @@ OP1::OP1(){ // constructor
         keyStatus.push_back(false);
     }
     
-    octaveOffset = 0; //possibly can get this through midi??
-    
     midiOut.openPort(0);
     
     currentNotePlaying = -1;
+    
+    // 0 output channels, 
+	// 2 input channels
+	// 22050 samples per second
+	// 256 samples per buffer
+	// 4 num buffers (latency)
+	
+    	ofSoundStreamSetup(0,2,this, 44100, 256, 4);	
+    	left = new float[256];
+    	right = new float[256];
 }
 
 void OP1::setDimensions(int _x, int _y, int _width){
@@ -911,8 +919,6 @@ void OP1::keyEvent(int key, bool keyDown){
     int keyNum = -1; //changing midi id's to graphical ids
     
 //    cout <<"key input is ["<<key<<"]\n";
-    key -= octaveOffset;
-//    cout <<"key output is ["<<key<<"]\n";
     
     switch (key) {
             //white keys
@@ -1026,23 +1032,15 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
     if (status == 176){ //control input
         if (byteOne<=4){ //encoder
             incrementEncoder(byteOne, byteTwo==1);
-        }else if (byteOne==41||byteOne==42){ //octave shift
-            if (byteOne==41){
-//                octaveOffset -= 12;
-//                cout << "octave down\n";
-            }else if(byteOne==42){
-//                octaveOffset += 12;
-//                cout << "octave up\n";
-            }
         }else{
             buttonEvent(byteOne, byteTwo==127); //buttonid buttondown
         }
     }else{ //keyboard input?
-        while (byteOne>64) {
+        while (byteOne>64) { //octave shifting
             byteOne-=24;
         }
         
-        while (byteOne<53) {
+        while (byteOne<53) { //octave shifting
             byteOne+=24;
         }
         
@@ -1129,5 +1127,52 @@ void OP1::handleKeystrokes(){
         keyNumber++;   
     }
 }
+
+void OP1::drawScreen(){
+    ofSetRectMode(OF_RECTMODE_CORNER);
+    
+	// draw the left:
+	ofSetColor(blue);
+	for (int i = 0; i < 256; i++){
+        float val = left[i]*20.0f;
+        if (val>5){
+            val = 5;
+            ofSetColor(orange);
+        }else if (val<-5){
+            val = -5;
+            ofSetColor(orange);
+        }
+		ofLine(5+(float)i/5,10,5+(float)i/5,10+val);
+	}
+	
+	// draw the right:
+	ofSetColor(blue);
+	for (int i = 0; i < 256; i++){
+        float val = right[i]*20.0f;
+        if (val>5){
+            val = 5;
+            ofSetColor(orange);
+        }else if (val<-5){
+            val = -5;
+            ofSetColor(orange);
+        }
+        ofLine(5+(float)i/5,20,5+(float)i/5,20+val);
+	}
+	
+    
+}
+
+void OP1::audioReceived (float * input, int bufferSize, int nChannels){	
+	// samples are "interleaved"
+	for (int i = 0; i < bufferSize; i++){
+		left[i] = input[i*2];
+		right[i] = input[i*2+1];
+	}
+    
+    cout <<"audio recieved ["<<left[128]<<"]\n";
+	
+}
+
+
 
 
