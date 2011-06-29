@@ -11,6 +11,8 @@ void testApp::setup(){
     
 //    ofHideCursor();
     op1.setDimensions(ofGetWidth()/2, ofGetHeight()/2, ofGetWidth()-200);
+    
+    
 
 }
 

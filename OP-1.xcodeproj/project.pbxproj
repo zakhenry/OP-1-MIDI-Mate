@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C36010413BADF0C002917D9 /* ofxSVG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C3600FD13BADF0C002917D9 /* ofxSVG.cpp */; };
+		6C36010513BADF0C002917D9 /* ofxSVGPathParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C3600FF13BADF0C002917D9 /* ofxSVGPathParser.cpp */; };
+		6C36010613BADF0C002917D9 /* ofxSVGXml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36010213BADF0C002917D9 /* ofxSVGXml.cpp */; };
+		6C36011713BADF58002917D9 /* ofxMatrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36010A13BADF58002917D9 /* ofxMatrix3x3.cpp */; };
+		6C36011813BADF58002917D9 /* ofxMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36010C13BADF58002917D9 /* ofxMatrix4x4.cpp */; };
+		6C36011913BADF58002917D9 /* ofxQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36011113BADF58002917D9 /* ofxQuaternion.cpp */; };
+		6C36012413BADF75002917D9 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36011D13BADF75002917D9 /* tinyxml.cpp */; };
+		6C36012513BADF75002917D9 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36011F13BADF75002917D9 /* tinyxmlerror.cpp */; };
+		6C36012613BADF75002917D9 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36012013BADF75002917D9 /* tinyxmlparser.cpp */; };
+		6C36012713BADF75002917D9 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6C36012213BADF75002917D9 /* ofxXmlSettings.cpp */; };
 		6CAD001B13B8014E004C3A3A /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001113B8014E004C3A3A /* RtMidi.cpp */; };
 		6CAD001C13B8014E004C3A3A /* ofxMidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001713B8014E004C3A3A /* ofxMidiIn.cpp */; };
 		6CAD001D13B8014E004C3A3A /* ofxMidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001913B8014E004C3A3A /* ofxMidiOut.cpp */; };
@@ -83,6 +93,35 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C3600FD13BADF0C002917D9 /* ofxSVG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSVG.cpp; sourceTree = "<group>"; };
+		6C3600FE13BADF0C002917D9 /* ofxSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSVG.h; sourceTree = "<group>"; };
+		6C3600FF13BADF0C002917D9 /* ofxSVGPathParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSVGPathParser.cpp; sourceTree = "<group>"; };
+		6C36010013BADF0C002917D9 /* ofxSVGPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSVGPathParser.h; sourceTree = "<group>"; };
+		6C36010113BADF0C002917D9 /* ofxSVGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSVGTypes.h; sourceTree = "<group>"; };
+		6C36010213BADF0C002917D9 /* ofxSVGXml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSVGXml.cpp; sourceTree = "<group>"; };
+		6C36010313BADF0C002917D9 /* ofxSVGXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSVGXml.h; sourceTree = "<group>"; };
+		6C36010813BADF58002917D9 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		6C36010A13BADF58002917D9 /* ofxMatrix3x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMatrix3x3.cpp; sourceTree = "<group>"; };
+		6C36010B13BADF58002917D9 /* ofxMatrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMatrix3x3.h; sourceTree = "<group>"; };
+		6C36010C13BADF58002917D9 /* ofxMatrix4x4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMatrix4x4.cpp; sourceTree = "<group>"; };
+		6C36010D13BADF58002917D9 /* ofxMatrix4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMatrix4x4.h; sourceTree = "<group>"; };
+		6C36010E13BADF58002917D9 /* ofxPoint2f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPoint2f.h; sourceTree = "<group>"; };
+		6C36010F13BADF58002917D9 /* ofxPoint3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPoint3f.h; sourceTree = "<group>"; };
+		6C36011013BADF58002917D9 /* ofxPoint4f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPoint4f.h; sourceTree = "<group>"; };
+		6C36011113BADF58002917D9 /* ofxQuaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxQuaternion.cpp; sourceTree = "<group>"; };
+		6C36011213BADF58002917D9 /* ofxQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQuaternion.h; sourceTree = "<group>"; };
+		6C36011313BADF58002917D9 /* ofxVec2f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxVec2f.h; sourceTree = "<group>"; };
+		6C36011413BADF58002917D9 /* ofxVec3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxVec3f.h; sourceTree = "<group>"; };
+		6C36011513BADF58002917D9 /* ofxVec4f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxVec4f.h; sourceTree = "<group>"; };
+		6C36011613BADF58002917D9 /* ofxVectorMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxVectorMath.h; sourceTree = "<group>"; };
+		6C36011B13BADF75002917D9 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		6C36011D13BADF75002917D9 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		6C36011E13BADF75002917D9 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		6C36011F13BADF75002917D9 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		6C36012013BADF75002917D9 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		6C36012213BADF75002917D9 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		6C36012313BADF75002917D9 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
+		6C36012A13BADFBE002917D9 /* ofxDisplayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxDisplayList.h; sourceTree = "<group>"; };
 		6CAD000E13B8014E004C3A3A /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		6CAD001013B8014E004C3A3A /* RtError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtError.h; sourceTree = "<group>"; };
 		6CAD001113B8014E004C3A3A /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
@@ -174,9 +213,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C3600FB13BADF0C002917D9 /* ofxSVG */ = {
+			isa = PBXGroup;
+			children = (
+				6C3600FC13BADF0C002917D9 /* src */,
+			);
+			name = ofxSVG;
+			path = ../../../../addons/ofxSVG;
+			sourceTree = "<group>";
+		};
+		6C3600FC13BADF0C002917D9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6C3600FD13BADF0C002917D9 /* ofxSVG.cpp */,
+				6C3600FE13BADF0C002917D9 /* ofxSVG.h */,
+				6C3600FF13BADF0C002917D9 /* ofxSVGPathParser.cpp */,
+				6C36010013BADF0C002917D9 /* ofxSVGPathParser.h */,
+				6C36010113BADF0C002917D9 /* ofxSVGTypes.h */,
+				6C36010213BADF0C002917D9 /* ofxSVGXml.cpp */,
+				6C36010313BADF0C002917D9 /* ofxSVGXml.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6C36010713BADF58002917D9 /* ofxVectorMath */ = {
+			isa = PBXGroup;
+			children = (
+				6C36010813BADF58002917D9 /* install.xml */,
+				6C36010913BADF58002917D9 /* src */,
+			);
+			name = ofxVectorMath;
+			path = ../../../../addons/ofxVectorMath;
+			sourceTree = "<group>";
+		};
+		6C36010913BADF58002917D9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6C36010A13BADF58002917D9 /* ofxMatrix3x3.cpp */,
+				6C36010B13BADF58002917D9 /* ofxMatrix3x3.h */,
+				6C36010C13BADF58002917D9 /* ofxMatrix4x4.cpp */,
+				6C36010D13BADF58002917D9 /* ofxMatrix4x4.h */,
+				6C36010E13BADF58002917D9 /* ofxPoint2f.h */,
+				6C36010F13BADF58002917D9 /* ofxPoint3f.h */,
+				6C36011013BADF58002917D9 /* ofxPoint4f.h */,
+				6C36011113BADF58002917D9 /* ofxQuaternion.cpp */,
+				6C36011213BADF58002917D9 /* ofxQuaternion.h */,
+				6C36011313BADF58002917D9 /* ofxVec2f.h */,
+				6C36011413BADF58002917D9 /* ofxVec3f.h */,
+				6C36011513BADF58002917D9 /* ofxVec4f.h */,
+				6C36011613BADF58002917D9 /* ofxVectorMath.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6C36011A13BADF75002917D9 /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				6C36011B13BADF75002917D9 /* install.xml */,
+				6C36011C13BADF75002917D9 /* libs */,
+				6C36012113BADF75002917D9 /* src */,
+			);
+			name = ofxXmlSettings;
+			path = ../../../../addons/ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		6C36011C13BADF75002917D9 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				6C36011D13BADF75002917D9 /* tinyxml.cpp */,
+				6C36011E13BADF75002917D9 /* tinyxml.h */,
+				6C36011F13BADF75002917D9 /* tinyxmlerror.cpp */,
+				6C36012013BADF75002917D9 /* tinyxmlparser.cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		6C36012113BADF75002917D9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6C36012213BADF75002917D9 /* ofxXmlSettings.cpp */,
+				6C36012313BADF75002917D9 /* ofxXmlSettings.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6C36012813BADFBE002917D9 /* ofxDisplayList */ = {
+			isa = PBXGroup;
+			children = (
+				6C36012913BADFBE002917D9 /* src */,
+			);
+			name = ofxDisplayList;
+			path = ../../../../addons/ofxDisplayList;
+			sourceTree = "<group>";
+		};
+		6C36012913BADFBE002917D9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6C36012A13BADFBE002917D9 /* ofxDisplayList.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		6CAD000C13B8013B004C3A3A /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				6C36012813BADFBE002917D9 /* ofxDisplayList */,
+				6C36011A13BADF75002917D9 /* ofxXmlSettings */,
+				6C36010713BADF58002917D9 /* ofxVectorMath */,
+				6C3600FB13BADF0C002917D9 /* ofxSVG */,
 				6CAD000D13B8014E004C3A3A /* ofxMidi */,
 			);
 			name = addons;
@@ -591,6 +735,16 @@
 				6CAD001B13B8014E004C3A3A /* RtMidi.cpp in Sources */,
 				6CAD001C13B8014E004C3A3A /* ofxMidiIn.cpp in Sources */,
 				6CAD001D13B8014E004C3A3A /* ofxMidiOut.cpp in Sources */,
+				6C36010413BADF0C002917D9 /* ofxSVG.cpp in Sources */,
+				6C36010513BADF0C002917D9 /* ofxSVGPathParser.cpp in Sources */,
+				6C36010613BADF0C002917D9 /* ofxSVGXml.cpp in Sources */,
+				6C36011713BADF58002917D9 /* ofxMatrix3x3.cpp in Sources */,
+				6C36011813BADF58002917D9 /* ofxMatrix4x4.cpp in Sources */,
+				6C36011913BADF58002917D9 /* ofxQuaternion.cpp in Sources */,
+				6C36012413BADF75002917D9 /* tinyxml.cpp in Sources */,
+				6C36012513BADF75002917D9 /* tinyxmlerror.cpp in Sources */,
+				6C36012613BADF75002917D9 /* tinyxmlparser.cpp in Sources */,
+				6C36012713BADF75002917D9 /* ofxXmlSettings.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

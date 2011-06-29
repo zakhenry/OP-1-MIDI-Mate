@@ -22,6 +22,8 @@ OP1::OP1(){ // constructor
     
     cout << "OP-1 created\n";
     
+    svg.load("Butterfly_001.svg");
+    
     keySpacing = 0.7;
     frameWidth = 4.5;
     
@@ -70,6 +72,9 @@ void OP1::setDimensions(int _x, int _y, int _width){
 }
 
 void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
+    
+    
+    svg.draw();
     
     ofPushMatrix();
         

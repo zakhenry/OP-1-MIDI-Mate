@@ -12,11 +12,17 @@
 #include "ofMain.h"
 #include "ofEvents.h"
 #include "ofxMidi.h"
+#include "ofxSVG.h"
+#include "ofxXmlSettings.h"
+#include "ofxVectorMath.h"
+#include "ofxDisplayList.h"
 
 class OP1 : public ofBaseApp{
 	
 	//private
     public:
+    
+    ofxSVG svg;
     
     float posX, posY, width;
     
