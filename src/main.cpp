@@ -6,7 +6,7 @@
 int main( ){
 
     ofAppGlutWindow window;
-    window.setGlutDisplayString("rgba double samples>=4 depth"); //antialiasing
+    window.setGlutDisplayString("rgba double samples>=8 depth"); //antialiasing
 //    ofSetupOpenGL(&window, 1024,768, OF_WINDOW);			// <-------- setup the GL context
     ofSetupOpenGL(&window, 1920,1200, OF_FULLSCREEN);			// <-------- setup the GL context
 

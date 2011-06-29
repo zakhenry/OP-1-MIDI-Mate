@@ -7,12 +7,12 @@ void testApp::setup(){
 	ofBackground(0, 0, 0);
 	ofSetWindowTitle("graphics example");
 
-	ofSetFrameRate(60); // if vertical sync is off, we can go a bit fast... this caps the framerate at 60fps.
+//	ofSetFrameRate(60); // if vertical sync is off, we can go a bit fast... this caps the framerate at 60fps.
     
 //    ofHideCursor();
     op1.setDimensions(ofGetWidth()/2, ofGetHeight()/2, ofGetWidth()-200);
     
-    
+    verdana.loadFont("verdana.ttf",80, true, true);
 
 }
 
@@ -23,6 +23,13 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    ofPushMatrix();
+    ofScale(0.5, 0.5);
+    ofSetColor(0x555555);
+    verdana.drawString("fps: "+ofToString(ofGetFrameRate()), 10, 100);
+    ofPopMatrix();
+    
+    
     op1.draw();
 }
 

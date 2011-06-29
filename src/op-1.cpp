@@ -16,13 +16,18 @@ int darkGrey = 0xC3C9C9;
 int black = 0x000000;
 int white = 0xFFFFFF;
 
+ofxSVG tape;
+
 int keyMap[] = {53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 54, 56, 58, 61, 63, 66, 68, 70, 73, 75};
 
 OP1::OP1(){ // constructor
     
     cout << "OP-1 created\n";
     
-    svg.load("Butterfly_001.svg");
+    
+    tape.load("tape.svg");
+    
+//    svg.load("Butterfly_001.svg");
     
     keySpacing = 0.7;
     frameWidth = 4.5;
@@ -74,7 +79,7 @@ void OP1::setDimensions(int _x, int _y, int _width){
 void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
     
     
-    svg.draw();
+    
     
     ofPushMatrix();
         
@@ -104,8 +109,7 @@ void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
     
     ofPopMatrix();
     
-    
-    
+    ofTranslate(cursorX, cursorY);
     
 }
 
@@ -338,8 +342,14 @@ void OP1::drawButton(int buttonNumber){
         }
         break;
             
-        case 4:
+        case 4: //tape
         {
+            ofTranslate(-5, -5); //go to corner
+            ofSetColor(0x03a7b8);
+            ofCircle(0, 0, 0.2);
+            ofScale(0.1, 0.1); //making a 100x100 fit into a 10x10
+            tape.draw();
+            /*
             ofTranslate(-1.5, 0);
             ofSetColor(orange);
             ofCircle(0, 0, 1.3);
@@ -353,6 +363,7 @@ void OP1::drawButton(int buttonNumber){
             ofTranslate(-1.5, 1.1);
             ofSetColor(orange);
             ofRect(0, 0, 3, 0.3);
+             */
         }
         break;
             

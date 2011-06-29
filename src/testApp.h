@@ -22,6 +22,8 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);    
     
         OP1 op1;
+    
+        ofTrueTypeFont	verdana;
 
 };
 
