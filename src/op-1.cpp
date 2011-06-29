@@ -22,6 +22,8 @@ OP1::OP1(){ // constructor
     
     cout << "OP-1 created\n";
     
+    keySpacing = 0.5;
+    
     // font name, size, anti-aliased, full character set
 	verdana.loadFont("verdana.ttf",80, true, true);
     spyroclassic.loadFont("spyroclassic.ttf",80, true, true);
@@ -52,6 +54,10 @@ OP1::OP1(){ // constructor
     	ofSoundStreamSetup(0,2,this, 44100, 256, 4);	
     	left = new float[256];
     	right = new float[256];
+}
+
+float OP1::keySpan(int span){
+    return ((14.5*span)+keySpacing*(span-1));
 }
 
 void OP1::setDimensions(int _x, int _y, int _width){
@@ -1132,6 +1138,8 @@ void OP1::drawScreen(){
     ofSetRectMode(OF_RECTMODE_CORNER);
     
 	// draw the left:
+    ofNoFill();
+    ofBeginShape();
 	ofSetColor(blue);
 	for (int i = 0; i < 256; i++){
         float val = left[i]*20.0f;
@@ -1142,11 +1150,12 @@ void OP1::drawScreen(){
             val = -5;
             ofSetColor(orange);
         }
-		ofLine(5+(float)i/5,10,5+(float)i/5,10+val);
+		ofVertex(5+(float)i/5,10+val);
 	}
-	
-	// draw the right:
-	ofSetColor(blue);
+    ofEndShape();
+    
+    ofSetColor(blue);
+    ofBeginShape();
 	for (int i = 0; i < 256; i++){
         float val = right[i]*20.0f;
         if (val>5){
@@ -1156,9 +1165,9 @@ void OP1::drawScreen(){
             val = -5;
             ofSetColor(orange);
         }
-        ofLine(5+(float)i/5,20,5+(float)i/5,20+val);
+        ofVertex(5+(float)i/5,20+val);
 	}
-	
+    ofEndShape();
     
 }
 
@@ -1169,7 +1178,7 @@ void OP1::audioReceived (float * input, int bufferSize, int nChannels){
 		right[i] = input[i*2+1];
 	}
     
-    cout <<"audio recieved ["<<left[128]<<"]\n";
+//    cout <<"audio recieved ["<<left[128]<<"]\n";
 	
 }
 

@@ -22,6 +22,10 @@ class OP1 : public ofBaseApp{
     
     float cursorX, cursorY;
     
+    float keySpacing;
+    
+    float keySpan(int span); //returns value in mm of a key spanning int grids
+    
     void drawFrame();
     void drawKeyboard();
     void drawSpeakerGrille();

@@ -9,7 +9,7 @@ void testApp::setup(){
 
 	ofSetFrameRate(60); // if vertical sync is off, we can go a bit fast... this caps the framerate at 60fps.
     
-    ofHideCursor();
+//    ofHideCursor();
     op1.setDimensions(ofGetWidth()/2, ofGetHeight()/2, ofGetWidth()-200);
 
 }
