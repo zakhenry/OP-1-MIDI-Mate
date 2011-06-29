@@ -22,7 +22,8 @@ OP1::OP1(){ // constructor
     
     cout << "OP-1 created\n";
     
-    keySpacing = 0.5;
+    keySpacing = 0.7;
+    frameWidth = 4.5;
     
     // font name, size, anti-aliased, full character set
 	verdana.loadFont("verdana.ttf",80, true, true);
@@ -57,7 +58,7 @@ OP1::OP1(){ // constructor
 }
 
 float OP1::keySpan(int span){
-    return ((14.5*span)+keySpacing*(span-1));
+    return ((14.7*span)+keySpacing*(span-1));
 }
 
 void OP1::setDimensions(int _x, int _y, int _width){
@@ -88,7 +89,7 @@ void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
         
         ofPushMatrix();
         ofPushStyle();
-        ofTranslate(66, 4.5);
+        ofTranslate(frameWidth+keySpan(4)+keySpacing*2, frameWidth+keySpacing);
         drawScreen();
         ofPopStyle();
         ofPopMatrix();
@@ -104,11 +105,11 @@ void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
 }
 
 float OP1::getScreenHeight(){
-    return 30;
+    return keySpan(2);
 }
 
 float OP1::getScreenWidth(){
-    return 61;
+    return keySpan(4);
 }
 
 
@@ -121,14 +122,14 @@ void OP1::drawFrame(){
         ofSetColor(darkGrey);
         roundedRect(284, 102, 4);
         ofSetColor(black);
-    ofTranslate(4, 4);
-        roundedRect(264, 93, 2);
+    ofTranslate(frameWidth, frameWidth);
+        roundedRect(keySpan(17)+2*keySpacing, keySpan(6)+2*keySpacing, 2);
     ofPopMatrix();
     
     //mic grill
     
     ofPushMatrix();
-    ofTranslate(275, 10.05);
+    ofTranslate(274, 11.05);
         ofCircle(0, 0, 0.5);
         ofCircle(2.5, 0, 0.5);
         ofCircle(0, 2.5, 0.5);
@@ -138,7 +139,7 @@ void OP1::drawFrame(){
     //vu grill
     
     ofPushMatrix();
-    ofTranslate(276.5, 37);
+    ofTranslate(275.5, 37);
         ofCircle(0, 0, 0.5);
         ofCircle(0, 3, 0.5);
         ofCircle(0, 6, 0.5);
@@ -146,12 +147,20 @@ void OP1::drawFrame(){
         ofCircle(0, 12, 0.5);
     ofPopMatrix();
     
+    ofPushMatrix();
+        ofTranslate(277.5, 87);
+        ofRotateZ(-90);
+        ofScale(0.07, 0.07);
+        ofSetColor(0x555555);
+        spyroclassic.drawString("OP-1", 0, 0);
+    ofPopMatrix();
+    
 }
 
 void OP1::drawKeyboard(){
     
     ofPushMatrix();
-    ofTranslate(50.5, 66);
+    ofTranslate(frameWidth+2*keySpacing+keySpan(3), frameWidth+2*keySpacing+keySpan(4));
     
     int keyNumber = 0;
         
@@ -160,42 +169,43 @@ void OP1::drawKeyboard(){
         ofPushMatrix();
         
             ofSetColor(darkGrey);
-            roundedRect(14.5, 30, 0.5);
-            ofTranslate(2, 2);
+            roundedRect(keySpan(1), keySpan(2), 0.5);
+            ofTranslate(keySpan(1)/2, keySpan(2)/2);
             ofSetColor(lightGrey);
-            roundedRect(10, 25, 5);
+            roundedRect(10, 25, 5, true);
         
         
         
         if (keyStatus[keyNumber]){
             ofSetColor(0x00ff00);
-            ofCircle(5, 12, 3);
+            ofCircle(0, 0, 3);
         }
             
         ofPopMatrix();
         
-        ofTranslate(15.5, 0);
+        ofTranslate(keySpan(1)+keySpacing, 0);
         
         keyNumber++;
     }
     
     ofPopMatrix();
     //black notes
+    float blackSpan = (keySpan(4)-(keySpan(1)+2*keySpacing))/2;
     ofPushMatrix();
-    ofTranslate(50.5, 50.5);
+    ofTranslate(frameWidth+2*keySpacing+keySpan(3), frameWidth+2*keySpacing+keySpan(3));
     for (int i=1; i<=10; i++){
         ofPushMatrix();
         ofSetColor(darkGrey);
         
         if (i==2||i==7){
-            roundedRect(14.5, 14.5, 0.5);
-            ofTranslate(7, 7);
+            roundedRect(keySpan(1), keySpan(1), 0.5);
+            ofTranslate(blackSpan/3, keySpan(1)/2);
         }else if (i==3||i==5||i==8||i==10){
-            roundedRect(22.5, 14.5, 0.5);
-            ofTranslate(7, 7);
+            roundedRect(blackSpan, keySpan(1), 0.5);
+            ofTranslate(blackSpan/3, keySpan(1)/2);
         }else{
-            roundedRect(22.5, 14.5, 0.5);
-            ofTranslate(15, 7);
+            roundedRect(blackSpan, keySpan(1), 0.5);
+            ofTranslate(2*blackSpan/3, keySpan(1)/2);
         }
         
         ofSetColor(lightGrey);
@@ -210,9 +220,9 @@ void OP1::drawKeyboard(){
         ofPopMatrix();
         
         if (i==2||i==7){
-            ofTranslate(15.3, 0);
+            ofTranslate(keySpan(1)+keySpacing, 0);
         }else{
-            ofTranslate(23.3, 0);
+            ofTranslate(blackSpan+keySpacing, 0);
         }
      keyNumber++;   
     }
@@ -225,9 +235,9 @@ void OP1::drawKeyboard(){
 
 void OP1::drawSpeakerGrille(){
     ofPushMatrix();
-    ofTranslate(4.5, 4.5);
+    ofTranslate(frameWidth+keySpacing, frameWidth+keySpacing);
         ofSetColor(darkGrey);
-        roundedRect(30, 30, 0.5);
+        roundedRect(keySpan(2), keySpan(2), 0.5);
     
     ofTranslate(1.2, 1.2);
     ofSetColor(black);
@@ -251,9 +261,9 @@ void OP1::drawSpeakerGrille(){
 
 void OP1::drawVolumeKnob(float volume){
     ofPushMatrix();
-    ofTranslate(35, 4.5);
+    ofTranslate(frameWidth+2*keySpacing+keySpan(2), frameWidth+keySpacing);
         ofSetColor(darkGrey);
-        roundedRect(30, 14.5, 0.5);
+        roundedRect(keySpan(2), keySpan(1), 0.5);
         ofTranslate(7, 7);
         ofSetColor(white);
         ofCircle(0, 0, 5);
@@ -269,9 +279,9 @@ void OP1::drawVolumeKnob(float volume){
 
 void OP1::drawButton(int buttonNumber){
     ofSetColor(darkGrey);
-    roundedRect(14.5, 14.5, 0.5);
+    roundedRect(keySpan(1), keySpan(1), 0.5);
     ofPushMatrix();
-    ofTranslate(14.5/2, 14.5/2);
+    ofTranslate(keySpan(1)/2, keySpan(1)/2);
     ofSetColor(lightGrey);
     ofCircle(0, 0, 5);
     
@@ -620,38 +630,38 @@ void OP1::drawButtons(){
     int buttonNumber = 0;
     
     ofPushMatrix();
-    ofTranslate(252.5, 4.5);
+    ofTranslate(frameWidth+2*keySpacing+keySpan(16), frameWidth+keySpacing);
     for (int i=1; i<=2; i++){
         drawButton(buttonNumber);
-        ofTranslate(0, 15.45);
+        ofTranslate(0, keySpan(1)+keySpacing);
         buttonNumber++;
     }
     ofPopMatrix();
     
     ofPushMatrix();
-    ofTranslate(4.5, 35);
+    ofTranslate(frameWidth+keySpacing, frameWidth+2*keySpacing+keySpan(2));
     for (int i=1; i<=17; i++){
         drawButton(buttonNumber);
-        ofTranslate(15.45, 0);
+        ofTranslate(keySpan(1)+keySpacing, 0);
         buttonNumber++;
     }
     ofPopMatrix();
     
     ofPushMatrix();
-    ofTranslate(35, 20);
+    ofTranslate(frameWidth+2*keySpacing+keySpan(2), frameWidth+2*keySpacing+keySpan(1));
     for (int i=1; i<=2; i++){
         drawButton(buttonNumber);
-        ofTranslate(15.45, 0);
+        ofTranslate(keySpan(1)+keySpacing, 0);
         buttonNumber++;
     }
     ofPopMatrix();
     
     ofPushMatrix();
-    ofTranslate(4.5, 35+15.45);
+    ofTranslate(frameWidth+keySpacing, frameWidth+2*keySpacing+keySpan(3));
     for (int i=0; i<=2; i++){
         for (int j=0; j<=2; j++){
             ofPushMatrix();
-                ofTranslate(15.45*j, 15.45*i);
+                ofTranslate((keySpacing+keySpan(1))*j, (keySpacing+keySpan(1))*i);
                 drawButton(buttonNumber);
                 buttonNumber++;
             ofPopMatrix();
@@ -664,9 +674,9 @@ void OP1::drawButtons(){
 
 void OP1::drawKnob(int knobNumber){
     ofSetColor(darkGrey);
-    roundedRect(30, 30, 0.5);
+    roundedRect(keySpan(2), keySpan(2), 0.5);
     ofPushMatrix();
-    ofTranslate(15, 15);
+    ofTranslate(keySpan(2)/2, keySpan(2)/2);
     ofSetColor(0xaaaaaa);
     ofCircle(0, 0, 9);
     ofSetColor(lightGrey);
@@ -713,15 +723,21 @@ void OP1::drawKnob(int knobNumber){
 
 void OP1::drawKnobs(){
     ofPushMatrix();
-    ofTranslate(128.5, 4.5);
+    ofTranslate(frameWidth+2*keySpacing+keySpan(8), frameWidth+keySpacing);
     for (int i=0; i<4; i++){
         drawKnob(i);
-        ofTranslate(31, 0);
+        ofTranslate(keySpan(2)+keySpacing, 0);
     }
     ofPopMatrix();
 }
 
-void OP1::roundedRect(float w, float h, float r) {
+void OP1::roundedRect(float w, float h, float r, bool rectModeCenter) {
+    
+    ofPushMatrix();
+    if (rectModeCenter){
+        ofTranslate(-(w/2), -(h/2));
+    }
+    
     ofBeginShape();
     ofVertex(r, 0);
     ofVertex(w-r, 0);
@@ -733,6 +749,12 @@ void OP1::roundedRect(float w, float h, float r) {
     ofVertex(0, r);
     quadraticBezierVertex(0, 0, r, 0, 0, r);
     ofEndShape();
+    
+    ofPopMatrix();
+}
+
+void OP1::roundedRect(float w, float h, float r) { //function overloader
+    roundedRect(w, h, r, false);
 }
 
 void OP1::quadraticBezierVertex(float cpx, float cpy, float x, float y, float prevX, float prevY) {
@@ -1136,6 +1158,13 @@ void OP1::handleKeystrokes(){
 
 void OP1::drawScreen(){
     ofSetRectMode(OF_RECTMODE_CORNER);
+    
+    ofPushStyle();
+    ofNoFill();
+    ofSetLineWidth(2);
+    ofSetColor(0x333333);
+    roundedRect(getScreenWidth(), getScreenHeight(), 0.5);
+    ofPopStyle();
     
 	// draw the left:
     ofNoFill();
