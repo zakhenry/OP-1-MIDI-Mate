@@ -7,18 +7,23 @@ void testApp::setup(){
 	ofBackground(0, 0, 0);
 	ofSetWindowTitle("graphics example");
 
-//	ofSetFrameRate(60); // if vertical sync is off, we can go a bit fast... this caps the framerate at 60fps.
+	ofSetFrameRate(60); // if vertical sync is off, we can go a bit fast... this caps the framerate at 60fps.
     
 //    ofHideCursor();
     op1.setDimensions(ofGetWidth()/2, ofGetHeight()/2, ofGetWidth()-200);
     
     verdana.loadFont("verdana.ttf",80, true, true);
-
+    ofAddListener(op1.midiEvent, this, &testApp::op1Event);
+    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 
+}
+
+void testApp::op1Event(midiPacket &packet){
+    cout << "midi packet: channel ["<<packet.channel<<"], event ["<<packet.event<<"], keyId ["<<packet.keyId<<"], keyName ["<<packet.keyName<<"], timestamp ["<<packet.timestamp<<"]\n";
 }
 
 //--------------------------------------------------------------

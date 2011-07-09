@@ -17,6 +17,15 @@
 #include "ofxVectorMath.h"
 #include "ofxDisplayList.h"
 
+typedef struct midiPacket {
+    string event;
+    int keyId;
+    string keyName;
+    int channel;
+    double timestamp;
+    //midiPacket(): event(""),keyId(-1),keyName(""),channel(-1){}
+} midiPacket;
+
 class OP1 : public ofBaseApp{
 	
 	//private
@@ -29,6 +38,10 @@ class OP1 : public ofBaseApp{
     float cursorX, cursorY;
     
     float keySpacing, frameWidth;
+    
+    
+    
+    ofEvent<midiPacket> midiEvent;
     
     float keySpan(int span); //returns value in mm of a key spanning int grids
     

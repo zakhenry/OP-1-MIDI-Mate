@@ -1091,8 +1091,16 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
         keyEvent(byteOne, byteTwo==127); //keyid keydown
     }
     
+    midiPacket newPacket;
+    newPacket.channel = 0;
+    newPacket.event = byteTwo;
+    newPacket.keyId = byteOne;
+    newPacket.timestamp = timestamp;
     
-    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
+    ofNotifyEvent(midiEvent, newPacket, this);
+    
+    
+//    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
 }
 
 
@@ -1108,7 +1116,7 @@ void OP1::sendNoteOff(int noteId){
 
 void OP1::mouseDown(int x, int y){
     
-    cout << "mouse down at ("<<cursorX<<","<<cursorY<<")\n";
+//    cout << "mouse down at ("<<cursorX<<","<<cursorY<<")\n";
     handleKeystrokes();
 }
 
