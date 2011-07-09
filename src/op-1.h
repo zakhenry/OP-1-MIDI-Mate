@@ -19,8 +19,8 @@
 
 typedef struct midiPacket {
     string event;
-    int keyId;
-    string keyName;
+    int elementId;
+    string elementName;
     int channel;
     double timestamp;
     //midiPacket(): event(""),keyId(-1),keyName(""),channel(-1){}
@@ -92,8 +92,8 @@ class OP1 : public ofBaseApp{
     void setEncoder(int encoder, float angle);
     void incrementEncoder(int encoder, bool cw);
     
-    void buttonEvent (int key, bool keydown);
-    void keyEvent (int key, bool keydown);
+    void buttonEvent (int key, bool keydown, string &keyName);
+    void keyEvent (int key, bool keydown, string &keyName);
     
     void update(){};
     

@@ -23,7 +23,7 @@ void testApp::update(){
 }
 
 void testApp::op1Event(midiPacket &packet){
-    cout << "midi packet: channel ["<<packet.channel<<"], event ["<<packet.event<<"], keyId ["<<packet.keyId<<"], keyName ["<<packet.keyName<<"], timestamp ["<<packet.timestamp<<"]\n";
+    cout << "midi packet: channel ["<<packet.channel<<"], event ["<<packet.event<<"], keyId ["<<packet.elementId<<"], keyName ["<<packet.elementName<<"], timestamp ["<<packet.timestamp<<"]\n";
 }
 
 //--------------------------------------------------------------

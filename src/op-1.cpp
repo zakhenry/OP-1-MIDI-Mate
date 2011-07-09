@@ -39,9 +39,10 @@ OP1::OP1(){ // constructor
     
     midiIn.listPorts();
     midiIn.openPort(0);
+    midiIn.setVerbose(false);
     ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
     
-    for (int i=0; i<29; i++){
+    for (int i=0; i<34; i++){
         buttonStatus.push_back(false);
     }
     
@@ -186,7 +187,7 @@ void OP1::drawKeyboard(){
         
         
         if (keyStatus[keyNumber]){
-            ofSetColor(0x00ff00);
+            ofSetColor(0x000000);
             ofCircle(0, 0, 3);
         }
             
@@ -222,8 +223,8 @@ void OP1::drawKeyboard(){
         ofSetColor(black);
         ofCircle(0, 0, 4.5);
         if (keyStatus[keyNumber]){
-            ofSetColor(0x00ff00);
-            ofCircle(0, 0, 3);
+            ofSetColor(0xffffff);
+            ofCircle(0, 0, 2.5);
         }
         
         ofPopMatrix();
@@ -698,28 +699,41 @@ void OP1::drawKnob(int knobNumber){
     ofSetColor(lightGrey);
     ofCircle(0, 0, 8.5);
     
+    int buttonNumber = -1;
+    
     int color = 0x000000; 
     float angle;
     switch (knobNumber) {
         case 0:
             color = blue;
             angle = bEncoder;
+            buttonNumber = 30;
             break;
         case 1:
             color = green;
             angle = gEncoder;
+            buttonNumber = 31;
             break;
         case 2:
             color = white;
             angle = wEncoder;
+            buttonNumber = 32;
             break;
         case 3:
             color = orange;
             angle = oEncoder;
+            buttonNumber = 33;
             break;
             
         default:
             break;
+    }
+    
+    if (buttonNumber>0){
+        if (buttonStatus[buttonNumber]){
+            ofSetColor(0x000000);
+            ofCircle(0, 0, 7);
+        }
     }
     ofSetColor(color);
     ofCircle(0, 0, 5);
@@ -851,27 +865,33 @@ void OP1::changeButtonStatus(int buttonNum, bool buttonDown){
     
 }
 
-void OP1::buttonEvent(int button, bool buttonDown){
+void OP1::buttonEvent(int button, bool buttonDown, string& buttonName){
     int buttonNum = -1; //changing midi id's to graphical ids
     
     switch (button) {
         case 48:
             buttonNum = 0;
+            buttonName = "input";
             break;
         case 49:
             buttonNum = 1;
+            buttonName = "com";
             break;
         case 7:
             buttonNum = 2;
+            buttonName = "synth";
             break;
         case 8:
             buttonNum = 3;
+            buttonName = "drum";
             break;
         case 9:
             buttonNum = 4;
+            buttonName = "tape";
             break;
         case 10:
             buttonNum = 5;
+            buttonName = "mixer";
             break;
     /*    case :
             buttonNum = 6;
@@ -888,64 +908,103 @@ void OP1::buttonEvent(int button, bool buttonDown){
      */
         case 50:
             buttonNum = 10;
+            buttonName = "tape_in";
             break;
         case 51:
             buttonNum = 11;
+            buttonName = "tape_out";
             break;
         case 52:
             buttonNum = 12;
+            buttonName = "tape_loop";
             break;
         case 21:
             buttonNum = 13;
+            buttonName = "tape_pause";
             break;
         case 22:
             buttonNum = 14;
+            buttonName = "tape_reverse";
             break;
         case 23:
             buttonNum = 15;
+            buttonName = "tape_jitter";
             break;
         case 24:
             buttonNum = 16;
+            buttonName = "m1";
             break;
         case 25:
             buttonNum = 17;
+            buttonName = "m2";
             break;
         case 26:
             buttonNum = 18;
+            buttonName = "sequencer";
             break;
         case 5:
             buttonNum = 19;
+            buttonName = "help";
             break;
         case 6:
             buttonNum = 20;
+            buttonName = "metronome";
             break;
         case 15:
             buttonNum = 21;
+            buttonName = "tape_lift";
             break;
         case 16:
             buttonNum = 22;
+            buttonName = "tape_drop";
             break;
         case 17:
             buttonNum = 23;
+            buttonName = "tape_join";
             break;
         case 38:
             buttonNum = 24;
+            buttonName = "record";
             break;
         case 39:
             buttonNum = 25;
+            buttonName = "play";
             break;
         case 40:
             buttonNum = 26;
+            buttonName = "stop";
             break;
         case 41:
             buttonNum = 27;
+            buttonName = "octave_down";
             break;
         case 42:
             buttonNum = 28;
+            buttonName = "octave_up";
             break;
         /*case :
             buttonNum = 29;
+             buttonName = "shift";
             break;*/
+        case 64: //encoder 1
+            buttonNum = 30;
+            buttonName = "encoder_blue";
+            break;
+            
+        case 65: //encoder 2
+            buttonNum = 31;
+            buttonName = "encoder_green";
+            break;
+            
+        case 66: //encoder 3
+            buttonNum = 32;
+            buttonName = "encoder_white";
+            break;
+            
+        case 67: //encoder 4
+            buttonNum = 33;
+            buttonName = "encoder_orange";
+            break;
             
         default:
             cout <<"button not found\n";
@@ -959,7 +1018,7 @@ void OP1::buttonEvent(int button, bool buttonDown){
     }
 }
 
-void OP1::keyEvent(int key, bool keyDown){
+void OP1::keyEvent(int key, bool keyDown, string& keyName){
     int keyNum = -1; //changing midi id's to graphical ids
     
 //    cout <<"key input is ["<<key<<"]\n";
@@ -968,78 +1027,102 @@ void OP1::keyEvent(int key, bool keyDown){
             //white keys
         case 53:
             keyNum = 0;
+            keyName = "F";
             break;
         case 55:
             keyNum = 1;
+            keyName = "G";
             break;
         case 57:
             keyNum = 2;
+            keyName = "A";
             break;
         case 59:
             keyNum = 3;
+            keyName = "B";
             break;
         case 60:
             keyNum = 4;
+            keyName = "C";
             break;
         case 62:
             keyNum = 5;
+            keyName = "D";
             break;
         case 64:
             keyNum = 6;
+            keyName = "E";
             break;
         case 65:
             keyNum = 7;
+            keyName = "F";
             break;
         case 67:
             keyNum = 8;
+            keyName = "G";
             break;
         case 69:
             keyNum = 9;
+            keyName = "A";
             break;
         case 71:
-            keyNum = 10; 
+            keyNum = 10;
+            keyName = "B";
             break;
         case 72:
             keyNum = 11;
+            keyName = "C";
             break;
         case 74:
             keyNum = 12;
+            keyName = "D";
             break;
         case 76:
             keyNum = 13;
+            keyName = "E";
             break;
             
             //black keys
             
         case 54:
             keyNum = 14;
+            keyName = "F#";
             break;
         case 56:
             keyNum = 15;
+            keyName = "G#";
             break;
         case 58:
             keyNum = 16;
+            keyName = "A#";
             break;
         case 61:
             keyNum = 17;
+            keyName = "C#";
             break;
         case 63:
             keyNum = 18;
+            keyName = "D#";
             break;
         case 66:
             keyNum = 19;
+            keyName = "F#";
             break;
         case 68:
             keyNum = 20;
+            keyName = "G#";
             break;
         case 70:
             keyNum = 21;
+            keyName = "A#";
             break;
         case 73:
             keyNum = 22;
+            keyName = "C#";
             break;
         case 75:
             keyNum = 23;
+            keyName = "D#";
             break;
            
         default:
@@ -1073,28 +1156,36 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
 	int byteTwo = args.byteTwo;
 	double 	timestamp = args.timestamp;
     
+    string event;
+    string elementName;
+    
     if (status == 176){ //control input
         if (byteOne<=4){ //encoder
             incrementEncoder(byteOne, byteTwo==1);
+            event = (byteTwo==1)?"encoder_cw":"encoder_ccw";
         }else{
-            buttonEvent(byteOne, byteTwo==127); //buttonid buttondown
+            buttonEvent(byteOne, byteTwo==127, elementName); //buttonid buttondown
+            event = (byteTwo==127)?"button_down":"button_up";
         }
     }else{ //keyboard input?
         while (byteOne>64) { //octave shifting
             byteOne-=24;
+            
         }
         
         while (byteOne<53) { //octave shifting
             byteOne+=24;
         }
         
-        keyEvent(byteOne, byteTwo==127); //keyid keydown
+        keyEvent(byteOne, byteTwo==127, elementName); //keyid keydown
+        event = (byteTwo==127)?"key_down":"key_up";
     }
     
     midiPacket newPacket;
     newPacket.channel = 0;
-    newPacket.event = byteTwo;
-    newPacket.keyId = byteOne;
+    newPacket.event = event;
+    newPacket.elementId = byteOne;
+    newPacket.elementName = elementName;
     newPacket.timestamp = timestamp;
     
     ofNotifyEvent(midiEvent, newPacket, this);
@@ -1106,12 +1197,14 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
 
 void OP1::sendNoteOn(int noteId){
     midiOut.sendNoteOn(1, noteId, 144);
-    keyEvent(noteId, true);
+    string name;
+    keyEvent(noteId, true, name);
 }
 
 void OP1::sendNoteOff(int noteId){
     midiOut.sendNoteOff(1, noteId, 128);
-    keyEvent(noteId, false);
+    string name;
+    keyEvent(noteId, false, name);
 }
 
 void OP1::mouseDown(int x, int y){
