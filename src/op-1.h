@@ -71,6 +71,9 @@ class OP1 : public ofBaseApp{
     
     ofxMidiIn midiIn;
     void newMessageEvent (ofxMidiEventArgs & args);
+    ofxMidiIn internalMidi;
+    void newVirtualMessageEvent (ofxMidiEventArgs & args);
+    
     
     vector<bool>buttonStatus;
     vector<bool>keyStatus;
@@ -81,8 +84,8 @@ class OP1 : public ofBaseApp{
     //MIDI OUT (TO OP-1)
     
     ofxMidiOut midiOut;
-    void sendNoteOn(int noteId);
-    void sendNoteOff(int noteId);
+    void sendNoteOn(int noteId, int keyId);
+    void sendNoteOff(int noteId, int keyId);
 
     
     OP1(); //constructor

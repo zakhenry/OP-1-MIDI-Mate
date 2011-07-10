@@ -5,7 +5,7 @@
 void testApp::setup(){
 	ofSetCircleResolution(50);
 	ofBackground(0, 0, 0);
-	ofSetWindowTitle("graphics example");
+	ofSetWindowTitle("ofxOP1 example");
 
 	ofSetFrameRate(60); // if vertical sync is off, we can go a bit fast... this caps the framerate at 60fps.
     
@@ -28,11 +28,13 @@ void testApp::op1Event(midiPacket &packet){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    ofPushMatrix();
-    ofScale(0.5, 0.5);
-    ofSetColor(0x555555);
-    verdana.drawString("fps: "+ofToString(ofGetFrameRate()), 10, 100);
-    ofPopMatrix();
+    
+    
+//    ofPushMatrix();
+//    ofScale(0.5, 0.5);
+//    ofSetColor(0x555555);
+//    verdana.drawString("fps: "+ofToString(ofGetFrameRate()), 10, 100);
+//    ofPopMatrix();
     
     
     op1.draw();

@@ -39,8 +39,10 @@ OP1::OP1(){ // constructor
     
     midiIn.listPorts();
     midiIn.openPort(0);
+    internalMidi.openVirtualPort("Virtual OP-1");
     midiIn.setVerbose(false);
     ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
+    ofAddListener(internalMidi.newMessageEvent, this, &OP1::newVirtualMessageEvent); //send data to same callback as the external midi in
     
     for (int i=0; i<34; i++){
         buttonStatus.push_back(false);
@@ -1177,8 +1179,8 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
             byteOne+=24;
         }
         
-        keyEvent(byteOne, byteTwo==127, elementName); //keyid keydown
-        event = (byteTwo==127)?"key_down":"key_up";
+        keyEvent(byteOne, status==144, elementName); //keyid keydown
+        event = (status==144)?"key_down":"key_up";
     }
     
     midiPacket newPacket;
@@ -1190,21 +1192,66 @@ void OP1::newMessageEvent (ofxMidiEventArgs & args){
     
     ofNotifyEvent(midiEvent, newPacket, this);
     
+        cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
+
+}
+
+void OP1::newVirtualMessageEvent (ofxMidiEventArgs & args){
     
-//    cout << "midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
+    int port = args.port;
+	int	channel = args.channel;
+	int status = args.status;
+	int byteOne = args.byteOne;
+	int byteTwo = args.byteTwo;
+	double 	timestamp = args.timestamp;
+    
+    string event;
+    string elementName;
+    
+    int keyId = byteOne;
+
+    while (keyId>64) { //octave shifting
+        keyId-=24;
+        
+    }
+    
+    while (keyId<53) { //octave shifting
+        keyId+=24;
+    }
+    
+//    keyEvent(byteOne, status==144, elementName); //keyid keydown
+    event = (status==144)?"key_down":"key_up";
+    
+    if (event=="key_down"){
+        sendNoteOn(byteOne, keyId);
+    }else{
+        sendNoteOff(byteOne, keyId);
+    }
+    
+    midiPacket newPacket;
+    newPacket.channel = 0;
+    newPacket.event = event;
+    newPacket.elementId = byteOne;
+    newPacket.elementName = elementName;
+    newPacket.timestamp = timestamp;
+    
+//    ofNotifyEvent(midiEvent, newPacket, this);
+    
+    cout << "virtual midi packet: port ["<<port<<"], channel ["<<channel<<"], status ["<<status<<"], byteOne ["<<byteOne<<"], byte2 ["<<byteTwo<<"], timestamp ["<<timestamp<<"]\n";
+
 }
 
 
-void OP1::sendNoteOn(int noteId){
+void OP1::sendNoteOn(int noteId, int keyId){ //note is the absolute note id, key is remapped notes to fit the length of the keyboard
     midiOut.sendNoteOn(1, noteId, 144);
     string name;
-    keyEvent(noteId, true, name);
+    keyEvent(keyId, true, name);
 }
 
-void OP1::sendNoteOff(int noteId){
+void OP1::sendNoteOff(int noteId, int keyId){
     midiOut.sendNoteOff(1, noteId, 128);
     string name;
-    keyEvent(noteId, false, name);
+    keyEvent(keyId, false, name);
 }
 
 void OP1::mouseDown(int x, int y){
@@ -1215,7 +1262,7 @@ void OP1::mouseDown(int x, int y){
 
 void OP1::mouseUp(){
     
-    sendNoteOff(currentNotePlaying);
+    sendNoteOff(currentNotePlaying, currentNotePlaying);
     currentNotePlaying = -1;
 }
 
@@ -1246,7 +1293,7 @@ void OP1::handleKeystrokes(){
         
             if (cursorInBoundingBox(50.5+i*15.5, 66, 14.5, 30)){
                 currentNotePlaying = keyMap[keyNumber];
-                sendNoteOn(currentNotePlaying);
+                sendNoteOn(currentNotePlaying, currentNotePlaying);
             }
         
         keyNumber++;
@@ -1260,7 +1307,7 @@ void OP1::handleKeystrokes(){
         
         if (cursorInBoundingBox(50.5+xOffset, 50.5, keyWidth, 15.5)){
             currentNotePlaying = keyMap[keyNumber];
-            sendNoteOn(currentNotePlaying);
+            sendNoteOn(currentNotePlaying, currentNotePlaying);
         }
         
         if (i==2||i==7){
