@@ -47,7 +47,16 @@ void testApp::keyPressed  (int key){
     cout << "key pressed ("<<key<<")\n";
     switch (key) {
         case 'f':
-            ofToggleFullscreen();
+            {
+                if (ofGetWindowMode()==OF_FULLSCREEN){
+                    ofSetFullscreen(false);
+                    ofSetWindowShape(1024,768);
+                }else{
+                    ofSetFullscreen(true);
+                    ofSetWindowShape(1900,1200);
+                    
+                }
+            }
             break;
             
         default:

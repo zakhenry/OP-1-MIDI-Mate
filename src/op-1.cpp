@@ -65,6 +65,24 @@ OP1::OP1(){ // constructor
     	ofSoundStreamSetup(0,2,this, 44100, 256, 4);	
     	left = new float[256];
     	right = new float[256];
+    
+    
+    //defining the buttons
+    
+    controlButton help;
+    help.name = "Help";
+    help.midiId = 57;
+    help.graphicId = 0;
+    help.icon.loadImage("help.png");
+    controlButtons.push_back(help);
+    
+    controlButton synth;
+    synth.name = "Synthesizer";
+    synth.midiId = 57;
+    synth.graphicId = 2;
+    synth.icon.loadImage("synth.png");
+    controlButtons.push_back(synth);
+    
 }
 
 float OP1::keySpan(int span){
@@ -325,10 +343,8 @@ void OP1::drawButton(int buttonNumber){
             
         case 2:
         {
-            ofSetColor(blue);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            spyroclassic.drawString("synth", 0,0);
+            ofScale(0.1, 0.1);
+            controlButtons[1].icon.draw(0,0);
         }
         break;
             
@@ -529,10 +545,8 @@ void OP1::drawButton(int buttonNumber){
             
         case 19:
         {
-            ofSetColor(black);
-            ofTranslate(-3, 2);
-            ofScale(0.05, 0.05);
-            spyroclassic.drawString("help", 0,0);
+            ofScale(0.1, 0.1);
+            controlButtons[0].icon.draw(0,0);
         }
         break;
             

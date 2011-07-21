@@ -23,8 +23,16 @@ typedef struct midiPacket {
     string elementName;
     int channel;
     double timestamp;
-    //midiPacket(): event(""),keyId(-1),keyName(""),channel(-1){}
 } midiPacket;
+
+typedef struct controlButton{
+    string name;
+    int midiId;
+    int graphicId;
+    ofImage icon;
+    bool keyPressed;
+    
+} controlButton;
 
 class OP1 : public ofBaseApp{
 	
@@ -63,6 +71,8 @@ class OP1 : public ofBaseApp{
     void roundedRect(float w, float h, float r, bool rectModeCenter);
     
     ofTrueTypeFont	verdana, spyroclassic;
+    
+    vector<controlButton>controlButtons;
     
     float scaleFactor;
     float volume, bEncoder, gEncoder, wEncoder, oEncoder; //angles
