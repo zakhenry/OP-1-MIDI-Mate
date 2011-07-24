@@ -16,18 +16,11 @@ int darkGrey = 0xC3C9C9;
 int black = 0x000000;
 int white = 0xFFFFFF;
 
-ofxSVG tape;
-
 int keyMap[] = {53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 54, 56, 58, 61, 63, 66, 68, 70, 73, 75};
 
 OP1::OP1(){ // constructor
     
     cout << "OP-1 created\n";
-    
-    
-    tape.load("tape.svg");
-    
-//    svg.load("Butterfly_001.svg");
     
     keySpacing = 0.7;
     frameWidth = 4.5;
@@ -143,56 +136,56 @@ OP1::OP1(){ // constructor
     voice_1.name = "Voice 1/";
     voice_1.midiId = -1;
     voice_1.graphicId = 10;
-    voice_1.icon.loadImage("one.png");
+    voice_1.icon.loadImage("voice_1.png");
     controlButtons.push_back(voice_1);
     
     controlButton voice_2;
     voice_2.name = "Voice 1/";
     voice_2.midiId = -1;
     voice_2.graphicId = 11;
-    voice_2.icon.loadImage("one.png");
+    voice_2.icon.loadImage("voice_2.png");
     controlButtons.push_back(voice_2);
     
     controlButton voice_3;
     voice_3.name = "Voice 1/";
     voice_3.midiId = -1;
     voice_3.graphicId = 12;
-    voice_3.icon.loadImage("one.png");
+    voice_3.icon.loadImage("voice_3.png");
     controlButtons.push_back(voice_3);
     
     controlButton voice_4;
     voice_4.name = "Voice 1/";
     voice_4.midiId = -1;
     voice_4.graphicId = 13;
-    voice_4.icon.loadImage("one.png");
+    voice_4.icon.loadImage("voice_4.png");
     controlButtons.push_back(voice_4);
     
     controlButton voice_5;
     voice_5.name = "Voice 1/";
     voice_5.midiId = -1;
     voice_5.graphicId = 14;
-    voice_5.icon.loadImage("one.png");
+    voice_5.icon.loadImage("voice_5.png");
     controlButtons.push_back(voice_5);
     
     controlButton voice_6;
     voice_6.name = "Voice 1/";
     voice_6.midiId = -1;
     voice_6.graphicId = 15;
-    voice_6.icon.loadImage("one.png");
+    voice_6.icon.loadImage("voice_6.png");
     controlButtons.push_back(voice_6);
     
     controlButton voice_7;
     voice_7.name = "Voice 1/";
     voice_7.midiId = -1;
     voice_7.graphicId = 16;
-    voice_7.icon.loadImage("one.png");
+    voice_7.icon.loadImage("voice_7.png");
     controlButtons.push_back(voice_7);
     
     controlButton voice_8;
     voice_8.name = "Voice 1/";
     voice_8.midiId = -1;
     voice_8.graphicId = 17;
-    voice_8.icon.loadImage("one.png");
+    voice_8.icon.loadImage("voice_8.png");
     controlButtons.push_back(voice_8);
     
     controlButton sequencer;
