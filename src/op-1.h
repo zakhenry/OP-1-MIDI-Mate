@@ -30,6 +30,12 @@ typedef struct controlButton{
     
 } controlButton;
 
+//struct findButtonByGraphicalId{
+//    bool operator()(const int graphicalId , const controlButton& button) const{
+//        return graphicalId == button.graphicId;
+//    }
+//};
+
 class OP1 : public ofBaseApp{
 	
 	//private

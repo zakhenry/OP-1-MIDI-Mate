@@ -64,42 +64,42 @@ OP1::OP1(){ // constructor
     
     controlButton mic;
     mic.name = "Mic/Input";
-    mic.midiId = -1;
+    mic.midiId = 48;
     mic.graphicId = 0;
     mic.icon.loadImage("mic.png");
     controlButtons.push_back(mic);
     
     controlButton com;
     com.name = "Album/Computer Connection";
-    com.midiId = -1;
+    com.midiId = 49;
     com.graphicId = 1;
     com.icon.loadImage("com.png");
     controlButtons.push_back(com);
     
     controlButton synth;
     synth.name = "Synthesizer";
-    synth.midiId = -1;
+    synth.midiId = 7;
     synth.graphicId = 2;
     synth.icon.loadImage("synth.png");
     controlButtons.push_back(synth);
     
     controlButton drum;
     drum.name = "Drum";
-    drum.midiId = -1;
+    drum.midiId = 8;
     drum.graphicId = 3;
     drum.icon.loadImage("drum.png");
     controlButtons.push_back(drum);
     
     controlButton tape;
     tape.name = "Tape";
-    tape.midiId = -1;
+    tape.midiId = 9;
     tape.graphicId = 4;
     tape.icon.loadImage("tape.png");
     controlButtons.push_back(tape);
     
     controlButton mixer;
     mixer.name = "Mixer";
-    mixer.midiId = -1;
+    mixer.midiId = 10;
     mixer.graphicId = 5;
     mixer.icon.loadImage("mix.png");
     controlButtons.push_back(mixer);
@@ -134,133 +134,133 @@ OP1::OP1(){ // constructor
     
     controlButton voice_1;
     voice_1.name = "Voice 1/";
-    voice_1.midiId = -1;
+    voice_1.midiId = 50;
     voice_1.graphicId = 10;
     voice_1.icon.loadImage("voice_1.png");
     controlButtons.push_back(voice_1);
     
     controlButton voice_2;
     voice_2.name = "Voice 1/";
-    voice_2.midiId = -1;
+    voice_2.midiId = 51;
     voice_2.graphicId = 11;
     voice_2.icon.loadImage("voice_2.png");
     controlButtons.push_back(voice_2);
     
     controlButton voice_3;
     voice_3.name = "Voice 1/";
-    voice_3.midiId = -1;
+    voice_3.midiId = 52;
     voice_3.graphicId = 12;
     voice_3.icon.loadImage("voice_3.png");
     controlButtons.push_back(voice_3);
     
     controlButton voice_4;
     voice_4.name = "Voice 1/";
-    voice_4.midiId = -1;
+    voice_4.midiId = 21;
     voice_4.graphicId = 13;
     voice_4.icon.loadImage("voice_4.png");
     controlButtons.push_back(voice_4);
     
     controlButton voice_5;
     voice_5.name = "Voice 1/";
-    voice_5.midiId = -1;
+    voice_5.midiId = 22;
     voice_5.graphicId = 14;
     voice_5.icon.loadImage("voice_5.png");
     controlButtons.push_back(voice_5);
     
     controlButton voice_6;
     voice_6.name = "Voice 1/";
-    voice_6.midiId = -1;
+    voice_6.midiId = 23;
     voice_6.graphicId = 15;
     voice_6.icon.loadImage("voice_6.png");
     controlButtons.push_back(voice_6);
     
     controlButton voice_7;
     voice_7.name = "Voice 1/";
-    voice_7.midiId = -1;
+    voice_7.midiId = 24;
     voice_7.graphicId = 16;
     voice_7.icon.loadImage("voice_7.png");
     controlButtons.push_back(voice_7);
     
     controlButton voice_8;
     voice_8.name = "Voice 1/";
-    voice_8.midiId = -1;
+    voice_8.midiId = 25;
     voice_8.graphicId = 17;
     voice_8.icon.loadImage("voice_8.png");
     controlButtons.push_back(voice_8);
     
     controlButton sequencer;
     sequencer.name = "Sequencer";
-    sequencer.midiId = -1;
+    sequencer.midiId = 26;
     sequencer.graphicId = 18;
     sequencer.icon.loadImage("sequencer.png");
     controlButtons.push_back(sequencer);
     
     controlButton help;
     help.name = "Help";
-    help.midiId = 57;
+    help.midiId = 5;
     help.graphicId = 19;
     help.icon.loadImage("help.png");
     controlButtons.push_back(help);
     
     controlButton metro;
     metro.name = "Metronome";
-    metro.midiId = -1;
+    metro.midiId = 6;
     metro.graphicId = 20;
     metro.icon.loadImage("metro.png");
     controlButtons.push_back(metro);
     
     controlButton lift;
     lift.name = "Lift";
-    lift.midiId = -1;
+    lift.midiId = 15;
     lift.graphicId = 21;
     lift.icon.loadImage("lift.png");
     controlButtons.push_back(lift);
     
     controlButton drop;
     drop.name = "Drop";
-    drop.midiId = -1;
+    drop.midiId = 16;
     drop.graphicId = 22;
     drop.icon.loadImage("drop.png");
     controlButtons.push_back(drop);
     
     controlButton join;
     join.name = "Join";
-    join.midiId = -1;
+    join.midiId = 17;
     join.graphicId = 23;
     join.icon.loadImage("join.png");
     controlButtons.push_back(join);
     
     controlButton record;
     record.name = "Record";
-    record.midiId = -1;
+    record.midiId = 38;
     record.graphicId = 24;
     record.icon.loadImage("record.png");
     controlButtons.push_back(record);
     
     controlButton play;
     play.name = "Play";
-    play.midiId = -1;
+    play.midiId = 39;
     play.graphicId = 25;
     play.icon.loadImage("play.png");
     controlButtons.push_back(play);
     
     controlButton stop;
     stop.name = "Stop";
-    stop.midiId = -1;
+    stop.midiId = 40;
     stop.graphicId = 26;
     stop.icon.loadImage("stop.png");
     controlButtons.push_back(stop);
     
     controlButton arrow_left;
     arrow_left.name = "Octave Down/Rewind";
-    arrow_left.midiId = -1;
+    arrow_left.midiId = 41;
     arrow_left.graphicId = 27;
     arrow_left.icon.loadImage("arrow_left.png");
     controlButtons.push_back(arrow_left);
     
     controlButton arrow_right;
     arrow_right.name = "Octave Up/Fast Forward";
-    arrow_right.midiId = -1;
+    arrow_right.midiId = 42;
     arrow_right.graphicId = 28;
     arrow_right.icon.loadImage("arrow_right.png");
     controlButtons.push_back(arrow_right);
@@ -272,7 +272,29 @@ OP1::OP1(){ // constructor
     shift.icon.loadImage("shift.png");
     controlButtons.push_back(shift);
     
+    controlButton encoder_blue;
+    encoder_blue.name = "Blue Encoder";
+    encoder_blue.midiId = 64;
+    encoder_blue.graphicId = -1;
+    controlButtons.push_back(encoder_blue);
     
+    controlButton encoder_green;
+    encoder_green.name = "Green Encoder";
+    encoder_green.midiId = 65;
+    encoder_green.graphicId = -1;
+    controlButtons.push_back(encoder_green);
+    
+    controlButton encoder_white;
+    encoder_white.name = "White Encoder";
+    encoder_white.midiId = 66;
+    encoder_white.graphicId = -1;
+    controlButtons.push_back(encoder_white);
+    
+    controlButton encoder_orange;
+    encoder_orange.name = "Orange Encoder";
+    encoder_orange.midiId = 67;
+    encoder_orange.graphicId = -1;
+    controlButtons.push_back(encoder_orange);
     
 }
 
@@ -289,9 +311,6 @@ void OP1::setDimensions(int _x, int _y, int _width){
 }
 
 void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
-    
-    
-    
     
     ofPushMatrix();
         
@@ -502,348 +521,14 @@ void OP1::drawButton(int buttonNumber){
     ofSetColor(darkGrey);
     roundedRect(keySpan(1), keySpan(1), 0.5);
     ofPushMatrix();
-    ofTranslate(keySpan(1)/2, keySpan(1)/2);
-    ofSetColor(lightGrey);
-    ofCircle(0, 0, 5);
-    
-    ofScale(0.1, 0.1);
-//    if (buttonNumber<24){ //tmp while i draw all the buttons
-        controlButtons[buttonNumber].icon.draw(0,0);
-//    }
-    
-
-    
-//    
-//    switch (buttonNumber) {
-//        case 0: //mic/radio/input
-//        {
-//            ofSetColor(orange);
-//            ofRotateZ(45);
-//            ofTranslate(0, -1.5);
-//            ofCircle(0, 0, 0.8);
-//            ofRect(0, 2, 0.6, 2.5);
-//        }
-//        break;
-//            
-//        case 1: //com
-//        {
-//            ofSetColor(black);
-//            ofTranslate(0, -1.5);
-//            ofCircle(0, 0, 2);
-//            ofSetColor(lightGrey);
-//            ofCircle(0, 0, 1.7);
-//            ofSetColor(black);
-//            ofCircle(0, 0, 0.6);
-//            ofScale(0.025, 0.025);
-//            ofSetColor(black);
-//            spyroclassic.drawString("COM", -100,180);
-//        }
-//        break;
-//            
-//        case 2:
-//        {
-//            ofScale(0.1, 0.1);
-//            controlButtons[1].icon.draw(0,0);
-//        }
-//        break;
-//            
-//        case 3:
-//        {
-//            ofSetColor(green);
-//            ofCircle(0, 0, 1.7);
-//            ofSetColor(lightGrey);
-//            ofCircle(0, 0, 1.4);
-//            ofSetColor(green);
-//            ofCircle(0, 0, 0.5);
-//            ofTranslate(0, 1.4);
-//            ofRect(0, 0, 0.3, 1.8);
-//        }
-//        break;
-//            
-//        case 4: //tape
-//        {
-//            ofTranslate(-5, -5); //go to corner
-//            ofSetColor(0x03a7b8);
-//            ofCircle(0, 0, 0.2);
-//            ofScale(0.1, 0.1); //making a 100x100 fit into a 10x10
-//            tape.draw();
-//            /*
-//            ofTranslate(-1.5, 0);
-//            ofSetColor(orange);
-//            ofCircle(0, 0, 1.3);
-//            ofSetColor(lightGrey);
-//            ofCircle(0, 0, 1);
-//            ofTranslate(3, 0);
-//            ofSetColor(orange);
-//            ofCircle(0, 0, 1.3);
-//            ofSetColor(lightGrey);
-//            ofCircle(0, 0, 1);
-//            ofTranslate(-1.5, 1.1);
-//            ofSetColor(orange);
-//            ofRect(0, 0, 3, 0.3);
-//             */
-//        }
-//        break;
-//            
-//        case 5:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-1.5, 0.4);
-//            ofRect(0, 0, 0.3, 2);
-//            ofRect(1, -0.5, 0.3, 3);
-//            ofRect(2, 0.15, 0.3, 1.7);
-//            ofRect(3, 0, 0.3, 2);
-//        }
-//        break;
-//            
-//        case 6:
-//        {
-//            ofSetColor(black);
-//            ofRect(0, 0, 0.55, 5);
-//        }
-//        break;
-//            
-//        case 7:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-2, 2.5);
-//            ofScale(0.1, 0.08);
-//            spyroclassic.drawString("2", 0,0);
-//        }
-//        break;
-//            
-//        case 8:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-2.5, 2.5);
-//            ofScale(0.1, 0.08);
-//            spyroclassic.drawString("3", 0,0);
-//        }
-//        break;
-//            
-//        case 9:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-2.5, 2.5);
-//            ofScale(0.1, 0.08);
-//            spyroclassic.drawString("4", 0,0);
-//        }
-//        break;
-//            
-//        case 10:
-//        {
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("1", -20,0);
-//            ofScale(0.5, 0.7);
-//            ofSetColor(green);
-//            spyroclassic.drawString("IN", -50,100);
-//        }
-//        break;
-//            
-//        case 11:
-//        {
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("2", -20,0);
-//            ofScale(0.5, 0.7);
-//            ofSetColor(green);
-//            spyroclassic.drawString("OUT", -100,100);
-//        }
-//        break;
-//            
-//        case 12:
-//        {
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("3", -20,0);
-//            ofSetColor(green);
-//        }
-//        break;
-//            
-//        case 13:
-//        {
-//            ofPushMatrix();
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("4", -20,0);
-//            ofPopMatrix();
-//            
-//            ofTranslate(-1.5, 2);
-//            ofScale(0.8, 0.8);
-//            //            ofScale(8, 8);
-//            //            ofTranslate(-10, 0);
-//            ofSetColor(orange);
-//            ofCircle(0, 0, 1.3);
-//            ofSetColor(lightGrey);
-//            ofCircle(0, 0, 1);
-//            ofTranslate(3, 0);
-//            ofSetColor(orange);
-//            ofCircle(0, 0, 1.3);
-//            ofSetColor(lightGrey);
-//            ofCircle(0, 0, 1);
-//            ofTranslate(-1.5, 1.1);
-//            ofSetColor(orange);
-//            ofRect(0, 0, 3, 0.3);
-//            
-//            ofBeginShape();
-//            //            ofCurve(-0.3, -0.3, <#float x1#>, <#float y1#>, <#float x2#>, <#float y2#>, <#float x3#>, <#float y3#>);
-//            ofEndShape();
-//        }
-//        break;
-//            
-//        case 14:
-//        {
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("5", -20,0);
-//            ofSetColor(orange);
-//        }
-//        break;
-//            
-//        case 15:
-//        {
-//            ofPushMatrix();
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("6", -20,0);
-//            ofPopMatrix();
-//        }
-//        break;
-//            
-//        case 16:
-//        {
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("7", -20,0);
-//            ofScale(0.5, 0.7);
-//            spyroclassic.drawString("M1", -50,100);
-//        }
-//        break;
-//            
-//        case 17:
-//        {
-//            ofScale(0.04, 0.04);
-//            ofSetColor(black);
-//            spyroclassic.drawString("8", -20,0);
-//            ofScale(0.5, 0.7);
-//            spyroclassic.drawString("M2", -50,100);
-//        }
-//        break;
-//            
-//        case 18:
-//        {
-//            ofSetColor(blue);
-//            ofTranslate(-2, 0.8);
-//            ofCircle(0, 0, 0.5);
-//            ofCircle(1.5, -1.5, 0.5);
-//            ofCircle(3, 0, 0.5);
-//            ofCircle(4.5, 0, 0.5);
-//        }
-//        break;
-//            
-//        case 19:
-//        {
-//            ofScale(0.1, 0.1);
-//            controlButtons[0].icon.draw(0,0);
-//        }
-//        break;
-//            
-//        case 20:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-3, 2);
-//            ofScale(0.05, 0.05);
-//            spyroclassic.drawString("metro", 0,0);
-//        }
-//        break;
-//            
-//        case 21:
-//        {
-//            ofSetColor(orange);
-//            
-//            ofScale(0.04, 0.03);
-//            ofSetColor(black);
-//            spyroclassic.drawString("1-4", -50,100);
-//        }
-//        break;
-//            
-//        case 22:
-//        {
-//            ofSetColor(orange);
-//            ofSetColor(black);
-//            ofTranslate(0, 2.5);
-//            ofCircle(0, 0, 0.5);
-//        }
-//        break;
-//            
-//        case 23:
-//        {
-//            ofSetColor(orange);
-//            ofScale(0.03, 0.03);
-//            ofSetColor(black);
-//            spyroclassic.drawString("JOIN", -70,100);
-//        }
-//        break;
-//            
-//        case 24:
-//        {
-//            ofSetColor(orange);
-//            ofCircle(0, 0, 4);
-//            ofSetColor(lightGrey);
-//            ofCircle(0, 0, 1);
-//        }
-//        break;
-//            
-//        case 25: //play
-//        {
-//            ofSetColor(black);
-//            ofBeginShape();
-//            ofVertex(-1, -1.5);
-//            ofVertex(-1, 1.5);
-//            ofVertex(1.5, 0);
-//            ofEndShape();
-//        }
-//        break;
-//            
-//        case 26: //stop
-//        {
-//            ofSetColor(black);
-//            ofRect(0, 0, 2.5, 2.5);
-//        }
-//        break;
-//            
-//        case 27:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-2, 2);
-//            ofScale(0.06, 0.06);
-//            spyroclassic.drawString("<", 0,0);
-//        }
-//        break;
-//            
-//        case 28:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-1, 2);
-//            ofScale(0.06, 0.06);
-//            spyroclassic.drawString(">", 0,0);
-//        }
-//        break;
-//            
-//        case 29:
-//        {
-//            ofSetColor(black);
-//            ofTranslate(-3, 1.5);
-//            ofScale(0.04, 0.04);
-//            spyroclassic.drawString("Shift", 0,0);
-//        }
-//        break;
-//            
-//        default:
-//            break;
-//    }
-    
+        ofTranslate(keySpan(1)/2, keySpan(1)/2);
+        ofSetColor(lightGrey);
+        ofCircle(0, 0, 5);
+        
+        ofScale(0.1, 0.1);
+        if (controlButtons[buttonNumber].graphicId>=0){ //only draw if it has a graphic id
+            controlButtons[buttonNumber].icon.draw(0,0);
+        }
     ofPopMatrix();
     
     if (buttonStatus[buttonNumber]){
@@ -1073,7 +758,7 @@ void OP1::incrementEncoder(int encoder, bool cw){
 void OP1::changeButtonStatus(int buttonNum, bool buttonDown){
     if (buttonNum>=0){
         buttonStatus[buttonNum] = buttonDown;
-//        cout << "button ["<<buttonNum<<"] status changed to ["<<buttonDown<<"]\n";
+        cout << "button ["<<buttonNum<<"] status changed to ["<<buttonDown<<"]\n";
     }else{
         cout <<"button not found\n";
     }
@@ -1083,147 +768,155 @@ void OP1::changeButtonStatus(int buttonNum, bool buttonDown){
 void OP1::buttonEvent(int button, bool buttonDown, string& buttonName){
     int buttonNum = -1; //changing midi id's to graphical ids
     
-    switch (button) {
-        case 48:
-            buttonNum = 0;
-            buttonName = "input";
+//    
+//    switch (button) {
+//        case 48:
+//            buttonNum = 0;
+//            buttonName = "input";
+//            break;
+//        case 49:
+//            buttonNum = 1;
+//            buttonName = "com";
+//            break;
+//        case 7:
+//            buttonNum = 2;
+//            buttonName = "synth";
+//            break;
+//        case 8:
+//            buttonNum = 3;
+//            buttonName = "drum";
+//            break;
+//        case 9:
+//            buttonNum = 4;
+//            buttonName = "tape";
+//            break;
+//        case 10:
+//            buttonNum = 5;
+//            buttonName = "mixer";
+//            break;
+//    /*    case :
+//            buttonNum = 6;
+//            break;
+//        case :
+//            buttonNum = 7;
+//            break;
+//        case :
+//            buttonNum = 8;
+//            break;
+//        case :
+//            buttonNum = 9;
+//            break;
+//     */
+//        case 50:
+//            buttonNum = 10;
+//            buttonName = "tape_in";
+//            break;
+//        case 51:
+//            buttonNum = 11;
+//            buttonName = "tape_out";
+//            break;
+//        case 52:
+//            buttonNum = 12;
+//            buttonName = "tape_loop";
+//            break;
+//        case 21:
+//            buttonNum = 13;
+//            buttonName = "tape_pause";
+//            break;
+//        case 22:
+//            buttonNum = 14;
+//            buttonName = "tape_reverse";
+//            break;
+//        case 23:
+//            buttonNum = 15;
+//            buttonName = "tape_jitter";
+//            break;
+//        case 24:
+//            buttonNum = 16;
+//            buttonName = "m1";
+//            break;
+//        case 25:
+//            buttonNum = 17;
+//            buttonName = "m2";
+//            break;
+//        case 26:
+//            buttonNum = 18;
+//            buttonName = "sequencer";
+//            break;
+//        case 5:
+//            buttonNum = 19;
+//            buttonName = "help";
+//            break;
+//        case 6:
+//            buttonNum = 20;
+//            buttonName = "metronome";
+//            break;
+//        case 15:
+//            buttonNum = 21;
+//            buttonName = "tape_lift";
+//            break;
+//        case 16:
+//            buttonNum = 22;
+//            buttonName = "tape_drop";
+//            break;
+//        case 17:
+//            buttonNum = 23;
+//            buttonName = "tape_join";
+//            break;
+//        case 38:
+//            buttonNum = 24;
+//            buttonName = "record";
+//            break;
+//        case 39:
+//            buttonNum = 25;
+//            buttonName = "play";
+//            break;
+//        case 40:
+//            buttonNum = 26;
+//            buttonName = "stop";
+//            break;
+//        case 41:
+//            buttonNum = 27;
+//            buttonName = "octave_down";
+//            break;
+//        case 42:
+//            buttonNum = 28;
+//            buttonName = "octave_up";
+//            break;
+//        /*case :
+//            buttonNum = 29;
+//             buttonName = "shift";
+//            break;*/
+//        case 64: //encoder 1
+//            buttonNum = 30;
+//            buttonName = "encoder_blue";
+//            break;
+//            
+//        case 65: //encoder 2
+//            buttonNum = 31;
+//            buttonName = "encoder_green";
+//            break;
+//            
+//        case 66: //encoder 3
+//            buttonNum = 32;
+//            buttonName = "encoder_white";
+//            break;
+//            
+//        case 67: //encoder 4
+//            buttonNum = 33;
+//            buttonName = "encoder_orange";
+//            break;
+//            
+//        default:
+//            cout <<"button not found\n";
+//            break;
+//    }
+    
+    for (int i=0; i<=controlButtons.size(); i++){
+        if (controlButtons[button].midiId==button){
+            buttonNum = i;
             break;
-        case 49:
-            buttonNum = 1;
-            buttonName = "com";
-            break;
-        case 7:
-            buttonNum = 2;
-            buttonName = "synth";
-            break;
-        case 8:
-            buttonNum = 3;
-            buttonName = "drum";
-            break;
-        case 9:
-            buttonNum = 4;
-            buttonName = "tape";
-            break;
-        case 10:
-            buttonNum = 5;
-            buttonName = "mixer";
-            break;
-    /*    case :
-            buttonNum = 6;
-            break;
-        case :
-            buttonNum = 7;
-            break;
-        case :
-            buttonNum = 8;
-            break;
-        case :
-            buttonNum = 9;
-            break;
-     */
-        case 50:
-            buttonNum = 10;
-            buttonName = "tape_in";
-            break;
-        case 51:
-            buttonNum = 11;
-            buttonName = "tape_out";
-            break;
-        case 52:
-            buttonNum = 12;
-            buttonName = "tape_loop";
-            break;
-        case 21:
-            buttonNum = 13;
-            buttonName = "tape_pause";
-            break;
-        case 22:
-            buttonNum = 14;
-            buttonName = "tape_reverse";
-            break;
-        case 23:
-            buttonNum = 15;
-            buttonName = "tape_jitter";
-            break;
-        case 24:
-            buttonNum = 16;
-            buttonName = "m1";
-            break;
-        case 25:
-            buttonNum = 17;
-            buttonName = "m2";
-            break;
-        case 26:
-            buttonNum = 18;
-            buttonName = "sequencer";
-            break;
-        case 5:
-            buttonNum = 19;
-            buttonName = "help";
-            break;
-        case 6:
-            buttonNum = 20;
-            buttonName = "metronome";
-            break;
-        case 15:
-            buttonNum = 21;
-            buttonName = "tape_lift";
-            break;
-        case 16:
-            buttonNum = 22;
-            buttonName = "tape_drop";
-            break;
-        case 17:
-            buttonNum = 23;
-            buttonName = "tape_join";
-            break;
-        case 38:
-            buttonNum = 24;
-            buttonName = "record";
-            break;
-        case 39:
-            buttonNum = 25;
-            buttonName = "play";
-            break;
-        case 40:
-            buttonNum = 26;
-            buttonName = "stop";
-            break;
-        case 41:
-            buttonNum = 27;
-            buttonName = "octave_down";
-            break;
-        case 42:
-            buttonNum = 28;
-            buttonName = "octave_up";
-            break;
-        /*case :
-            buttonNum = 29;
-             buttonName = "shift";
-            break;*/
-        case 64: //encoder 1
-            buttonNum = 30;
-            buttonName = "encoder_blue";
-            break;
-            
-        case 65: //encoder 2
-            buttonNum = 31;
-            buttonName = "encoder_green";
-            break;
-            
-        case 66: //encoder 3
-            buttonNum = 32;
-            buttonName = "encoder_white";
-            break;
-            
-        case 67: //encoder 4
-            buttonNum = 33;
-            buttonName = "encoder_orange";
-            break;
-            
-        default:
-            cout <<"button not found\n";
-            break;
+        }
     }
     
     if (buttonDown){
@@ -1237,6 +930,8 @@ void OP1::keyEvent(int key, bool keyDown, string& keyName){
     int keyNum = -1; //changing midi id's to graphical ids
     
 //    cout <<"key input is ["<<key<<"]\n";
+    
+    
     
     switch (key) {
             //white keys
