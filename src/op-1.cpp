@@ -931,7 +931,9 @@ void OP1::keyEvent(int key, bool keyDown, string& keyName){
     
 //    cout <<"key input is ["<<key<<"]\n";
     
-    
+    if (((key+3)%12)==0) {
+        cout << "A pressed\n";
+    }
     
     switch (key) {
             //white keys
