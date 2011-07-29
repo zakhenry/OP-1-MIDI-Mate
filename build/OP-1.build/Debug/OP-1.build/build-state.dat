@@ -4,25 +4,54 @@ r1
 cCheck dependencies
 cProcessInfoPlistFile "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Info.plist" openFrameworks-Info.plist
 cProcessPCH++ /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxSVG.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVG.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxml.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxml.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/main.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/RtMidi.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxMidiIn.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/src/ofxMidiIn.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxMidiOut.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/src/ofxMidiOut.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxSVGXml.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVGXml.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/RtMidi.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxMatrix3x3.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix3x3.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxMatrix4x4.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix4x4.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxSVGPathParser.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVGPathParser.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxQuaternion.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxQuaternion.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxml.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxml.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxMatrix3x3.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix3x3.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxmlerror.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxmlparser.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxXmlSettings.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxmlparser.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 cLd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug" normal i386
 cPhaseScriptExecution "Run Script" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
 cPBXCp ../../../libs/glut/lib/osx/GLUT.framework bin/OP-1Debug.app/Contents/Frameworks/GLUT.framework
+cPBXCp bin/data/record.png bin/OP-1Debug.app/Contents/Resources/record.png
+cPBXCp bin/data/stop.png bin/OP-1Debug.app/Contents/Resources/stop.png
+cPBXCp bin/data/play.png bin/OP-1Debug.app/Contents/Resources/play.png
+cPBXCp bin/data/op1.png bin/OP-1Debug.app/Contents/Resources/op1.png
+cPBXCp OP1logo.icns bin/OP-1Debug.app/Contents/Resources/OP1logo.icns
+cPBXCp bin/data/arrow_left.png bin/OP-1Debug.app/Contents/Resources/arrow_left.png
+cPBXCp bin/data/arrow_right.png bin/OP-1Debug.app/Contents/Resources/arrow_right.png
+cPBXCp bin/data/com.png bin/OP-1Debug.app/Contents/Resources/com.png
+cPBXCp bin/data/drop.png bin/OP-1Debug.app/Contents/Resources/drop.png
+cPBXCp bin/data/drum.png bin/OP-1Debug.app/Contents/Resources/drum.png
+cPBXCp bin/data/four.png bin/OP-1Debug.app/Contents/Resources/four.png
+cPBXCp bin/data/help.png bin/OP-1Debug.app/Contents/Resources/help.png
+cPBXCp bin/data/join.png bin/OP-1Debug.app/Contents/Resources/join.png
+cPBXCp bin/data/metro.png bin/OP-1Debug.app/Contents/Resources/metro.png
+cPBXCp bin/data/mic.png bin/OP-1Debug.app/Contents/Resources/mic.png
+cPBXCp bin/data/lift.png bin/OP-1Debug.app/Contents/Resources/lift.png
+cPBXCp bin/data/mix.png bin/OP-1Debug.app/Contents/Resources/mix.png
+cPBXCp bin/data/one.png bin/OP-1Debug.app/Contents/Resources/one.png
+cPBXCp bin/data/sequencer.png bin/OP-1Debug.app/Contents/Resources/sequencer.png
+cPBXCp bin/data/shift.png bin/OP-1Debug.app/Contents/Resources/shift.png
+cPBXCp bin/data/synth.png bin/OP-1Debug.app/Contents/Resources/synth.png
+cPBXCp bin/data/tape.png bin/OP-1Debug.app/Contents/Resources/tape.png
+cPBXCp bin/data/two.png bin/OP-1Debug.app/Contents/Resources/two.png
+cPBXCp bin/data/three.png bin/OP-1Debug.app/Contents/Resources/three.png
+cPBXCp bin/data/voice_1.png bin/OP-1Debug.app/Contents/Resources/voice_1.png
+cPBXCp bin/data/voice_2.png bin/OP-1Debug.app/Contents/Resources/voice_2.png
+cPBXCp bin/data/voice_4.png bin/OP-1Debug.app/Contents/Resources/voice_4.png
+cPBXCp bin/data/voice_3.png bin/OP-1Debug.app/Contents/Resources/voice_3.png
+cPBXCp bin/data/voice_6.png bin/OP-1Debug.app/Contents/Resources/voice_6.png
+cPBXCp bin/data/voice_7.png bin/OP-1Debug.app/Contents/Resources/voice_7.png
+cPBXCp bin/data/voice_5.png bin/OP-1Debug.app/Contents/Resources/voice_5.png
+cPBXCp bin/data/voice_8.png bin/OP-1Debug.app/Contents/Resources/voice_8.png
 cPBXCp openFrameworks-Info.plist bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist
 cTouch "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app"
 
@@ -398,11 +427,31 @@ i"fmod_codec.h"
 i"fmod_dsp.h"
 i"fmod_memoryinfo.h"
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/include/fmod.hpp
+c000000004CE314C8000000000000907E
+t1289950408
+s36990
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/include/fmod_codec.h
+c000000004CE314C8000000000000334A
+t1289950408
+s13130
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/include/fmod_dsp.h
+c000000004CE314C8000000000000892F
+t1289950408
+s35119
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/include/fmod_errors.h
 c000000004CE314C80000000000003408
 t1289950408
 s13320
 i"fmod.h"
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/include/fmod_output.h
+c000000004CE314C80000000000001A46
+t1289950408
+s6726
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/lib/osx/libfmodex.dylib
 c000000004CE314C800000000001DD8CC
@@ -456,47 +505,606 @@ c000000004CE314CA0000000000239BC0
 t1289950410
 s2333632
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/include/RtAudio.h
+c000000004CE314CE0000000000009B55
+t1289950414
+s39765
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/include/RtError.h
+c000000004CE314CE0000000000000846
+t1289950414
+s2118
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx/rtAudio.a
 c000000004CE314CE00000000000BC8E8
 t1289950414
 s772328
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/OP1logo.icns
+c000000004E3234A7000000000002B2DA
+t1311913127
+s176858
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app
-t1311547372
+t1311913698
 s102
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Frameworks/GLUT.framework
-t1309056142
+t1311892725
 s204
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Info.plist
-t1309056138
-s998
+t1311913698
+s1354
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug
-t1311547372
-s4225444
+t1311913698
+s3668656
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/PkgInfo
-t1309056138
+t1311913698
 s8
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/CppUnit.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/FreeImage.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/GLee.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/GLee.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/OP-1Debug.app
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/OP1logo.icns
+t1311913698
+s176858
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/PocoFoundation.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/PocoNet.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/PocoUtil.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/PocoXML.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/RtAudio.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/RtError.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/RtMidi.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/RtMidi.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/arrow_left.png
+t1311893091
+s644
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/arrow_right.png
+t1311893091
+s648
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/com.png
+t1311893091
+s1508
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/drop.png
+t1311893091
+s685
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/drum.png
+t1311893091
+s838
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/fmod.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/fmod.hpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/fmod_codec.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/fmod_dsp.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/fmod_errors.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/fmod_output.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/four.png
+t1311893091
+s568
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/freeimage.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/freetype.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/help.png
+t1311893091
+s751
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/install.xml
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/join.png
+t1311893091
+s1282
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/libfmodex.dylib
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/lift.png
+t1311893091
+s844
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/main.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/metro.png
+t1311893091
+s785
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/mic.png
+t1311893091
+s507
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/mix.png
+t1311893091
+s301
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxDisplayList.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMatrix3x3.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMatrix3x3.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMatrix4x4.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMatrix4x4.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMidi.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMidiConstants.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMidiEvents.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMidiIn.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMidiIn.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMidiOut.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxMidiOut.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxPoint2f.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxPoint3f.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxPoint4f.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxQuaternion.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxQuaternion.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxSVG.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxSVG.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxSVGPathParser.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxSVGPathParser.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxSVGTypes.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxSVGXml.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxSVGXml.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxVec2f.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxVec3f.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxVec4f.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxVectorMath.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxXmlSettings.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/ofxXmlSettings.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/one.png
+t1311893091
+s260
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/op-1.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/op-1.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/op1.png
+t1311901614
+s2240
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist
-t1309056142
-s631
+t1311913698
+s978
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/play.png
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/record.png
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/rtAudio.a
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/sequencer.png
+t1311893091
+s579
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/shift.png
+t1311893091
+s873
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/spyroclassic.ttf
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/stop.png
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/synth.png
+t1311893091
+s738
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/tape.png
+t1311893091
+s929
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/testApp.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/testApp.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/three.png
+t1311893091
+s753
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/tinyxml.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/tinyxml.h
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/tinyxmlerror.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/tinyxmlparser.cpp
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/two.png
+t1311893091
+s826
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_1.png
+t1311893091
+s469
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_2.png
+t1311893091
+s991
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_3.png
+t1311893091
+s1003
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_4.png
+t1311893091
+s1058
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_5.png
+t1311893091
+s869
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_6.png
+t1311893091
+s988
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_7.png
+t1311893091
+s823
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_8.png
+t1311893091
+s1152
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/arrow_left.png
+c000000004E2A5C970000000000000284
+t1311399063
+s644
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/arrow_right.png
+c000000004E2A5CA00000000000000288
+t1311399072
+s648
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/com.png
+c000000004E2A5CED00000000000005E4
+t1311399149
+s1508
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/drop.png
+c000000004E2A5CB000000000000002AD
+t1311399088
+s685
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/drum.png
+c000000004E2A5C500000000000000346
+t1311398992
+s838
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/four.png
+c000000004E2A5C850000000000000238
+t1311399045
+s568
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/help.png
+c000000004E27E35300000000000002EF
+t1311236947
+s751
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/join.png
+c000000004E2A5CB90000000000000502
+t1311399097
+s1282
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/lift.png
+c000000004E2A5CA8000000000000034C
+t1311399080
+s844
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/metro.png
+c000000004E2A5CD80000000000000311
+t1311399128
+s785
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/mic.png
+c000000004E2A5CDF00000000000001FB
+t1311399135
+s507
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/mix.png
+c000000004E2A5CCF000000000000012D
+t1311399119
+s301
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/one.png
+c000000004E2A5C6C0000000000000104
+t1311399020
+s260
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/op1.png
+c000000004E32078C00000000000008C0
+t1311901580
+s2240
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/play.png
+c000000004E3238040000000000000187
+t1311913988
+s391
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/record.png
+c000000004E323815000000000000043D
+t1311914005
+s1085
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/sequencer.png
+c000000004E2A5C5D0000000000000243
+t1311399005
+s579
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/shift.png
+c000000004E2A5CE50000000000000369
+t1311399141
+s873
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/spyroclassic.ttf
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/stop.png
+c000000004E32380F00000000000000ED
+t1311913999
+s237
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/synth.png
+c000000004E27E06000000000000002E2
+t1311236192
+s738
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/tape.png
+c000000004E2A5CC600000000000003A1
+t1311399110
+s929
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/three.png
+c000000004E2A5C7E00000000000002F1
+t1311399038
+s753
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/two.png
+c000000004E2A5C76000000000000033A
+t1311399030
+s826
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_1.png
+c000000004E2C90C200000000000001D5
+t1311543490
+s469
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_2.png
+c000000004E2C90CB00000000000003DF
+t1311543499
+s991
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_3.png
+c000000004E2C90D300000000000003EB
+t1311543507
+s1003
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_4.png
+c000000004E2C90DB0000000000000422
+t1311543515
+s1058
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_5.png
+c000000004E2C90E30000000000000365
+t1311543523
+s869
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_6.png
+c000000004E2C90EB00000000000003DC
+t1311543531
+s988
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_7.png
+c000000004E2C90F20000000000000337
+t1311543538
+s823
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_8.png
+c000000004E2C90FA0000000000000480
+t1311543546
+s1152
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/OP-1Debug.LinkFileList
-c000000004E0AA808000000000000096A
-t1309321224
-s2410
+c000000004E31E57900000000000007A4
+t1311892857
+s1956
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/RtMidi.o
 t1309134183
 s251212
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o
-t1311546912
-s376636
+t1311911503
+s234656
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxMatrix3x3.o
 t1309321288
@@ -535,12 +1143,12 @@ t1309321291
 s232892
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o
-t1311547372
-s660568
+t1311912186
+s670428
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o
-t1311546912
-s387788
+t1311911503
+s299004
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxml.o
 t1309321290
@@ -560,14 +1168,24 @@ t1309056138
 s275
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/openFrameworks-Info.plist
-c000000004CE314C60000000000000277
-t1289950406
-s631
+c000000004E32359900000000000003D2
+t1311913369
+s978
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxDisplayList/src/ofxDisplayList.h
 c000000004BE524FB000000000000034C
 t1273308411
 s844
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/install.xml
+c000000004C7A8E2E0000000000000607
+t1283100206
+s1543
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtError.h
+c000000004C7A8E2E00000000000007E6
+t1283100206
+s2022
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp
 c000000004C7A8E2E0000000000012E13
@@ -614,17 +1232,32 @@ t1283100206
 s1257
 i"ofConstants.h"
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/src/ofxMidiEvents.h
+c000000004C7A8E2E0000000000000236
+t1283100206
+s566
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/src/ofxMidiIn.cpp
 c000000004E1916960000000000001371
 t1310267030
 s4977
 i"ofxMidiIn.h"
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/src/ofxMidiIn.h
+c000000004E1914800000000000000490
+t1310266496
+s1168
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/src/ofxMidiOut.cpp
 c000000004C7A8E2E0000000000000B01
 t1283100206
 s2817
 i"ofxMidiOut.h"
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/src/ofxMidiOut.h
+c000000004C7A8E2E00000000000003C5
+t1283100206
+s965
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVG.cpp
 c000000004E0AA750000000000000C130
@@ -650,11 +1283,26 @@ t1309321040
 s8434
 i"ofxSVGPathParser.h"
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVGPathParser.h
+c000000004E0AA75000000000000008E1
+t1309321040
+s2273
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVGTypes.h
+c000000004E0AA7500000000000000B3E
+t1309321040
+s2878
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVGXml.cpp
 c000000004E0AA75000000000000006D5
 t1309321040
 s1749
 i"ofxSVGXml.h"
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSVG/src/ofxSVGXml.h
+c000000004E0AA75000000000000002B0
+t1309321040
+s688
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxSvg/src/ofxSvg.h
 c000000004BE524F40000000000000BE4
@@ -665,11 +1313,21 @@ i"ofxXmlSettings.h"
 i"ofxSvgPath.h"
 i"ofxDisplayList.h"
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/install.xml
+c000000004CE314C6000000000000050B
+t1289950406
+s1291
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix3x3.cpp
 c000000004CE314C60000000000001593
 t1289950406
 s5523
 i"ofxMatrix3x3.h"
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix3x3.h
+c000000004CE314C60000000000000A1D
+t1289950406
+s2589
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix4x4.cpp
 c000000004CE314C6000000000000A582
@@ -679,6 +1337,26 @@ i"ofxMatrix4x4.h"
 i<limits>
 i<stdlib.h>
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix4x4.h
+c000000004CE314C600000000000064CC
+t1289950406
+s25804
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxPoint2f.h
+c000000004CE314C6000000000000019D
+t1289950406
+s413
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxPoint3f.h
+c000000004CE314C6000000000000019E
+t1289950406
+s414
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxPoint4f.h
+c000000004CE314C600000000000001A0
+t1289950406
+s416
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxQuaternion.cpp
 c000000004CE314C6000000000000219E
 t1289950406
@@ -687,12 +1365,27 @@ i<stdio.h>
 i"ofxQuaternion.h"
 i"ofxMatrix4x4.h"
 
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxQuaternion.h
+c000000004CE314C6000000000000242E
+t1289950406
+s9262
+
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxVec2f.h
 c000000004CE314C60000000000004100
 t1289950406
 s16640
 i"ofConstants.h"
 i"ofTypes.h"
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxVec3f.h
+c000000004CE314C60000000000006487
+t1289950406
+s25735
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxVec4f.h
+c000000004CE314C60000000000002DE5
+t1289950406
+s11749
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxVectorMath.h
 c000000004CE314C60000000000000125
@@ -704,6 +1397,11 @@ i"ofxVec4f.h"
 i"ofxMatrix3x3.h"
 i"ofxMatrix4x4.h"
 i"ofxQuaternion.h"
+
+N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/install.xml
+c000000004DD70D960000000000000479
+t1305939350
+s1145
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxml.cpp
 c000000004DD70D960000000000009064
@@ -761,35 +1459,31 @@ i<string.h>
 i"tinyxml.h"
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/main.cpp
-c000000004E27E48A000000000000024D
-t1311237258
+c000000004E320AD1000000000000024D
+t1311902417
 s589
 i"ofMain.h"
 i"testApp.h"
 i"ofAppGlutWindow.h"
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.cpp
-c000000004E2CA0DE0000000000007E52
-t1311547614
-s32338
+c000000004E3230F50000000000007956
+t1311912181
+s31062
 i"op-1.h"
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.h
-c000000004E2C9C520000000000000C52
-t1311546450
-s3154
+c000000004E322E470000000000000CC8
+t1311911495
+s3272
 i"ofMain.h"
 i"ofEvents.h"
 i"ofxMidi.h"
-i"ofxSVG.h"
-i"ofxXmlSettings.h"
-i"ofxVectorMath.h"
-i"ofxDisplayList.h"
 
 N/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp
-c000000004E27E5940000000000000A06
-t1311237524
-s2566
+c000000004E320D650000000000000B0E
+t1311903077
+s2830
 i"testApp.h"
 i"stdio.h"
 
@@ -1529,9 +2223,9 @@ t1309056140
 s39872240
 
 NopenFrameworks-Info.plist
-c000000004CE314C60000000000000277
-t1289950406
-s631
+c000000004E32359900000000000003D2
+t1311913369
+s978
 
 CBuild AST from "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp"
 r0
@@ -1583,7 +2277,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencieseeb50461d8dcb341^92b20961d8dcb341^-110"[WARN]Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.1(21%IDEActivityLogMessage2@103"Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.-333240417#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb951f0d76fe2b341^eb6ef2d76fe2b341^-110"[WARN]Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.1(21%IDEActivityLogMessage2@103"Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.-333606871#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies
 
 CCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/RtMidi.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 s330826981.839835
@@ -1600,8 +2294,8 @@ oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because l
 lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp3414d7e504b8b341^9ed30ce704b8b341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp0000000000000000^2107"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/RtMidi.o src/../../../../addons/ofxMidi/libs/RtMidi.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxMidi/libs/RtMidi.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/RtMidi.o"
 
 CCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/main.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-s333239710.801100
-e333239712.425651
+s333604301.697614
+e333604303.191873
 r1
 xCompileC
 xbuild/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o
@@ -1611,7 +2305,7 @@ xi386
 xc++
 xcom.apple.compilers.llvmgcc42
 oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/main.cpp6a34cd9ed5dcb341^6ef96ca0d5dcb341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/main.cpp0000000000000000^2035"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/main.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/main.cppa6b4b2cd65e2b341^fa2631cf65e2b341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/main.cpp0000000000000000^2035"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/main.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/main.o"
 
 CCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxMatrix3x3.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxVectorMath/src/ofxMatrix3x3.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 s331014088.761317
@@ -1748,8 +2442,8 @@ oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because l
 lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection152"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp7fd965cadfbab341^7c0c92cbdfbab341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@162"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/../../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp0000000000000000^2151"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxXmlSettings.o src/../../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/ofxXmlSettings.o"
 
 CCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-s333240417.063865
-e333240418.552517
+s333604984.666810
+e333604986.236756
 r1
 xCompileC
 xbuild/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o
@@ -1759,11 +2453,11 @@ xi386
 xc++
 xcom.apple.compilers.llvmgcc42
 oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.cpp310b1161d8dcb341^c5708d62d8dcb341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/op-1.cpp0000000000000000^2035"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o src/op-1.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.cpp27ddaa7868e2b341^e1953c7a68e2b341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/op-1.cpp0000000000000000^2035"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o src/op-1.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/op-1.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/op-1.o"
 
 CCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
-s333239710.801147
-e333239712.434569
+s333604301.697301
+e333604303.269327
 r1
 xCompileC
 xbuild/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o
@@ -1773,7 +2467,7 @@ xi386
 xc++
 xcom.apple.compilers.llvmgcc42
 oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp0438cd9ed5dcb341^2d406fa0d5dcb341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/testApp.cpp0000000000000000^2047"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp26abb2cd65e2b341^e5f144cf65e2b341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/testApp.cpp0000000000000000^2047"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/testApp.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/testApp.o"
 
 CCompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxml.o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxml.cpp" normal i386 c++ com.apple.compilers.llvmgcc42
 s331014089.720493
@@ -1818,50 +2512,539 @@ oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because l
 lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection152"Compile /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxmlparser.cppf1451fcadfbab341^c8d1d4cadfbab341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@162"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp0000000000000000^2149"CompileC build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxmlparser.o src/../../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -include /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/src/../../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/tinyxmlparser.o"
 
 CLd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug" normal i386
-s333240418.552780
-e333240418.892672
+s333604986.237275
+e333604986.676437
 r1
 xLd
 x/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug
 xnormal
 xi386
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Link /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug73a28d62d8dcb341^8f89e462d8dcb341^---0#0#0#--3303"Ld bin/OP-1Debug.app/Contents/MacOS/OP-1Debug normal i386    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    /Developer/usr/bin/llvm-g++-4.2 -arch i386 "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freeimage/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -filelist "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/OP-1Debug.LinkFileList" -dead_strip -framework CoreMIDI /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx/GLee.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx/rtAudio.a" -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework IOKit -framework GLUT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/CppUnit.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoFoundation.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoNet.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoUtil.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoXML.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx/freetype.a" -lfmodex "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx/freeimage.a" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Link /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug83f83c7a68e2b341^382cad7a68e2b341^---0#0#0#--3303"Ld bin/OP-1Debug.app/Contents/MacOS/OP-1Debug normal i386    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    /Developer/usr/bin/llvm-g++-4.2 -arch i386 "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freeimage/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx" "-L/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -filelist "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/OP-1Debug.LinkFileList" -dead_strip -framework CoreMIDI /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx/GLee.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx/rtAudio.a" -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework IOKit -framework GLUT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/CppUnit.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoFoundation.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoNet.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoUtil.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx/PocoXML.a" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx/freetype.a" -lfmodex "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx/freeimage.a" -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/MacOS/OP-1Debug"
+
+CPBXCp ../../../libs/FreeImage/lib/osx/freeimage.a bin/OP-1Debug.app/Contents/Resources/freeimage.a
+r0
+
+CPBXCp ../../../libs/GLee/include/GLee.h bin/OP-1Debug.app/Contents/Resources/GLee.h
+r0
+
+CPBXCp ../../../libs/GLee/lib/osx/GLee.a bin/OP-1Debug.app/Contents/Resources/GLee.a
+r0
+
+CPBXCp ../../../libs/fmodex/include/fmod.h bin/OP-1Debug.app/Contents/Resources/fmod.h
+r0
+
+CPBXCp ../../../libs/fmodex/include/fmod.hpp bin/OP-1Debug.app/Contents/Resources/fmod.hpp
+r0
+
+CPBXCp ../../../libs/fmodex/include/fmod_codec.h bin/OP-1Debug.app/Contents/Resources/fmod_codec.h
+r0
+
+CPBXCp ../../../libs/fmodex/include/fmod_dsp.h bin/OP-1Debug.app/Contents/Resources/fmod_dsp.h
+r0
+
+CPBXCp ../../../libs/fmodex/include/fmod_errors.h bin/OP-1Debug.app/Contents/Resources/fmod_errors.h
+r0
+
+CPBXCp ../../../libs/fmodex/include/fmod_output.h bin/OP-1Debug.app/Contents/Resources/fmod_output.h
+r0
+
+CPBXCp ../../../libs/fmodex/lib/osx/libfmodex.dylib bin/OP-1Debug.app/Contents/Resources/libfmodex.dylib
+r0
+
+CPBXCp ../../../libs/freeimage/include/FreeImage.h bin/OP-1Debug.app/Contents/Resources/FreeImage.h
+r0
+
+CPBXCp ../../../libs/freetype/lib/osx/freetype.a bin/OP-1Debug.app/Contents/Resources/freetype.a
+r0
 
 CPBXCp ../../../libs/glut/lib/osx/GLUT.framework bin/OP-1Debug.app/Contents/Frameworks/GLUT.framework
-s330748942.591604
-e330748942.728559
+s333585525.205836
+e333585525.322824
 r1
 xPBXCp
 x../../../libs/glut/lib/osx/GLUT.framework
 xbin/OP-1Debug.app/Contents/Frameworks/GLUT.framework
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy bin/OP-1Debug.app/Contents/Frameworks/GLUT.frameworka08a970ed4b6b341^c782ba0ed4b6b341^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Frameworks/GLUT.framework000020442305f041^545"PBXCp ../../../libs/glut/lib/osx/GLUT.framework bin/OP-1Debug.app/Contents/Frameworks/GLUT.framework    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx/GLUT.framework" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Frameworks"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy bin/OP-1Debug.app/Contents/Frameworks/GLUT.frameworka9c134751ce2b341^a9a452751ce2b341^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Frameworks/GLUT.framework000020442305f041^545"PBXCp ../../../libs/glut/lib/osx/GLUT.framework bin/OP-1Debug.app/Contents/Frameworks/GLUT.framework    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx/GLUT.framework" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Frameworks"
+
+CPBXCp ../../../libs/poco/lib/osx/CppUnit.a bin/OP-1Debug.app/Contents/Resources/CppUnit.a
+r0
+
+CPBXCp ../../../libs/poco/lib/osx/PocoFoundation.a bin/OP-1Debug.app/Contents/Resources/PocoFoundation.a
+r0
+
+CPBXCp ../../../libs/poco/lib/osx/PocoNet.a bin/OP-1Debug.app/Contents/Resources/PocoNet.a
+r0
+
+CPBXCp ../../../libs/poco/lib/osx/PocoUtil.a bin/OP-1Debug.app/Contents/Resources/PocoUtil.a
+r0
+
+CPBXCp ../../../libs/poco/lib/osx/PocoXML.a bin/OP-1Debug.app/Contents/Resources/PocoXML.a
+r0
+
+CPBXCp ../../../libs/rtAudio/include/RtAudio.h bin/OP-1Debug.app/Contents/Resources/RtAudio.h
+r0
+
+CPBXCp ../../../libs/rtAudio/include/RtError.h bin/OP-1Debug.app/Contents/Resources/RtError.h
+r0
+
+CPBXCp ../../../libs/rtAudio/lib/osx/rtAudio.a bin/OP-1Debug.app/Contents/Resources/rtAudio.a
+r0
+
+CPBXCp OP1logo.icns bin/OP-1Debug.app/Contents/Resources/OP1logo.icns
+s333606498.589281
+e333606498.592998
+r1
+xPBXCp
+xOP1logo.icns
+xbin/OP-1Debug.app/Contents/Resources/OP1logo.icns
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy bin/OP-1Debug.app/Contents/Resources/OP1logo.icnsc90597626ee2b341^b8ce97626ee2b341^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/OP1logo.icns000020442305f041^483"PBXCp OP1logo.icns bin/OP-1Debug.app/Contents/Resources/OP1logo.icns    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/OP1logo.icns" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/OP-1Debug.app bin/OP-1Debug.app/Contents/Resources/OP-1Debug.app
+r0
+
+CPBXCp bin/data/arrow_left.png bin/OP-1Debug.app/Contents/Resources/arrow_left.png
+s333585891.056612
+e333585891.059157
+r1
+xPBXCp
+xbin/data/arrow_left.png
+xbin/OP-1Debug.app/Contents/Resources/arrow_left.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy bin/OP-1Debug.app/Contents/Resources/arrow_left.png618e0ee31de2b341^20280fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/arrow_left.png000020442305f041^507"PBXCp bin/data/arrow_left.png bin/OP-1Debug.app/Contents/Resources/arrow_left.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/arrow_left.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/arrow_right.png bin/OP-1Debug.app/Contents/Resources/arrow_right.png
+s333585891.056813
+e333585891.060421
+r1
+xPBXCp
+xbin/data/arrow_right.png
+xbin/OP-1Debug.app/Contents/Resources/arrow_right.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy bin/OP-1Debug.app/Contents/Resources/arrow_right.png0b9a0ee31de2b341^08770fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/arrow_right.png000020442305f041^510"PBXCp bin/data/arrow_right.png bin/OP-1Debug.app/Contents/Resources/arrow_right.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/arrow_right.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/com.png bin/OP-1Debug.app/Contents/Resources/com.png
+s333585891.056829
+e333585891.059809
+r1
+xPBXCp
+xbin/data/com.png
+xbin/OP-1Debug.app/Contents/Resources/com.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy bin/OP-1Debug.app/Contents/Resources/com.png3ca20ee31de2b341^76520fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/com.png000020442305f041^486"PBXCp bin/data/com.png bin/OP-1Debug.app/Contents/Resources/com.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/com.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/drop.png bin/OP-1Debug.app/Contents/Resources/drop.png
+s333585891.056872
+e333585891.059821
+r1
+xPBXCp
+xbin/data/drop.png
+xbin/OP-1Debug.app/Contents/Resources/drop.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/drop.pngfda00ee31de2b341^a3570fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/drop.png000020442305f041^489"PBXCp bin/data/drop.png bin/OP-1Debug.app/Contents/Resources/drop.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/drop.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/drum.png bin/OP-1Debug.app/Contents/Resources/drum.png
+s333585891.059415
+e333585891.062121
+r1
+xPBXCp
+xbin/data/drum.png
+xbin/OP-1Debug.app/Contents/Resources/drum.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/drum.png454a0fe31de2b341^9fe70fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/drum.png000020442305f041^489"PBXCp bin/data/drum.png bin/OP-1Debug.app/Contents/Resources/drum.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/drum.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/four.png bin/OP-1Debug.app/Contents/Resources/four.png
+s333585891.060012
+e333585891.062319
+r1
+xPBXCp
+xbin/data/four.png
+xbin/OP-1Debug.app/Contents/Resources/four.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/four.png5d6f0fe31de2b341^88f40fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/four.png000020442305f041^489"PBXCp bin/data/four.png bin/OP-1Debug.app/Contents/Resources/four.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/four.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/help.png bin/OP-1Debug.app/Contents/Resources/help.png
+s333585891.060018
+e333585891.062070
+r1
+xPBXCp
+xbin/data/help.png
+xbin/OP-1Debug.app/Contents/Resources/help.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/help.pngec6d0fe31de2b341^b7ed0fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/help.png000020442305f041^489"PBXCp bin/data/help.png bin/OP-1Debug.app/Contents/Resources/help.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/help.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/join.png bin/OP-1Debug.app/Contents/Resources/join.png
+s333585891.060535
+e333585891.062267
+r1
+xPBXCp
+xbin/data/join.png
+xbin/OP-1Debug.app/Contents/Resources/join.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/join.png44880fe31de2b341^20f10fe31de2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/join.png000020442305f041^489"PBXCp bin/data/join.png bin/OP-1Debug.app/Contents/Resources/join.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/join.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/lift.png bin/OP-1Debug.app/Contents/Resources/lift.png
+s333585891.062242
+e333585891.065711
+r1
+xPBXCp
+xbin/data/lift.png
+xbin/OP-1Debug.app/Contents/Resources/lift.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/lift.pngd10210e31de2b341^7bdb10e31de2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/lift.png000020442305f041^489"PBXCp bin/data/lift.png bin/OP-1Debug.app/Contents/Resources/lift.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/lift.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/metro.png bin/OP-1Debug.app/Contents/Resources/metro.png
+s333585891.062324
+e333585891.065062
+r1
+xPBXCp
+xbin/data/metro.png
+xbin/OP-1Debug.app/Contents/Resources/metro.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy bin/OP-1Debug.app/Contents/Resources/metro.pngac0310e31de2b341^68b110e31de2b341^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/metro.png000020442305f041^492"PBXCp bin/data/metro.png bin/OP-1Debug.app/Contents/Resources/metro.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/metro.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/mic.png bin/OP-1Debug.app/Contents/Resources/mic.png
+s333585891.062465
+e333585891.066015
+r1
+xPBXCp
+xbin/data/mic.png
+xbin/OP-1Debug.app/Contents/Resources/mic.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy bin/OP-1Debug.app/Contents/Resources/mic.pngd80c10e31de2b341^68e710e31de2b341^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/mic.png000020442305f041^486"PBXCp bin/data/mic.png bin/OP-1Debug.app/Contents/Resources/mic.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/mic.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/mix.png bin/OP-1Debug.app/Contents/Resources/mix.png
+s333585891.062516
+e333585891.066042
+r1
+xPBXCp
+xbin/data/mix.png
+xbin/OP-1Debug.app/Contents/Resources/mix.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy bin/OP-1Debug.app/Contents/Resources/mix.png301010e31de2b341^25eb10e31de2b341^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/mix.png000020442305f041^486"PBXCp bin/data/mix.png bin/OP-1Debug.app/Contents/Resources/mix.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/mix.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/one.png bin/OP-1Debug.app/Contents/Resources/one.png
+s333585891.065444
+e333585891.067636
+r1
+xPBXCp
+xbin/data/one.png
+xbin/OP-1Debug.app/Contents/Resources/one.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy bin/OP-1Debug.app/Contents/Resources/one.pnge9d110e31de2b341^ca5011e31de2b341^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/one.png000020442305f041^486"PBXCp bin/data/one.png bin/OP-1Debug.app/Contents/Resources/one.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/one.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/op1.png bin/OP-1Debug.app/Contents/Resources/op1.png
+s333594414.724233
+e333594414.727312
+r1
+xPBXCp
+xbin/data/op1.png
+xbin/OP-1Debug.app/Contents/Resources/op1.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy bin/OP-1Debug.app/Contents/Resources/op1.png287db92e3fe2b341^8331ba2e3fe2b341^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/op1.png0000000000000000^486"PBXCp bin/data/op1.png bin/OP-1Debug.app/Contents/Resources/op1.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/op1.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/play.png bin/OP-1Debug.app/Contents/Resources/play.png
+s333606872.029569
+e333606872.035013
+r1
+xPBXCp
+xbin/data/play.png
+xbin/OP-1Debug.app/Contents/Resources/play.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/play.pngedb607d86fe2b341^d21809d86fe2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/play.png000020442305f041^489"PBXCp bin/data/play.png bin/OP-1Debug.app/Contents/Resources/play.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/play.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/record.png bin/OP-1Debug.app/Contents/Resources/record.png
+s333606872.029211
+e333606872.035156
+r1
+xPBXCp
+xbin/data/record.png
+xbin/OP-1Debug.app/Contents/Resources/record.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy bin/OP-1Debug.app/Contents/Resources/record.png81cb07d86fe2b341^642209d86fe2b341^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/record.png000020442305f041^495"PBXCp bin/data/record.png bin/OP-1Debug.app/Contents/Resources/record.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/record.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/sequencer.png bin/OP-1Debug.app/Contents/Resources/sequencer.png
+s333585891.065829
+e333585891.068158
+r1
+xPBXCp
+xbin/data/sequencer.png
+xbin/OP-1Debug.app/Contents/Resources/sequencer.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy bin/OP-1Debug.app/Contents/Resources/sequencer.pngafea10e31de2b341^de7211e31de2b341^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/sequencer.png000020442305f041^504"PBXCp bin/data/sequencer.png bin/OP-1Debug.app/Contents/Resources/sequencer.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/sequencer.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/shift.png bin/OP-1Debug.app/Contents/Resources/shift.png
+s333585891.066257
+e333585891.068275
+r1
+xPBXCp
+xbin/data/shift.png
+xbin/OP-1Debug.app/Contents/Resources/shift.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy bin/OP-1Debug.app/Contents/Resources/shift.png140611e31de2b341^ff7a11e31de2b341^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/shift.png000020442305f041^492"PBXCp bin/data/shift.png bin/OP-1Debug.app/Contents/Resources/shift.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/shift.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/spyroclassic.ttf bin/OP-1Debug.app/Contents/Resources/spyroclassic.ttf
+r0
+
+CPBXCp bin/data/stop.png bin/OP-1Debug.app/Contents/Resources/stop.png
+s333606872.029235
+e333606872.034892
+r1
+xPBXCp
+xbin/data/stop.png
+xbin/OP-1Debug.app/Contents/Resources/stop.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/stop.pnga5bf07d86fe2b341^410b09d86fe2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/stop.png000020442305f041^489"PBXCp bin/data/stop.png bin/OP-1Debug.app/Contents/Resources/stop.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/stop.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/synth.png bin/OP-1Debug.app/Contents/Resources/synth.png
+s333585891.066284
+e333585891.068302
+r1
+xPBXCp
+xbin/data/synth.png
+xbin/OP-1Debug.app/Contents/Resources/synth.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy bin/OP-1Debug.app/Contents/Resources/synth.pnga20811e31de2b341^567e11e31de2b341^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/synth.png000020442305f041^492"PBXCp bin/data/synth.png bin/OP-1Debug.app/Contents/Resources/synth.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/synth.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/tape.png bin/OP-1Debug.app/Contents/Resources/tape.png
+s333585891.067732
+e333585891.071050
+r1
+xPBXCp
+xbin/data/tape.png
+xbin/OP-1Debug.app/Contents/Resources/tape.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy bin/OP-1Debug.app/Contents/Resources/tape.png5a6611e31de2b341^233012e31de2b341^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/tape.png000020442305f041^489"PBXCp bin/data/tape.png bin/OP-1Debug.app/Contents/Resources/tape.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/tape.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/three.png bin/OP-1Debug.app/Contents/Resources/three.png
+s333585891.068287
+e333585891.072833
+r1
+xPBXCp
+xbin/data/three.png
+xbin/OP-1Debug.app/Contents/Resources/three.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy bin/OP-1Debug.app/Contents/Resources/three.png658a11e31de2b341^33a812e31de2b341^---0#0#0#-19%DVTDocumentLocation2@148"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/three.png000020442305f041^492"PBXCp bin/data/three.png bin/OP-1Debug.app/Contents/Resources/three.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/three.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/two.png bin/OP-1Debug.app/Contents/Resources/two.png
+s333585891.068414
+e333585891.072296
+r1
+xPBXCp
+xbin/data/two.png
+xbin/OP-1Debug.app/Contents/Resources/two.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy bin/OP-1Debug.app/Contents/Resources/two.pngaf9811e31de2b341^0e8612e31de2b341^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/two.png000020442305f041^486"PBXCp bin/data/two.png bin/OP-1Debug.app/Contents/Resources/two.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/two.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_1.png bin/OP-1Debug.app/Contents/Resources/voice_1.png
+s333585891.068440
+e333585891.071969
+r1
+xPBXCp
+xbin/data/voice_1.png
+xbin/OP-1Debug.app/Contents/Resources/voice_1.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_1.pngf69711e31de2b341^437212e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_1.png000020442305f041^498"PBXCp bin/data/voice_1.png bin/OP-1Debug.app/Contents/Resources/voice_1.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_1.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_2.png bin/OP-1Debug.app/Contents/Resources/voice_2.png
+s333585891.071279
+e333585891.074702
+r1
+xPBXCp
+xbin/data/voice_2.png
+xbin/OP-1Debug.app/Contents/Resources/voice_2.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_2.png595212e31de2b341^312413e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_2.png000020442305f041^498"PBXCp bin/data/voice_2.png bin/OP-1Debug.app/Contents/Resources/voice_2.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_2.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_3.png bin/OP-1Debug.app/Contents/Resources/voice_3.png
+s333585891.072226
+e333585891.074885
+r1
+xPBXCp
+xbin/data/voice_3.png
+xbin/OP-1Debug.app/Contents/Resources/voice_3.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_3.png8b8c12e31de2b341^697013e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_3.png000020442305f041^498"PBXCp bin/data/voice_3.png bin/OP-1Debug.app/Contents/Resources/voice_3.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_3.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_4.png bin/OP-1Debug.app/Contents/Resources/voice_4.png
+s333585891.072452
+e333585891.077232
+r1
+xPBXCp
+xbin/data/voice_4.png
+xbin/OP-1Debug.app/Contents/Resources/voice_4.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_4.png139c12e31de2b341^7ee313e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_4.png000020442305f041^498"PBXCp bin/data/voice_4.png bin/OP-1Debug.app/Contents/Resources/voice_4.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_4.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_5.png bin/OP-1Debug.app/Contents/Resources/voice_5.png
+s333585891.072934
+e333585891.075037
+r1
+xPBXCp
+xbin/data/voice_5.png
+xbin/OP-1Debug.app/Contents/Resources/voice_5.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_5.png41bc12e31de2b341^b87513e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_5.png000020442305f041^498"PBXCp bin/data/voice_5.png bin/OP-1Debug.app/Contents/Resources/voice_5.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_5.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_6.png bin/OP-1Debug.app/Contents/Resources/voice_6.png
+s333585891.074825
+e333585891.078195
+r1
+xPBXCp
+xbin/data/voice_6.png
+xbin/OP-1Debug.app/Contents/Resources/voice_6.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_6.png583a13e31de2b341^451314e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_6.png000020442305f041^498"PBXCp bin/data/voice_6.png bin/OP-1Debug.app/Contents/Resources/voice_6.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_6.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_7.png bin/OP-1Debug.app/Contents/Resources/voice_7.png
+s333585891.075362
+e333585891.078154
+r1
+xPBXCp
+xbin/data/voice_7.png
+xbin/OP-1Debug.app/Contents/Resources/voice_7.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_7.pngaf5c13e31de2b341^fe0f14e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_7.png000020442305f041^498"PBXCp bin/data/voice_7.png bin/OP-1Debug.app/Contents/Resources/voice_7.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_7.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp bin/data/voice_8.png bin/OP-1Debug.app/Contents/Resources/voice_8.png
+s333585891.075846
+e333585891.078068
+r1
+xPBXCp
+xbin/data/voice_8.png
+xbin/OP-1Debug.app/Contents/Resources/voice_8.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy bin/OP-1Debug.app/Contents/Resources/voice_8.png967913e31de2b341^0f0c14e31de2b341^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/voice_8.png000020442305f041^498"PBXCp bin/data/voice_8.png bin/OP-1Debug.app/Contents/Resources/voice_8.png    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/data/voice_8.png" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
 
 CPBXCp openFrameworks-Info.plist bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist
-s330748942.730020
-e330748942.732876
+s333606498.593178
+e333606498.596156
 r1
 xPBXCp
 xopenFrameworks-Info.plist
 xbin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist1bf3ba0ed4b6b341^f59dbb0ed4b6b341^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist000020442305f041^522"PBXCp openFrameworks-Info.plist bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/openFrameworks-Info.plist" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist2ff997626ee2b341^139a98626ee2b341^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist0000000000000000^522"PBXCp openFrameworks-Info.plist bin/OP-1Debug.app/Contents/Resources/openFrameworks-Info.plist    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/openFrameworks-Info.plist" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Resources"
+
+CPBXCp src/../../../../addons/ofxDisplayList/src/ofxDisplayList.h bin/OP-1Debug.app/Contents/Resources/ofxDisplayList.h
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/install.xml bin/OP-1Debug.app/Contents/Resources/install.xml
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/libs/RtError.h bin/OP-1Debug.app/Contents/Resources/RtError.h
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/libs/RtMidi.cpp bin/OP-1Debug.app/Contents/Resources/RtMidi.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/libs/RtMidi.h bin/OP-1Debug.app/Contents/Resources/RtMidi.h
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/src/ofxMidi.h bin/OP-1Debug.app/Contents/Resources/ofxMidi.h
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/src/ofxMidiConstants.h bin/OP-1Debug.app/Contents/Resources/ofxMidiConstants.h
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/src/ofxMidiEvents.h bin/OP-1Debug.app/Contents/Resources/ofxMidiEvents.h
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/src/ofxMidiIn.cpp bin/OP-1Debug.app/Contents/Resources/ofxMidiIn.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/src/ofxMidiIn.h bin/OP-1Debug.app/Contents/Resources/ofxMidiIn.h
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/src/ofxMidiOut.cpp bin/OP-1Debug.app/Contents/Resources/ofxMidiOut.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxMidi/src/ofxMidiOut.h bin/OP-1Debug.app/Contents/Resources/ofxMidiOut.h
+r0
+
+CPBXCp src/../../../../addons/ofxSVG/src/ofxSVG.cpp bin/OP-1Debug.app/Contents/Resources/ofxSVG.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxSVG/src/ofxSVG.h bin/OP-1Debug.app/Contents/Resources/ofxSVG.h
+r0
+
+CPBXCp src/../../../../addons/ofxSVG/src/ofxSVGPathParser.cpp bin/OP-1Debug.app/Contents/Resources/ofxSVGPathParser.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxSVG/src/ofxSVGPathParser.h bin/OP-1Debug.app/Contents/Resources/ofxSVGPathParser.h
+r0
+
+CPBXCp src/../../../../addons/ofxSVG/src/ofxSVGTypes.h bin/OP-1Debug.app/Contents/Resources/ofxSVGTypes.h
+r0
+
+CPBXCp src/../../../../addons/ofxSVG/src/ofxSVGXml.cpp bin/OP-1Debug.app/Contents/Resources/ofxSVGXml.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxSVG/src/ofxSVGXml.h bin/OP-1Debug.app/Contents/Resources/ofxSVGXml.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/install.xml bin/OP-1Debug.app/Contents/Resources/install.xml
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxMatrix3x3.cpp bin/OP-1Debug.app/Contents/Resources/ofxMatrix3x3.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxMatrix3x3.h bin/OP-1Debug.app/Contents/Resources/ofxMatrix3x3.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxMatrix4x4.cpp bin/OP-1Debug.app/Contents/Resources/ofxMatrix4x4.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxMatrix4x4.h bin/OP-1Debug.app/Contents/Resources/ofxMatrix4x4.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxPoint2f.h bin/OP-1Debug.app/Contents/Resources/ofxPoint2f.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxPoint3f.h bin/OP-1Debug.app/Contents/Resources/ofxPoint3f.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxPoint4f.h bin/OP-1Debug.app/Contents/Resources/ofxPoint4f.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxQuaternion.cpp bin/OP-1Debug.app/Contents/Resources/ofxQuaternion.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxQuaternion.h bin/OP-1Debug.app/Contents/Resources/ofxQuaternion.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxVec2f.h bin/OP-1Debug.app/Contents/Resources/ofxVec2f.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxVec3f.h bin/OP-1Debug.app/Contents/Resources/ofxVec3f.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxVec4f.h bin/OP-1Debug.app/Contents/Resources/ofxVec4f.h
+r0
+
+CPBXCp src/../../../../addons/ofxVectorMath/src/ofxVectorMath.h bin/OP-1Debug.app/Contents/Resources/ofxVectorMath.h
+r0
+
+CPBXCp src/../../../../addons/ofxXmlSettings/install.xml bin/OP-1Debug.app/Contents/Resources/install.xml
+r0
+
+CPBXCp src/../../../../addons/ofxXmlSettings/libs/tinyxml.cpp bin/OP-1Debug.app/Contents/Resources/tinyxml.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxXmlSettings/libs/tinyxml.h bin/OP-1Debug.app/Contents/Resources/tinyxml.h
+r0
+
+CPBXCp src/../../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp bin/OP-1Debug.app/Contents/Resources/tinyxmlerror.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp bin/OP-1Debug.app/Contents/Resources/tinyxmlparser.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp bin/OP-1Debug.app/Contents/Resources/ofxXmlSettings.cpp
+r0
+
+CPBXCp src/../../../../addons/ofxXmlSettings/src/ofxXmlSettings.h bin/OP-1Debug.app/Contents/Resources/ofxXmlSettings.h
+r0
+
+CPBXCp src/main.cpp bin/OP-1Debug.app/Contents/Resources/main.cpp
+r0
+
+CPBXCp src/op-1.cpp bin/OP-1Debug.app/Contents/Resources/op-1.cpp
+r0
+
+CPBXCp src/op-1.h bin/OP-1Debug.app/Contents/Resources/op-1.h
+r0
+
+CPBXCp src/testApp.cpp bin/OP-1Debug.app/Contents/Resources/testApp.cpp
+r0
+
+CPBXCp src/testApp.h bin/OP-1Debug.app/Contents/Resources/testApp.h
+r0
 
 CPhaseScriptExecution "Run Script" "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
-s333240418.894135
-e333240418.920223
+s333606871.969600
+e333606871.997299
 r1
 xPhaseScriptExecution
 xRun Script
 x/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'34dbe562d8dcb341^7d92eb62d8dcb341^---0#0#0#--21406"PhaseScriptExecution "Run Script" build/OP-1.build/Debug/OP-1.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER zakhenry    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv BUILD_ROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv CACHE_ROOT /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app"    setenv CODE_SIGNING_ALLOWED YES    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv CONFIGURATION_TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug"    setenv CONTENTS_FOLDER_PATH OP-1Debug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH OP-1Debug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/OP-1.dst    setenv DWARF_DSYM_FILE_NAME OP-1Debug.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH OP-1Debug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH OP-1Debug.app/Contents/MacOS    setenv EXECUTABLE_NAME OP-1Debug    setenv EXECUTABLE_PATH OP-1Debug.app/Contents/MacOS/OP-1Debug    setenv FILE_LIST "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH OP-1Debug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin\"  \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME OP-1Debug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvmgcc42    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include\" ../../../libs/openFrameworks/** ../../../libs/freetype/include/ ../../../libs/freetype/include/freetype2 ../../../libs/poco/include ../../../addons/"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH OP-1Debug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH OP-1Debug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/OP-1.dst/Users/zakhenry/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER zakhenry    setenv INSTALL_PATH /Users/zakhenry/Applications    setenv INSTALL_ROOT /tmp/OP-1.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH OP-1Debug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug-LinkMap-normal-i386.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin\"  \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freeimage/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx\"  \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx\"        \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freeimage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/OP-1Debug.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH OP-1Debug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 10J869    setenv MAC_OS_X_VERSION_ACTUAL 1067    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0607    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal"    setenv OBJROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH OP-1Debug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/PkgInfo"    setenv PKGINFO_PATH OP-1Debug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/MacOSX.platform    setenv PLATFORM_NAME macosx    setenv PLATFORM_PREFERRED_ARCH x86_64    setenv PLATFORM_PRODUCT_BUILD_VERSION 4A304a    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH OP-1Debug.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH OP-1Debug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME OP-1Debug    setenv PRODUCT_SETTINGS_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/openFrameworks-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT OP-1    setenv PROJECT_DERIVED_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/DerivedSources"    setenv PROJECT_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv PROJECT_FILE_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/OP-1.xcodeproj"    setenv PROJECT_NAME OP-1    setenv PROJECT_TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build"    setenv PUBLIC_HEADERS_FOLDER_PATH OP-1Debug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH OP-1Debug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SDK_PRODUCT_BUILD_VERSION 10J869    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH OP-1Debug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH OP-1Debug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv SRCROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_PLATFORMS macosx    setenv SYMBOL_REPOSITORY_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/SymbolRepositories"    setenv SYMROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME OP-1    setenv TARGET_BUILD_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv TARGET_NAME OP-1    setenv TARGET_TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_FILES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_ROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv TEST_AFTER_BUILD NO    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH OP-1Debug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER zakhenry    setenv USER_APPS_DIR /Users/zakhenry/Applications    setenv USER_LIBRARY_DIR /Users/zakhenry/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH OP-1Debug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER zakhenry    setenv VERSION_INFO_FILE OP-1Debug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:OP-1Debug  PROJECT:OP-1-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME OP-1Debug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4A304a    setenv XCODE_VERSION_ACTUAL 0400    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0400    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh\""
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'7e1cf9d76fe2b341^494dffd76fe2b341^---0#0#0#--21406"PhaseScriptExecution "Run Script" build/OP-1.build/Debug/OP-1.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER zakhenry    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv BUILD_ROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv CACHE_ROOT /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app"    setenv CODE_SIGNING_ALLOWED YES    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv CONFIGURATION_TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug"    setenv CONTENTS_FOLDER_PATH OP-1Debug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH OP-1Debug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/OP-1.dst    setenv DWARF_DSYM_FILE_NAME OP-1Debug.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH OP-1Debug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH OP-1Debug.app/Contents/MacOS    setenv EXECUTABLE_NAME OP-1Debug    setenv EXECUTABLE_PATH OP-1Debug.app/Contents/MacOS/OP-1Debug    setenv FILE_LIST "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH OP-1Debug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin\"  \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME OP-1Debug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvmgcc42    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include\" ../../../libs/openFrameworks/** ../../../libs/freetype/include/ ../../../libs/freetype/include/freetype2 ../../../libs/poco/include ../../../addons/"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH OP-1Debug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH OP-1Debug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/OP-1.dst/Users/zakhenry/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER zakhenry    setenv INSTALL_PATH /Users/zakhenry/Applications    setenv INSTALL_ROOT /tmp/OP-1.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH OP-1Debug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug-LinkMap-normal-i386.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin\"  \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freeimage/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx\"  \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx\"        \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx\" \"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freeimage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/fmodex/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/freetype/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/GLee/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/poco/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/rtAudio/lib/osx\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal/i386/OP-1Debug.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH OP-1Debug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 10J869    setenv MAC_OS_X_VERSION_ACTUAL 1067    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0607    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Objects-normal"    setenv OBJROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH OP-1Debug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/PkgInfo"    setenv PKGINFO_PATH OP-1Debug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/MacOSX.platform    setenv PLATFORM_NAME macosx    setenv PLATFORM_PREFERRED_ARCH x86_64    setenv PLATFORM_PRODUCT_BUILD_VERSION 4A304a    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH OP-1Debug.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH OP-1Debug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME OP-1Debug    setenv PRODUCT_SETTINGS_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/openFrameworks-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT OP-1    setenv PROJECT_DERIVED_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/DerivedSources"    setenv PROJECT_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv PROJECT_FILE_PATH "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/OP-1.xcodeproj"    setenv PROJECT_NAME OP-1    setenv PROJECT_TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build"    setenv PUBLIC_HEADERS_FOLDER_PATH OP-1Debug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH OP-1Debug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SDK_PRODUCT_BUILD_VERSION 10J869    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH OP-1Debug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH OP-1Debug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv SRCROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_PLATFORMS macosx    setenv SYMBOL_REPOSITORY_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/SymbolRepositories"    setenv SYMROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME OP-1    setenv TARGET_BUILD_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin"    setenv TARGET_NAME OP-1    setenv TARGET_TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_FILES_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_FILE_DIR "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build"    setenv TEMP_ROOT "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build"    setenv TEST_AFTER_BUILD NO    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH OP-1Debug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER zakhenry    setenv USER_APPS_DIR /Users/zakhenry/Applications    setenv USER_LIBRARY_DIR /Users/zakhenry/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH OP-1Debug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER zakhenry    setenv VERSION_INFO_FILE OP-1Debug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:OP-1Debug  PROJECT:OP-1-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME OP-1Debug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4A304a    setenv XCODE_VERSION_ACTUAL 0400    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0400    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c "\"/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh\""
 
 CProcessInfoPlistFile "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Info.plist" openFrameworks-Info.plist
-s330748938.714865
-e330748938.719437
+s333606498.529352
+e333606498.532751
 r1
 xProcessInfoPlistFile
 x/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Info.plist
 xopenFrameworks-Info.plist
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Process openFrameworks-Info.plistae2eb70ad4b6b341^9030b80ad4b6b341^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/openFrameworks-Info.plist0000000000000000^531"ProcessInfoPlistFile bin/OP-1Debug.app/Contents/Info.plist openFrameworks-Info.plist    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Info.plist"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Process openFrameworks-Info.plist859487626ee2b341^5f6288626ee2b341^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my%20stuff/OP-1/openFrameworks-Info.plist0000000000000000^531"ProcessInfoPlistFile bin/OP-1Debug.app/Contents/Info.plist openFrameworks-Info.plist    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app/Contents/Info.plist"
 
 CProcessPCH++ /Users/zakhenry/Library/Developer/Xcode/DerivedData/OP-1-fsxiodmkesvxiqcqeqajzynvlrva/Index/PrecompiledHeaders/Carbon-cgljvxsnpotrcobwlfzhokzedcgs_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
@@ -1881,10 +3064,10 @@ oi686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because l
 lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Precompile /System/Library/Frameworks/Carbon.framework/Headers/Carbon.heeebb80ad4b6b341^7024fc0cd4b6b341^-95"i686-apple-darwin10-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done-0#0#0#-19%DVTDocumentLocation2@76"file://localhost/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h0000000000000000^1990"ProcessPCH++ /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/OP-1Debug.hmap" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources/i386" "-I/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/build/OP-1.build/Debug/OP-1.build/DerivedSources" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin" "-F/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/../../../libs/glut/lib/osx" -D__MACOSX_CORE__ -lpthread -c /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/jd/jdZgx0iBGiKHFwzxGG-ZGk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-aepgkofvmmwzvggfcxvrkjyapmio/Carbon.h.gch
 
 CTouch "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app"
-s333240418.925559
-e333240418.931473
+s333606872.076437
+e333606872.084276
 r1
 xTouch
 x/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Touch /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.appc9ffec62d8dcb341^8e74ee62d8dcb341^---0#0#0#--243"Touch bin/OP-1Debug.app    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    /usr/bin/touch -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app"
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Touch /Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app2db013d86fe2b341^689115d86fe2b341^---0#0#0#--243"Touch bin/OP-1Debug.app    cd "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1"    /usr/bin/touch -c "/Users/zakhenry/BCT/openFrameworks/of_preRelease_v0062_osxSL_FAT/apps/my stuff/OP-1/bin/OP-1Debug.app"
 

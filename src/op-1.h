@@ -79,7 +79,7 @@ class OP1 : public ofBaseApp{
     
     //MIDI IN (FROM OP-1)
     
-    ofxMidiIn midiIn;
+    ofxMidiIn * midiIn; //pointer to object
     void newMessageEvent (ofxMidiEventArgs & args);
     ofxMidiIn internalMidi;
     void newVirtualMessageEvent (ofxMidiEventArgs & args);
@@ -103,6 +103,7 @@ class OP1 : public ofBaseApp{
 
     
     OP1(); //constructor
+    ~OP1(); //destructor
     
     void setDimensions(int x, int y, int width);
     void draw();

@@ -41,6 +41,11 @@
 		6C73B28213E21DD90057CD36 /* voice_6.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B26713E21DA70057CD36 /* voice_6.png */; };
 		6C73B28313E21DD90057CD36 /* voice_7.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B26813E21DA70057CD36 /* voice_7.png */; };
 		6C73B28413E21DD90057CD36 /* voice_8.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B26913E21DA70057CD36 /* voice_8.png */; };
+		6C73B29D13E26E560057CD36 /* OP1logo.icns in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B29C13E26C4C0057CD36 /* OP1logo.icns */; };
+		6C73B29E13E26EF90057CD36 /* op1.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B29B13E23F490057CD36 /* op1.png */; };
+		6C73B2A213E26FD10057CD36 /* play.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B29F13E26FC60057CD36 /* play.png */; };
+		6C73B2A313E26FD10057CD36 /* record.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B2A013E26FC60057CD36 /* record.png */; };
+		6C73B2A413E26FD10057CD36 /* stop.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C73B2A113E26FC60057CD36 /* stop.png */; };
 		6CAD001B13B8014E004C3A3A /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001113B8014E004C3A3A /* RtMidi.cpp */; };
 		6CAD001C13B8014E004C3A3A /* ofxMidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001713B8014E004C3A3A /* ofxMidiIn.cpp */; };
 		6CAD001D13B8014E004C3A3A /* ofxMidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD001913B8014E004C3A3A /* ofxMidiOut.cpp */; };
@@ -110,6 +115,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				6C73B2A213E26FD10057CD36 /* play.png in CopyFiles */,
+				6C73B2A313E26FD10057CD36 /* record.png in CopyFiles */,
+				6C73B2A413E26FD10057CD36 /* stop.png in CopyFiles */,
+				6C73B29E13E26EF90057CD36 /* op1.png in CopyFiles */,
+				6C73B29D13E26E560057CD36 /* OP1logo.icns in CopyFiles */,
 				6C73B26A13E21DD80057CD36 /* arrow_left.png in CopyFiles */,
 				6C73B26B13E21DD80057CD36 /* arrow_right.png in CopyFiles */,
 				6C73B26C13E21DD80057CD36 /* com.png in CopyFiles */,
@@ -194,6 +204,10 @@
 		6C73B26813E21DA70057CD36 /* voice_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voice_7.png; sourceTree = "<group>"; };
 		6C73B26913E21DA70057CD36 /* voice_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voice_8.png; sourceTree = "<group>"; };
 		6C73B29B13E23F490057CD36 /* op1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = op1.png; sourceTree = "<group>"; };
+		6C73B29C13E26C4C0057CD36 /* OP1logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = OP1logo.icns; sourceTree = "<group>"; };
+		6C73B29F13E26FC60057CD36 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		6C73B2A013E26FC60057CD36 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		6C73B2A113E26FC60057CD36 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		6CAD000E13B8014E004C3A3A /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		6CAD001013B8014E004C3A3A /* RtError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtError.h; sourceTree = "<group>"; };
 		6CAD001113B8014E004C3A3A /* RtMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RtMidi.cpp; sourceTree = "<group>"; };
@@ -366,6 +380,9 @@
 		6C73B24E13E21DA70057CD36 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				6C73B29F13E26FC60057CD36 /* play.png */,
+				6C73B2A013E26FC60057CD36 /* record.png */,
+				6C73B2A113E26FC60057CD36 /* stop.png */,
 				6C73B29B13E23F490057CD36 /* op1.png */,
 				6C73B24F13E21DA70057CD36 /* arrow_left.png */,
 				6C73B25013E21DA70057CD36 /* arrow_right.png */,
@@ -627,6 +644,7 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				6C73B29C13E26C4C0057CD36 /* OP1logo.icns */,
 				6C73B24E13E21DA70057CD36 /* data */,
 				E4B69B5B0A3A1756003C02F2 /* OP-1Debug.app */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,

@@ -56,6 +56,8 @@ OP1::OP1(){ // constructor
     frameWidth = 4.5;
 
     ofSetRectMode(OF_RECTMODE_CENTER);
+    
+    midiIn = new ofxMidiIn;
 
     op1Connected = connectToExternalOP1();
     nextConnectionAttempt = ofGetSystemTime()+5000;
@@ -329,28 +331,38 @@ OP1::OP1(){ // constructor
     
 }
 
+OP1::~OP1(){
+    delete midiIn;
+}
+
 bool OP1::connectToExternalOP1(){
     
-    new (&midiIn) ofxMidiIn();
+    delete midiIn;
+    midiIn = new ofxMidiIn;
     
-    midiIn.listPorts();
+    midiIn->listPorts();
     int op1Port = -1;
-    for (int portNum = 0; portNum<midiIn.portNames.size(); portNum++) {
-        cout << "port "<<portNum<<" is labelled "<<midiIn.portNames[portNum]<<endl;
-        if (true){
+    for (int portNum = 0; portNum<midiIn->portNames.size(); portNum++) {
+        string portName = midiIn->portNames[portNum];
+        string match = "OP-1";
+        size_t found;
+        
+        found=portName.rfind(match);
+        if (found!=string::npos){
             op1Port = portNum;
         }
+        cout << "port "<<portNum<<" is labelled "<<midiIn->portNames[portNum]<<endl;
     }
     
     if (op1Port>-1) {
         
 //        ofxMidiIn midiIn; //reconstruct? hopefully this isn't leaky
         
-        midiIn.openPort(op1Port);
-        midiIn.setVerbose(false);
-        ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
+        midiIn->openPort(op1Port);
+        midiIn->setVerbose(false);
+        ofAddListener(midiIn->newMessageEvent, this, &OP1::newMessageEvent);
         cout << "OP1 found, listing ports\n";
-        midiIn.listPorts();
+        midiIn->listPorts();
         
         return true;
     }else{
