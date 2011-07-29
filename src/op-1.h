@@ -70,7 +70,7 @@ class OP1 : public ofBaseApp{
     void roundedRect(float w, float h, float r);
     void roundedRect(float w, float h, float r, bool rectModeCenter);
     
-    ofTrueTypeFont	verdana, spyroclassic;
+    ofImage op1Logo;
     
     vector<controlButton>controlButtons;
     
@@ -83,6 +83,10 @@ class OP1 : public ofBaseApp{
     void newMessageEvent (ofxMidiEventArgs & args);
     ofxMidiIn internalMidi;
     void newVirtualMessageEvent (ofxMidiEventArgs & args);
+    
+    bool op1Connected;
+    bool connectToExternalOP1();
+    int nextConnectionAttempt;
     
     
     vector<bool>buttonStatus;

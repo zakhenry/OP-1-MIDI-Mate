@@ -18,23 +18,51 @@ int white = 0xFFFFFF;
 
 int keyMap[] = {53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 54, 56, 58, 61, 63, 66, 68, 70, 73, 75};
 
+int getdir (string dir, vector<string> &files)
+{
+    DIR *dp;
+    struct dirent *dirp;
+    if((dp  = opendir(dir.c_str())) == NULL) {
+        cout << "Error(" << errno << ") opening " << dir << endl;
+        return errno;
+    }
+    
+    while ((dirp = readdir(dp)) != NULL) {
+        files.push_back(string(dirp->d_name));
+    }
+    closedir(dp);
+    return 0;
+}
+
 OP1::OP1(){ // constructor
     
     cout << "OP-1 created\n";
     
+    ofSetDataPathRoot("../Resources/");
+//    cout << "data path: " << ofToDataPath("help.png", false)<<" \n";
+//    
+//    string dir = string("../Resources/");
+//    vector<string> files = vector<string>();
+//    
+//    getdir(dir,files);
+//    
+//    cout <<"listing files in current dir\n";
+//    
+//    for (unsigned int i = 0;i < files.size();i++) {
+//        cout << files[i] << endl;
+//    }
+    
     keySpacing = 0.7;
     frameWidth = 4.5;
-    
-    // font name, size, anti-aliased, full character set
-	verdana.loadFont("verdana.ttf",80, true, true);
-    spyroclassic.loadFont("spyroclassic.ttf",80, true, true);
+
     ofSetRectMode(OF_RECTMODE_CENTER);
+
+    op1Connected = connectToExternalOP1();
+    nextConnectionAttempt = ofGetSystemTime()+5000;
     
-    midiIn.listPorts();
-    midiIn.openPort(0);
     internalMidi.openVirtualPort("Virtual OP-1");
-    midiIn.setVerbose(false);
-    ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
+    
+    
     ofAddListener(internalMidi.newMessageEvent, this, &OP1::newVirtualMessageEvent); //send data to same callback as the external midi in
     
     for (int i=0; i<34; i++){
@@ -59,6 +87,9 @@ OP1::OP1(){ // constructor
     	left = new float[256];
     	right = new float[256];
     
+    
+    
+    op1Logo.loadImage("op1.png");
     
     //defining the buttons
     
@@ -298,6 +329,37 @@ OP1::OP1(){ // constructor
     
 }
 
+bool OP1::connectToExternalOP1(){
+    
+    new (&midiIn) ofxMidiIn();
+    
+    midiIn.listPorts();
+    int op1Port = -1;
+    for (int portNum = 0; portNum<midiIn.portNames.size(); portNum++) {
+        cout << "port "<<portNum<<" is labelled "<<midiIn.portNames[portNum]<<endl;
+        if (true){
+            op1Port = portNum;
+        }
+    }
+    
+    if (op1Port>-1) {
+        
+//        ofxMidiIn midiIn; //reconstruct? hopefully this isn't leaky
+        
+        midiIn.openPort(op1Port);
+        midiIn.setVerbose(false);
+        ofAddListener(midiIn.newMessageEvent, this, &OP1::newMessageEvent);
+        cout << "OP1 found, listing ports\n";
+        midiIn.listPorts();
+        
+        return true;
+    }else{
+        cout <<"OP1 external device not found"<<endl;
+    }
+    
+    return false;
+}
+
 float OP1::keySpan(int span){
     return ((14.7*span)+keySpacing*(span-1));
 }
@@ -311,6 +373,17 @@ void OP1::setDimensions(int _x, int _y, int _width){
 }
 
 void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
+    
+    if(!op1Connected){
+        if (nextConnectionAttempt<ofGetSystemTime()){
+            cout << "attempting reconnection\n";
+            op1Connected = connectToExternalOP1();
+            nextConnectionAttempt = ofGetSystemTime()+5000; //retry every 5 seconds
+        }else{
+            cout << "reconnecting in"<<nextConnectionAttempt-ofGetSystemTime()<<" us\n";
+        }
+        cout <<"nextConnectionAttempt is: "<<nextConnectionAttempt<<endl;
+    }
     
     ofPushMatrix();
         
@@ -335,8 +408,8 @@ void OP1::draw(){ //all is drawn as 1px = 1mm, then scaled up
         ofPopStyle();
         ofPopMatrix();
     
-    ofSetColor(0x0000ff);
-    ofCircle(cursorX, cursorY, 2);
+//    ofSetColor(0x0000ff);
+//    ofCircle(cursorX, cursorY, 2);
     
     ofPopMatrix();
     
@@ -387,12 +460,17 @@ void OP1::drawFrame(){
         ofCircle(0, 12, 0.5);
     ofPopMatrix();
     
+    
+    
     ofPushMatrix();
-        ofTranslate(277.5, 87);
-        ofRotateZ(-90);
-        ofScale(0.07, 0.07);
-        ofSetColor(0x555555);
-        spyroclassic.drawString("OP-1", 0, 0);
+        ofTranslate(274.5, 82);
+        ofScale(0.06, 0.06);
+        ofSetColor(0xaaaaaa); //this actually colours the png!
+        op1Logo.draw(0,0);
+//        ofRotateZ(-90);
+//        ofScale(0.07, 0.07);
+//        ofSetColor(0x555555);
+//        spyroclassic.drawString("OP-1", 0, 0);
     ofPopMatrix();
     
 }
@@ -768,152 +846,12 @@ void OP1::changeButtonStatus(int buttonNum, bool buttonDown){
 void OP1::buttonEvent(int button, bool buttonDown, string& buttonName){
     int buttonNum = -1; //changing midi id's to graphical ids
     
-//    
-//    switch (button) {
-//        case 48:
-//            buttonNum = 0;
-//            buttonName = "input";
-//            break;
-//        case 49:
-//            buttonNum = 1;
-//            buttonName = "com";
-//            break;
-//        case 7:
-//            buttonNum = 2;
-//            buttonName = "synth";
-//            break;
-//        case 8:
-//            buttonNum = 3;
-//            buttonName = "drum";
-//            break;
-//        case 9:
-//            buttonNum = 4;
-//            buttonName = "tape";
-//            break;
-//        case 10:
-//            buttonNum = 5;
-//            buttonName = "mixer";
-//            break;
-//    /*    case :
-//            buttonNum = 6;
-//            break;
-//        case :
-//            buttonNum = 7;
-//            break;
-//        case :
-//            buttonNum = 8;
-//            break;
-//        case :
-//            buttonNum = 9;
-//            break;
-//     */
-//        case 50:
-//            buttonNum = 10;
-//            buttonName = "tape_in";
-//            break;
-//        case 51:
-//            buttonNum = 11;
-//            buttonName = "tape_out";
-//            break;
-//        case 52:
-//            buttonNum = 12;
-//            buttonName = "tape_loop";
-//            break;
-//        case 21:
-//            buttonNum = 13;
-//            buttonName = "tape_pause";
-//            break;
-//        case 22:
-//            buttonNum = 14;
-//            buttonName = "tape_reverse";
-//            break;
-//        case 23:
-//            buttonNum = 15;
-//            buttonName = "tape_jitter";
-//            break;
-//        case 24:
-//            buttonNum = 16;
-//            buttonName = "m1";
-//            break;
-//        case 25:
-//            buttonNum = 17;
-//            buttonName = "m2";
-//            break;
-//        case 26:
-//            buttonNum = 18;
-//            buttonName = "sequencer";
-//            break;
-//        case 5:
-//            buttonNum = 19;
-//            buttonName = "help";
-//            break;
-//        case 6:
-//            buttonNum = 20;
-//            buttonName = "metronome";
-//            break;
-//        case 15:
-//            buttonNum = 21;
-//            buttonName = "tape_lift";
-//            break;
-//        case 16:
-//            buttonNum = 22;
-//            buttonName = "tape_drop";
-//            break;
-//        case 17:
-//            buttonNum = 23;
-//            buttonName = "tape_join";
-//            break;
-//        case 38:
-//            buttonNum = 24;
-//            buttonName = "record";
-//            break;
-//        case 39:
-//            buttonNum = 25;
-//            buttonName = "play";
-//            break;
-//        case 40:
-//            buttonNum = 26;
-//            buttonName = "stop";
-//            break;
-//        case 41:
-//            buttonNum = 27;
-//            buttonName = "octave_down";
-//            break;
-//        case 42:
-//            buttonNum = 28;
-//            buttonName = "octave_up";
-//            break;
-//        /*case :
-//            buttonNum = 29;
-//             buttonName = "shift";
-//            break;*/
-//        case 64: //encoder 1
-//            buttonNum = 30;
-//            buttonName = "encoder_blue";
-//            break;
-//            
-//        case 65: //encoder 2
-//            buttonNum = 31;
-//            buttonName = "encoder_green";
-//            break;
-//            
-//        case 66: //encoder 3
-//            buttonNum = 32;
-//            buttonName = "encoder_white";
-//            break;
-//            
-//        case 67: //encoder 4
-//            buttonNum = 33;
-//            buttonName = "encoder_orange";
-//            break;
-//            
-//        default:
-//            cout <<"button not found\n";
-//            break;
-//    }
+//    cout << "button checked for is "<<button<<" \n";
     
     for (int i=0; i<=controlButtons.size(); i++){
-        if (controlButtons[button].midiId==button){
+//        cout << "controlButtons[i].midiId is "<<controlButtons[i].midiId<<"\n";
+        if (controlButtons[i].midiId==button){
+//            cout << "button with index "<<i<<"matches midi button "<<button<<"\n";
             buttonNum = i;
             break;
         }
@@ -931,9 +869,9 @@ void OP1::keyEvent(int key, bool keyDown, string& keyName){
     
 //    cout <<"key input is ["<<key<<"]\n";
     
-    if (((key+3)%12)==0) {
-        cout << "A pressed\n";
-    }
+//    if (((key+3)%12)==0) {
+//        cout << "A pressed\n";
+//    }
     
     switch (key) {
             //white keys

@@ -3,6 +3,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
+    ofSetDataPathRoot("./");
 	ofSetCircleResolution(50);
 	ofBackground(0, 0, 0);
 	ofSetWindowTitle("ofxOP1 example");
@@ -12,7 +13,10 @@ void testApp::setup(){
 //    ofHideCursor();
     op1.setDimensions(ofGetWidth()/2, ofGetHeight()/2, ofGetWidth()-200);
     
-    verdana.loadFont("verdana.ttf",80, true, true);
+    
+//    cout << "cwd is "<<getcwd()<<"\n";
+    
+//    verdana.loadFont("verdana.ttf",80, true, true);
     ofAddListener(op1.midiEvent, this, &testApp::op1Event);
     
 }
@@ -44,17 +48,18 @@ static float adder = 0;
 
 //--------------------------------------------------------------
 void testApp::keyPressed  (int key){
-    cout << "key pressed ("<<key<<")\n";
+//    cout << "key pressed ("<<key<<")\n";
     switch (key) {
         case 'f':
             {
                 if (ofGetWindowMode()==OF_FULLSCREEN){
-                    ofSetFullscreen(false);
                     ofSetWindowShape(1024,768);
+                    ofSetFullscreen(false);
+                    op1.setDimensions(1024/2, 768/2, 1024-200);
                 }else{
+                    ofSetWindowShape(ofGetScreenWidth(),ofGetScreenHeight());
                     ofSetFullscreen(true);
-                    ofSetWindowShape(1900,1200);
-                    
+                    op1.setDimensions(ofGetScreenWidth()/2, ofGetScreenHeight()/2, ofGetScreenWidth()-200);
                 }
             }
             break;
